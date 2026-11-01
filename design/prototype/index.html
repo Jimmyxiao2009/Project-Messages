@@ -1,0 +1,973 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>言枢 Messages · Windows 10 Mobile 界面设计稿 v1</title>
+<style>
+:root{
+  /* ── 色板（暗色 · 默认） ── */
+  --bg:#000;--chrome:#1F1F1F;--chrome-low:#171717;--chrome-ml:#2B2B2B;
+  --low:#333;--ml:#666;--mid:#999;--soft:#BDBDBD;--text:#FFF;
+  --accent:#0078D7;--accent-t:#76B9ED;--accent-bg:rgba(0,120,215,.35);
+  --think:#B4A0FF;--think-bd:#8764B8;
+  --warn:#FFB900;--err:#E81123;--err-t:#FF99A4;--ok:#6CCB5F;
+  --code:#0C0C0C;
+  /* ── 度量 ── */
+  --r-card:12px;--r-pill:18px;--r-ctrl:8px;
+  --sp-xs:4px;--sp-s:8px;--sp-m:12px;--sp-l:16px;--sp-xl:24px;
+  --touch:44px;--row:56px;--bar:48px;
+  --fs-cap:12px;--fs-body:14px;--fs-ui:15px;--fs-sub:18px;--fs-title:22px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  background:#121212;color:var(--text);padding:32px 28px 64px;
+  font-family:"Segoe UI","Microsoft YaHei UI","Microsoft YaHei",sans-serif;
+  font-size:var(--fs-ui);line-height:1.45;
+}
+h1{font-size:26px;font-weight:300;margin:0 0 6px;letter-spacing:.5px}
+h2{font-size:18px;font-weight:600;margin:44px 0 14px;color:var(--accent-t)}
+h3{font-size:15px;font-weight:600;margin:26px 0 10px}
+p{margin:0 0 12px;color:var(--soft);font-size:14px;max-width:1180px}
+.lede{color:var(--mid);font-size:14px;margin-bottom:26px}
+code{font-family:Consolas,"Cascadia Mono",monospace;font-size:.9em;background:var(--chrome-low);padding:1px 5px;border-radius:3px;color:var(--accent-t)}
+.i{font-family:"Segoe MDL2 Assets","Segoe Fluent Icons";font-style:normal;font-weight:400;line-height:1;display:inline-block}
+.mono{font-family:Consolas,"Cascadia Mono",monospace}
+
+/* ══ 规格表 ══ */
+.spec{border:1px solid var(--low);margin:0 0 34px;max-width:1360px}
+.spec + .spec{margin-top:-34px}
+.spec .hd{background:var(--chrome);padding:10px 14px;font-size:13px;font-weight:600;color:var(--accent-t);letter-spacing:.5px}
+.spec table{width:100%;border-collapse:collapse}
+.spec td,.spec th{border-top:1px solid #222;padding:9px 12px;vertical-align:top;font-size:13px;color:var(--soft)}
+.spec th{color:var(--mid);font-weight:600;text-align:left;background:#161616}
+.spec td.k{color:var(--text);white-space:nowrap}
+.sw{display:inline-flex;align-items:center;gap:7px;white-space:nowrap}
+.sw i{width:16px;height:12px;display:inline-block;border:1px solid #000}
+
+/* ══ 页面网格 ══ */
+.grid{display:flex;flex-wrap:wrap;gap:44px 34px;align-items:flex-start}
+figure.shot{margin:0;width:360px}
+figcaption{font-size:13px;color:var(--mid);margin-top:12px;line-height:1.5}
+figcaption b{display:block;color:var(--text);font-size:14px;font-weight:600;margin-bottom:3px}
+
+/* ══ 手机框 ══ */
+.phone{
+  width:360px;height:640px;background:var(--bg);overflow:hidden;
+  display:flex;flex-direction:column;position:relative;
+  box-shadow:0 0 0 1px #2A2A2A,0 0 0 12px #050505,0 0 0 13px #2A2A2A,0 24px 50px rgba(0,0,0,.6);
+}
+
+/* 顶栏 */
+.top{height:var(--bar);flex:none;background:var(--chrome);display:flex;align-items:center;padding:0 4px 0 2px;gap:2px;position:relative}
+.top .back{width:44px;height:44px;display:flex;align-items:center;justify-content:center;color:var(--text);font-size:16px}
+.top .tt{flex:1;min-width:0;padding-left:4px}
+.top .tt b{display:block;font-size:15px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.top .tt small{display:block;font-size:11px;color:var(--mid);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.top .act{width:44px;height:44px;display:flex;align-items:center;justify-content:center;color:var(--text);font-size:16px}
+.top .act.on{color:var(--accent-t)}
+.pulse{width:3px;height:12px;background:var(--accent);display:inline-block;margin-left:5px;animation:pl 1.2s ease-in-out infinite;vertical-align:-1px}
+@keyframes pl{0%,100%{opacity:.25}50%{opacity:1}}
+
+/* Pivot 头 */
+.pivot{height:44px;flex:none;background:var(--chrome);display:flex;align-items:stretch;border-bottom:1px solid #000}
+.pivot div{flex:1;display:flex;align-items:center;justify-content:center;font-size:15px;color:var(--mid);border-bottom:2px solid transparent}
+.pivot div.on{color:var(--text);border-bottom-color:var(--accent);font-weight:600}
+.pivot.sm{height:38px}
+.pivot.sm div{font-size:13.5px}
+
+/* 内容区 */
+.body{flex:1;min-height:0;overflow:hidden;display:flex;flex-direction:column}
+.scroll{flex:1;min-height:0;overflow:hidden}
+.pad{padding:var(--sp-l)}
+.sec{font-size:11.5px;font-weight:600;color:var(--mid);letter-spacing:1.4px;margin:18px 16px 6px;text-transform:uppercase}
+.sec:first-child{margin-top:12px}
+
+/* 列表行 */
+.row{display:flex;align-items:center;gap:12px;min-height:var(--row);padding:9px 14px;position:relative}
+.row.tap:active{background:var(--accent-bg)}
+.row .lead{width:26px;flex:none;text-align:center;font-size:17px;color:var(--accent-t)}
+.row .c{flex:1;min-width:0}
+.row .c b{display:block;font-size:15px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.row .c small{display:block;font-size:12px;color:var(--mid);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:1px}
+.row .chev{color:var(--ml);font-size:12px;flex:none}
+.row.on{background:var(--accent-bg)}
+.row.on:before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--accent)}
+.divider{height:1px;background:#1B1B1B;margin:0 14px}
+
+/* 卡片 */
+.card{background:var(--chrome-ml);border:1px solid var(--low);border-radius:var(--r-card);padding:var(--sp-l);margin:0 14px 10px}
+.card.ghost{background:transparent;border:1px dashed var(--ml);display:flex;align-items:center;gap:12px;color:var(--accent-t);font-size:15px;font-weight:600}
+.av{width:48px;height:48px;border-radius:50%;flex:none;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;font-size:19px;font-weight:600;overflow:hidden}
+.av.s{width:36px;height:36px;font-size:15px}
+.av.l{width:72px;height:72px;font-size:28px}
+
+/* 徽标 */
+.tagrow{display:flex;gap:6px;margin:2px 14px 8px;overflow:hidden}
+.tag{font-size:11.5px;padding:3px 10px;border-radius:var(--r-pill);border:1px solid var(--low);color:var(--mid);white-space:nowrap}
+.tag.on{background:var(--accent-bg);border-color:var(--accent);color:var(--text)}
+.badge{font-size:10.5px;padding:2px 7px;border-radius:3px;background:var(--accent-bg);color:var(--accent-t);white-space:nowrap}
+.badge.w{background:rgba(255,185,0,.22);color:var(--warn)}
+.badge.g{background:rgba(108,203,95,.2);color:var(--ok)}
+.badge.r{background:rgba(232,17,35,.22);color:var(--err-t)}
+
+/* 按钮 */
+.btn{height:36px;min-width:88px;padding:0 14px;border:1px solid var(--low);background:transparent;color:var(--text);font-size:14px;font-family:inherit;display:inline-flex;align-items:center;justify-content:center;gap:6px;border-radius:var(--r-ctrl)}
+.btn.acc{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:600}
+.btn.gh{min-width:0;padding:0 10px;border-color:transparent;color:var(--accent-t)}
+.btn.wide{width:100%;height:44px}
+
+/* ══ 会话时间线 ══ */
+.tl{padding:12px 14px 4px}
+.tl .older{align-self:center;margin:0 auto 14px;display:block;text-align:center;font-size:13.5px;color:var(--accent-t);padding:4px 10px}
+
+.u{margin:0 0 16px;display:flex;justify-content:flex-end}
+.u .bub{background:var(--accent);color:#fff;padding:8px 11px;font-size:15px;line-height:1.55;max-width:282px;position:relative;word-break:break-word}
+.u .bub:after{content:"";position:absolute;right:14px;bottom:-8px;border-top:9px solid var(--accent);border-left:12px solid transparent}
+.u .att{display:flex;gap:6px;justify-content:flex-end;margin-bottom:6px}
+.u .att span{font-size:11.5px;background:var(--chrome-ml);border:1px solid var(--low);padding:3px 8px;color:var(--soft)}
+
+/* 思考行 */
+.think{display:flex;gap:10px;align-items:flex-start;margin:0 0 12px;padding-left:2px}
+.think .ring{width:15px;height:15px;border-radius:50%;border:2px dotted var(--accent);flex:none;margin-top:2px}
+.think .ring.spin{animation:r 1.6s linear infinite}
+@keyframes r{to{transform:rotate(360deg)}}
+.think .tx{font-size:13.5px;color:var(--think);font-style:italic;line-height:1.55}
+.think .tx small{display:block;color:var(--mid);font-style:normal;font-size:11.5px;margin-top:2px}
+
+/* 步骤轨道 */
+.rail{position:relative;margin:0 0 14px;padding-left:22px}
+.rail:before{content:"";position:absolute;left:5px;top:6px;bottom:6px;width:2px;background:var(--accent);opacity:.55}
+.rail.closed:before{bottom:100%}
+.step{position:relative;margin-bottom:11px}
+.step:before{content:"";position:absolute;left:-21px;top:5px;width:8px;height:8px;background:var(--accent);border-radius:1px}
+.step.done:before{background:var(--ok)}
+.step.fail:before{background:var(--err)}
+.step.sys:before{background:var(--ml)}
+.step .sl{font-size:13.5px;color:var(--text);line-height:1.5}
+.step .sub{font-size:11.5px;color:var(--mid);margin-top:2px;line-height:1.5}
+.step .arg{font-family:Consolas,monospace;font-size:12px;color:var(--mid);margin-top:3px;word-break:break-all}
+.step .out{margin-top:5px;background:var(--chrome-low);border-left:2px solid var(--low);padding:6px 9px;font-family:Consolas,monospace;font-size:12px;line-height:1.5;color:#DADADA;white-space:pre-wrap;word-break:break-all}
+.fold{display:flex;gap:10px;align-items:flex-start;margin-bottom:14px;padding-left:2px}
+.fold .n{width:15px;height:15px;border-radius:50%;background:var(--accent);flex:none;margin-top:3px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:9px}
+.fold .sl b{color:var(--accent-t);font-size:13.5px}
+.fold .sub{font-size:11.5px;color:var(--mid);margin-top:2px}
+
+/* 最终输出 */
+.out{margin:0 0 16px;font-size:15px;line-height:1.6;color:var(--text)}
+.out p{margin:0 0 10px;color:var(--text);font-size:15px}
+.out ul{margin:0 0 10px;padding-left:20px;color:var(--text)}
+.out li{margin-bottom:4px}
+.code{background:var(--code);border-left:2px solid var(--accent);margin:10px 0;position:relative}
+.code .lbl{display:flex;justify-content:space-between;font-size:11px;color:var(--mid);padding:5px 10px 0;font-family:Consolas,monospace}
+.code pre{margin:0;font-family:Consolas,monospace;font-size:12.5px;line-height:1.55;padding:4px 10px 9px;overflow-x:auto;white-space:pre;color:#E6E6E6}
+.kw{color:var(--accent-t)}
+.cm{color:#7A7A7A}
+.sysline{text-align:center;font-size:12.5px;color:var(--mid);margin:2px 0 16px}
+.errline{display:flex;gap:10px;border-left:2px solid var(--err);padding:6px 0 6px 12px;margin:0 0 14px}
+.errline b{color:var(--err-t);font-size:14px}
+.errline .sub{font-size:12px;color:var(--mid);margin-top:3px}
+
+/* 审批条 */
+.approve{flex:none;background:rgba(255,185,0,.14);border-left:3px solid var(--warn);padding:9px 12px;display:flex;align-items:center;gap:10px}
+.approve .c{flex:1;min-width:0}
+.approve b{display:block;font-size:13.5px;color:var(--warn)}
+.approve small{display:block;font-size:11.5px;color:var(--soft);margin-top:1px}
+
+/* composer */
+.cmp{flex:none;background:var(--chrome);border-top:1px solid #000;padding:8px 10px 10px}
+.cmp .att{display:flex;gap:6px;margin-bottom:7px}
+.cmp .att span{font-size:11.5px;background:var(--chrome-ml);border:1px solid var(--low);padding:3px 8px;color:var(--soft)}
+.tb{background:var(--chrome-ml);border:1px solid var(--low);min-height:38px;padding:9px 11px;font-size:15px;color:var(--mid);line-height:1.4}
+.tb.focus{background:#fff;color:#000;border-color:var(--accent)}
+.tb.ph{color:var(--ml)}
+.cmp .act{display:flex;align-items:center;gap:4px;margin-top:8px}
+.cmp .act .sp{flex:1}
+.cmp .ib{width:44px;height:38px;display:flex;align-items:center;justify-content:center;color:var(--soft);font-size:17px}
+.cmp .send{width:56px;height:38px;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;font-size:17px}
+.cmp .steer{height:38px;padding:0 12px;border:1px solid var(--accent);color:var(--accent-t);display:flex;align-items:center;gap:6px;font-size:14px}
+.cmp .stop{height:32px;padding:0 12px;border:1px solid var(--err);color:var(--err-t);display:flex;align-items:center;gap:6px;font-size:13px;flex:none}
+/* 运行条：进度环 + 状态文字 + 打断，在输入行上方独占一行 */
+.runbar{display:flex;align-items:center;gap:10px;margin-bottom:7px}
+.runbar .rring{width:18px;height:18px;border-radius:50%;border:2px solid var(--low);border-top-color:var(--accent-t);flex:none;animation:r 1s linear infinite}
+.runbar .rtx{flex:1;min-width:0;font-size:13px;color:var(--mid);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+/* 浮动回底 */
+.fab{position:absolute;right:12px;bottom:104px;width:38px;height:38px;border-radius:50%;background:var(--chrome-ml);border:1px solid var(--low);color:var(--accent-t);display:flex;align-items:center;justify-content:center;font-size:15px}
+
+/* 欢迎空态 */
+.welcome{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:0 34px;text-align:center}
+.ringlg{width:84px;height:84px;border-radius:50%;background:var(--accent-bg);border:1px solid var(--accent);display:flex;align-items:center;justify-content:center;font-size:30px;color:var(--accent-t);margin-bottom:18px}
+.welcome b{font-size:18px;font-weight:600;margin-bottom:6px}
+.welcome p{font-size:13.5px;color:var(--mid);margin:0 0 20px}
+
+/* 表单 */
+.field{padding:0 16px 12px}
+.field label{display:block;font-size:11.5px;color:var(--mid);letter-spacing:.8px;margin-bottom:5px;font-weight:600}
+.inp{background:var(--chrome-ml);border:1px solid var(--low);padding:9px 11px;font-size:14.5px;color:var(--text);border-radius:2px}
+.inp.ta{min-height:86px;line-height:1.5;font-size:14px;color:var(--soft)}
+.inp.ph{color:var(--ml)}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:7px}
+.chip{font-size:11.5px;font-family:Consolas,monospace;padding:3px 8px;background:var(--chrome-ml);border:1px solid var(--low);color:var(--accent-t);border-radius:3px}
+
+/* 开关 */
+.sw-row{display:flex;align-items:center;gap:12px;min-height:52px;padding:8px 16px}
+.sw-row .c{flex:1;min-width:0}
+.sw-row b{display:block;font-size:14.5px;font-weight:600}
+.sw-row small{display:block;font-size:11.5px;color:var(--mid);margin-top:2px;line-height:1.4}
+.tg{width:42px;height:20px;border-radius:10px;background:var(--low);flex:none;position:relative}
+.tg:after{content:"";position:absolute;top:3px;left:3px;width:14px;height:14px;border-radius:50%;background:var(--mid)}
+.tg.on{background:var(--accent)}
+.tg.on:after{left:25px;background:#fff}
+
+/* 底部操作条 */
+.foot{flex:none;background:var(--chrome);border-top:1px solid #000;padding:9px 12px;display:flex;gap:10px;align-items:center}
+.foot .btn{flex:1}
+
+/* 记忆条目 */
+.mem{margin:0 14px 9px;border:1px solid var(--low);border-left:3px solid var(--accent);background:var(--chrome-low);padding:9px 11px}
+.mem .h{display:flex;align-items:center;gap:7px;margin-bottom:4px}
+.mem .tx{font-size:13.5px;color:var(--text);line-height:1.5}
+.mem .ft{font-size:11px;color:var(--mid);margin-top:5px;display:flex;gap:10px}
+.imp{height:3px;width:52px;background:var(--low);position:relative;flex:none}
+.imp i{position:absolute;left:0;top:0;bottom:0;background:var(--accent)}
+
+/* 进度条 */
+.bar{height:3px;background:var(--low);position:relative;margin:0 16px 10px}
+.bar i{position:absolute;left:0;top:0;bottom:0;background:var(--accent)}
+.usage{margin:0 16px 10px;font-size:11.5px;color:var(--mid);display:flex;justify-content:space-between}
+
+/* 全屏审批 */
+.q{padding:0 16px 16px}
+.q .qt{font-size:14.5px;font-weight:600;margin-bottom:8px}
+.q .opt{border:1px solid var(--low);padding:10px 12px;font-size:14px;margin-bottom:7px;display:flex;align-items:center;gap:10px}
+.q .opt.on{border-color:var(--accent);background:var(--accent-bg)}
+.q .opt .mk{width:16px;height:16px;border:1px solid var(--ml);border-radius:2px;flex:none;display:flex;align-items:center;justify-content:center;font-size:10px;color:#fff}
+.q .opt.on .mk{background:var(--accent);border-color:var(--accent)}
+.kv{display:flex;gap:10px;font-size:13px;padding:6px 0;border-bottom:1px solid #1B1B1B}
+.kv span:first-child{color:var(--mid);width:74px;flex:none}
+.kv span:last-child{color:var(--text);font-family:Consolas,monospace;word-break:break-all}
+.note{margin:12px 16px;padding:10px 12px;border-left:2px solid var(--warn);background:rgba(255,185,0,.10);font-size:12.5px;color:var(--soft);line-height:1.5}
+</style>
+</head>
+<body>
+
+<h1>言枢 Messages · Windows 10 Mobile 界面设计稿 v1</h1>
+<p class="lede">
+  设计基准 360 × 640（Windows 10 Mobile / Lumia 950，15254）。黑底 + 系统强调色 + 直角气泡的单强调色体系；除用户消息外，全部过程走左侧轨道，不进气泡。
+  配套文档：<code>docs/设计稿.md</code>
+</p>
+
+<!-- ══════════ 规格表 ══════════ -->
+<section class="spec">
+  <div class="hd">时间线条目怎么区分</div>
+  <table>
+    <tr><th style="width:150px">类型</th><th>规则</th><th style="width:210px">数据来源</th><th style="width:110px">默认状态</th></tr>
+    <tr>
+      <td class="k"><span class="sw"><i style="background:var(--accent)"></i>用户消息</span></td>
+      <td>唯一靠右、强调色实心<b>直角</b>气泡，右下小三角尾巴；附件行在气泡<b>上方</b>。</td>
+      <td class="mono">role=user</td><td>完整显示</td>
+    </tr>
+    <tr>
+      <td class="k"><span class="sw"><i style="border:2px dotted var(--accent);background:none;height:13px"></i>思考</span></td>
+      <td>左侧虚线圆圈 + 斜体淡紫灰字，表示「推理中」。生成时圆圈缓慢旋转。</td>
+      <td class="mono">reasoning_content</td><td>折叠为一行摘要</td>
+    </tr>
+    <tr>
+      <td class="k"><span class="sw"><i style="background:var(--accent);width:4px"></i>步骤轨道</span></td>
+      <td>左侧 2px 实心竖轨 + 方块节点。思考 / 工具 / 读取 / 命令都挂在轨道上。<b>默认只显示最近一步</b>，上方给「显示前面 N 步」折叠条。</td>
+      <td class="mono">think_steps / tool_calls</td><td>仅最近一步</td>
+    </tr>
+    <tr>
+      <td class="k"><span class="sw"><i style="background:var(--ok);width:8px;height:8px"></i>工具完成</span></td>
+      <td>节点由强调色转绿；失败转红并在行内展开错误摘要，附「重试」。</td>
+      <td class="mono">role=tool</td><td>标题行可见</td>
+    </tr>
+    <tr>
+      <td class="k"><span class="sw"><i style="background:#2B2B2B"></i>中间解说</span></td>
+      <td>缩进正文块，左侧 2px 深灰竖线，颜色比最终输出暗一档。模型「说话但还没定稿」的内容。</td>
+      <td class="mono">assistant（中间轮）</td><td>完整显示</td>
+    </tr>
+    <tr>
+      <td class="k"><span class="sw"><i style="background:#fff;width:16px;height:3px"></i>最终输出</span></td>
+      <td>无气泡、亮色正文，Markdown 全量渲染。代码块深底 + 左侧强调色边 + 语言标签 + 复制按钮。</td>
+      <td class="mono">assistant（末轮）</td><td>完整显示</td>
+    </tr>
+    <tr>
+      <td class="k"><span class="sw"><i style="background:#666"></i>系统 / 分隔</span></td>
+      <td>居中灰字小字条（如「已加载 12 条更早消息」「上下文已压缩」），可点。</td>
+      <td class="mono">system / 本地事件</td><td>—</td>
+    </tr>
+    <tr>
+      <td class="k"><span class="sw"><i style="background:var(--err);width:4px"></i>错误</span></td>
+      <td>左侧红色竖轨 + 红标题 + 可展开详情 + 「重试」（复用同一 clientMessageId，不产生重复任务）。</td>
+      <td class="mono">本地异常 / HTTP</td><td>展开</td>
+    </tr>
+    <tr>
+      <td class="k"><span class="sw"><i style="background:var(--warn);width:4px"></i>审批 / 需要你处理</span></td>
+      <td><b>不进列表</b>，固定条钉在会话顶部（黄条），点开进全屏表单。处理完回原位。</td>
+      <td class="mono">notice / permission</td><td>常显至处理</td>
+    </tr>
+  </table>
+</section>
+
+<section class="spec">
+  <div class="hd">色板与度量</div>
+  <table>
+    <tr><th style="width:150px">令牌</th><th style="width:110px">值</th><th>用途</th><th style="width:150px">令牌</th><th style="width:110px">值</th><th>用途</th></tr>
+    <tr><td class="k">--bg</td><td class="mono">#000000</td><td>页面底</td><td class="k">圆角 · 卡片</td><td class="mono">12px</td><td>仅卡片用</td></tr>
+    <tr><td class="k">--chrome</td><td class="mono">#1F1F1F</td><td>顶栏 / 底栏</td><td class="k">圆角 · 气泡</td><td class="mono">0</td><td>直角（刻意）</td></tr>
+    <tr><td class="k">--chrome-ml</td><td class="mono">#2B2B2B</td><td>输入框 / 卡片底</td><td class="k">触控目标</td><td class="mono">44px</td><td>最小可点尺寸</td></tr>
+    <tr><td class="k">--accent</td><td class="mono">#0078D7</td><td>唯一强调色，启动时替换为系统强调色；可跟随角色卡主色</td><td class="k">行高 · 列表</td><td class="mono">56px</td><td>设置 / 档案 / 会话行</td></tr>
+    <tr><td class="k">--accent-t</td><td class="mono">#76B9ED</td><td>暗底上的强调色文字</td><td class="k">字号 · 界面</td><td class="mono">15px</td><td>行高 1.45</td></tr>
+    <tr><td class="k">--think</td><td class="mono">#B4A0FF</td><td>思考步骤</td><td class="k">字号 · 正文</td><td class="mono">15px</td><td>行高 1.6</td></tr>
+    <tr><td class="k">--warn</td><td class="mono">#FFB900</td><td>审批 / 注意</td><td class="k">字号 · 说明</td><td class="mono">12px</td><td>次要文字</td></tr>
+    <tr><td class="k">--err</td><td class="mono">#E81123</td><td>错误</td><td class="k">间距刻度</td><td class="mono">4/8/12/16/24</td><td>全局统一</td></tr>
+    <tr><td class="k">--ok</td><td class="mono">#6CCB5F</td><td>完成</td><td class="k">字体</td><td class="mono">系统内置</td><td>Segoe UI + 微软雅黑 UI；图标 Segoe MDL2 Assets；等宽 Consolas</td></tr>
+  </table>
+</section>
+
+<h2>页面总览</h2>
+
+<div class="grid">
+
+<!-- ═══════════ 1. 启动 ═══════════ -->
+<figure class="shot">
+  <div class="phone">
+    <div class="body" style="justify-content:center;padding:0 34px">
+      <div style="font-size:13px;letter-spacing:4px;color:var(--accent-t);font-weight:600">言枢</div>
+      <div style="font-size:28px;font-weight:300;letter-spacing:2px;margin:6px 0 30px">Messages</div>
+      <div style="font-size:13px;color:var(--mid);margin-bottom:8px">正在准备工作区…</div>
+      <div class="bar" style="margin:0 0 10px"><i style="width:62%"></i></div>
+      <div style="font-size:11.5px;color:var(--ml);line-height:1.6">载入 3 个档案 · 128 条会话<br>初始化嵌入引擎（后台）</div>
+    </div>
+    <div class="foot" style="justify-content:center;font-size:11.5px;color:var(--ml)">
+      首次启动或检测到旧数据时会先跑迁移
+    </div>
+  </div>
+  <figcaption>
+    <b>1 · 启动与初始化</b>
+    顺序：加载工作区 → 跑数据迁移（若检测到旧言枢数据）→ 后台初始化嵌入引擎 → 进入根 Pivot。迁移失败给明确原因 + 「查看调试日志」+「跳过迁移继续」，绝不白屏。
+  </figcaption>
+</figure>
+
+<!-- ═══════════ 2. 档案列表 ═══════════ -->
+<figure class="shot">
+  <div class="phone">
+    <div class="top">
+      <div class="back"></div>
+      <div class="tt"><b>言枢</b><small>3 个档案 · 128 条会话</small></div>
+      <div class="act"><i class="i">&#xE721;</i></div>
+      <div class="act"><i class="i">&#xE712;</i></div>
+    </div>
+    <div class="pivot"><div class="on">对话</div><div>档案</div><div>我的</div></div>
+    <div class="body">
+      <div class="scroll">
+        <div style="height:12px"></div>
+        <div class="card ghost" style="height:60px"><i class="i" style="font-size:18px">&#xE710;</i>新建档案</div>
+        <div class="tagrow"><span class="tag on">全部</span><span class="tag">工程</span><span class="tag">角色</span><span class="tag">翻译</span></div>
+        <div class="row tap on">
+          <div class="av">工</div>
+          <div class="c"><b>工程助理</b><small>deepseek-chat · 42 会话 · 87 条记忆</small></div>
+          <div class="chev"><i class="i">&#xE76C;</i></div>
+        </div>
+        <div class="row tap">
+          <div class="av" style="background:#5E5DB6">林</div>
+          <div class="c"><b>林深</b><small>claude-sonnet · 18 会话 · 214 条记忆</small></div>
+          <div class="chev"><i class="i">&#xE76C;</i></div>
+        </div>
+        <div class="row tap">
+          <div class="av" style="background:#4A5568">译</div>
+          <div class="c"><b>本地化助手</b><small>gpt-4o-mini · 7 会话 · 12 条记忆</small></div>
+          <div class="chev"><i class="i">&#xE76C;</i></div>
+        </div>
+        <div class="sec">工程助理的会话</div>
+        <div class="card" style="padding:12px 14px;border-left:4px solid var(--warn)">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:8px">
+            <b style="font-size:14.5px;font-weight:600;color:var(--accent-t)">修复手机登录</b>
+            <span style="font-size:11px;color:var(--mid)">10:42</span>
+          </div>
+          <div style="font-size:12.5px;color:var(--soft);margin-top:3px">最后一句：密码派生用 PBKDF2-SHA256…</div>
+          <div style="display:flex;gap:7px;margin-top:8px;align-items:center">
+            <span class="badge w">需要你处理</span>
+            <span style="font-size:11px;color:var(--mid)" class="mono">4.2k tokens</span>
+          </div>
+        </div>
+        <div class="card" style="padding:12px 14px;border-left:4px solid var(--low)">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:8px">
+            <b style="font-size:14.5px;font-weight:600">重写时间线投影</b>
+            <span style="font-size:11px;color:var(--mid)">昨天</span>
+          </div>
+          <div style="font-size:12.5px;color:var(--soft);margin-top:3px">最后一句：按 item ID 合并，recovery 用 nextCursor…</div>
+          <div style="display:flex;gap:7px;margin-top:8px;align-items:center">
+            <span class="badge g">已完成</span>
+            <span style="font-size:11px;color:var(--mid)" class="mono">18.6k tokens</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cmp" style="background:var(--chrome)">
+      <div class="act"><div class="ib"><i class="i">&#xE710;</i></div><div class="ib"><i class="i">&#xE8B7;</i></div><div class="sp"></div><div class="ib"><i class="i">&#xE72C;</i></div></div>
+    </div>
+  </div>
+  <figcaption>
+    <b>2 · 档案列表（根 Pivot 第 1 页）</b>
+    档案卡片在最上；点档案就地筛选出它的会话，<b>不跳页</b>。会话卡片三行 + 一根 <b>4px 左边色条</b>：警告色=需要你处理、强调色=运行中、错误色=失败，普通会话几乎不可见——扫一眼就知道该点哪条。CommandBar 收在底栏（3 个主命令，UWP 主命令不会自动溢流，超了会被裁切）。
+  </figcaption>
+</figure>
+
+<!-- ═══════════ 2B. 新建会话（草稿） ═══════════ -->
+<figure class="shot">
+  <div class="phone">
+    <div class="top">
+      <div class="back"><i class="i">&#xE72B;</i></div>
+      <div class="tt"><b>新建会话</b><small>先选设置，发首条消息时才创建</small></div>
+    </div>
+    <div class="body">
+      <div class="scroll">
+        <div class="sec">用哪个档案</div>
+        <div class="row tap on">
+          <div class="av s">工</div>
+          <div class="c"><b>工程助理</b><small>deepseek-chat · 87 条记忆</small></div>
+        </div>
+        <div class="row tap">
+          <div class="av s" style="background:#5E5DB6">林</div>
+          <div class="c"><b>林深</b><small>claude-sonnet · 214 条记忆</small></div>
+        </div>
+        <div class="sec">模型</div>
+        <div class="field" style="padding-top:0">
+          <div class="inp" style="display:flex;justify-content:space-between;align-items:center">
+            <span>deepseek-chat</span><span style="color:var(--ml)"><i class="i">&#xE70D;</i></span>
+          </div>
+          <div style="font-size:11.5px;color:var(--mid);margin-top:6px">档案已固定模型；这里可临时覆盖</div>
+        </div>
+        <div class="sec">会话名称（可选）</div>
+        <div class="field" style="padding-top:0">
+          <div class="inp ph">不填则用首句自动生成</div>
+        </div>
+        <div class="note">这是一个<b>草稿</b>：不进会话列表、不落盘。发出第一条消息时才真正创建，避免列表里堆一堆空会话，也避免选错模型后留下垃圾记录。</div>
+      </div>
+    </div>
+    <div class="foot"><div class="btn">取消</div><div class="btn acc">进入对话</div></div>
+  </div>
+  <figcaption>
+    <b>2B · 新建会话（草稿态）</b>
+    沿用 Agents Anywhere 已验证的「先选设置、后建会话」流程。草稿态禁用附件 / 追加 / 打断 / 命令；切到别的标签强制弹回对话页；未发消息就返回则丢弃。真会话创建成功后继承草稿的标题与模型选择。
+  </figcaption>
+</figure>
+
+<!-- ═══════════ 3. 档案编辑 ═══════════ -->
+<figure class="shot">
+  <div class="phone">
+    <div class="top">
+      <div class="back"><i class="i">&#xE72B;</i></div>
+      <div class="tt"><b>编辑档案</b><small>工程助理</small></div>
+    </div>
+    <div class="pivot sm"><div class="on">人设</div><div>模型</div><div>工具</div><div>记忆</div></div>
+    <div class="body">
+      <div class="scroll">
+        <div style="height:14px"></div>
+        <div class="field">
+          <label>名称</label>
+          <div class="inp">工程助理</div>
+        </div>
+        <div class="field">
+          <label>系统提示词</label>
+          <div class="inp ta">你是 {{user}} 的工程助理。回答先给结论，再给依据；涉及代码时给出可运行的最小示例，不要堆砌无关细节。</div>
+          <div class="chips">
+            <span class="chip">{{user}}</span><span class="chip">{{char}}</span><span class="chip">{{cur_date}}</span>
+            <span class="chip">{{cur_time}}</span><span class="chip">{{model_name}}</span><span class="chip">{{device_info}}</span>
+          </div>
+        </div>
+        <div class="field">
+          <label>描述</label>
+          <div class="inp ta" style="min-height:56px">面向 UWP / .NET 项目的工程助手，擅长调试与重构。</div>
+        </div>
+        <div class="field">
+          <label>首句（助手先说）</label>
+          <div class="inp ta" style="min-height:56px;color:var(--soft)">在。今天要处理哪一块？</div>
+        </div>
+        <div class="note">留空的字段会被跳过，不会在提示词里留下空标题。</div>
+      </div>
+    </div>
+    <div class="foot"><div class="btn">取消</div><div class="btn acc">保存</div></div>
+  </div>
+  <figcaption>
+    <b>3 · 档案编辑 · 人设</b>
+    分节表单，节标题用 12px 字距拉开的标签。系统提示词编辑器带<b>占位符芯片行</b>，点一下插入到焦点处。有未保存改动时按返回键先确认。
+  </figcaption>
+</figure>
+
+<!-- ═══════════ 4. 角色卡导入 ═══════════ -->
+<figure class="shot">
+  <div class="phone">
+    <div class="top">
+      <div class="back"><i class="i">&#xE72B;</i></div>
+      <div class="tt"><b>导入角色卡</b><small>第 2 步 / 共 3 步</small></div>
+    </div>
+    <div class="body">
+      <div class="scroll">
+        <div style="height:14px"></div>
+        <div class="card" style="display:flex;gap:14px;align-items:flex-start">
+          <div class="av l" style="background:#5E5DB6">林</div>
+          <div style="flex:1;min-width:0">
+            <b style="font-size:16px;font-weight:600">林深</b>
+            <div style="display:flex;gap:5px;margin-top:6px;flex-wrap:wrap">
+              <span class="tag on">角色扮演</span><span class="tag">中文</span>
+            </div>
+            <div class="mono" style="font-size:10.5px;color:var(--mid);margin-top:8px">spec v3 · card.png · 1.8 MB</div>
+          </div>
+        </div>
+        <div class="sec">解析结果</div>
+        <div class="kv" style="margin:0 16px"><span>名称</span><span>林深</span></div>
+        <div class="kv" style="margin:0 16px"><span>描述</span><span>已解析 · 412 字</span></div>
+        <div class="kv" style="margin:0 16px"><span>性格</span><span>已解析 · 96 字</span></div>
+        <div class="kv" style="margin:0 16px"><span>首句</span><span>已解析 · 128 字</span></div>
+        <div class="kv" style="margin:0 16px"><span>示例对话</span><span style="color:var(--warn)">缺失</span></div>
+        <div class="kv" style="margin:0 16px"><span>内嵌世界书</span><span>6 条</span></div>
+        <div class="note" style="margin-top:14px">示例对话缺失，不影响使用；可在档案编辑里补，或让模型按描述生成（P2）。</div>
+        <div class="sec">落盘选项</div>
+        <div class="sw-row"><div class="c"><b>设为聊天背景</b><small>使用卡图，不透明度 12%</small></div><div class="tg on"></div></div>
+        <div class="sw-row"><div class="c"><b>导入内嵌世界书</b><small>6 条写入本档案，默认启用</small></div><div class="tg on"></div></div>
+        <div class="sw-row"><div class="c"><b>创建首个会话</b><small>把首句作为第一条助手消息</small></div><div class="tg on"></div></div>
+      </div>
+    </div>
+    <div class="foot"><div class="btn">上一步</div><div class="btn acc">导入</div></div>
+  </div>
+  <figcaption>
+    <b>4 · 角色卡导入</b>
+    PNG（<code>chara</code> / <code>zTXt</code> 块）与 JSON 都走同一向导。字段完整度逐项列出，缺什么说什么。超 5MB 拒绝；无卡块时提示「当普通图片作头像」；解析出 0 条 <b>明确报错</b>，不静默成功。
+  </figcaption>
+</figure>
+
+<!-- ═══════════ 5. 会话 · 空闲 ═══════════ -->
+<figure class="shot">
+  <div class="phone">
+    <div class="top">
+      <div class="back"><i class="i">&#xE72B;</i></div>
+      <div class="tt"><b>工程助理</b><small>deepseek-chat</small></div>
+      <div class="act"><i class="i">&#xE712;</i></div>
+    </div>
+    <div class="body">
+      <div class="scroll">
+        <div class="tl">
+          <div class="sysline">已加载 12 条更早消息</div>
+          <div class="u"><div class="bub">帮我看下这段登录代码为什么在手机上偶尔失败</div></div>
+          <div class="think">
+            <div class="ring"></div>
+            <div class="tx">先看密码派生的实现，怀疑是编码问题…
+              <small>思考 · 折叠</small>
+            </div>
+          </div>
+          <div class="rail">
+            <div class="step">
+              <div class="sl">读取 <span class="mono" style="color:var(--accent-t)">AuthService.cs</span></div>
+              <div class="sub">1.2k 字 · 已完成</div>
+            </div>
+          </div>
+          <div class="out">
+            <p>问题在密码派生：官网的 <code>salt</code> 必须按 UTF-8 字符串本身使用，不能做 base64 解码。</p>
+          </div>
+        </div>
+      </div>
+      <div class="fab"><i class="i">&#xE74B;</i></div>
+    </div>
+    <div class="cmp">
+      <div class="tb ph">发消息…</div>
+      <div class="act">
+        <div class="ib"><i class="i">&#xE723;</i></div>
+        <div class="ib"><i class="i">&#xE8B7;</i></div>
+        <div class="sp"></div>
+        <div class="send"><i class="i">&#xE724;</i></div>
+      </div>
+    </div>
+  </div>
+  <figcaption>
+    <b>5 · 会话 · 空闲</b>
+    只有用户消息是气泡（靠右、直角、强调色）。思考与工具走左侧轨道，默认收起。滚动离开底部超过一屏时出现「回到底部」浮动按钮。
+  </figcaption>
+</figure>
+
+<!-- ═══════════ 6. 会话 · 运行中 ═══════════ -->
+<figure class="shot">
+  <div class="phone">
+    <div class="top">
+      <div class="back"><i class="i">&#xE72B;</i></div>
+      <div class="tt"><b>工程助理</b><small>deepseek-reasoner<span class="pulse"></span> 运行中</small></div>
+      <div class="act"><i class="i">&#xE712;</i></div>
+    </div>
+    <div class="body">
+      <div class="scroll">
+        <div class="tl">
+          <div class="u"><div class="bub">重构时间线投影，把过程和最终输出分开</div></div>
+          <div class="fold">
+            <div class="n"><i class="i">&#xE712;</i></div>
+            <div>
+              <div class="sl"><b>显示前面 11 步</b></div>
+              <div class="sub">思考 4 · 工具 7 · 读取 5 个文件 · 运行 2 条命令</div>
+            </div>
+          </div>
+          <div class="rail">
+            <div class="step done">
+              <div class="sl">搜索 <span class="mono" style="color:var(--accent-t)">web_search</span></div>
+              <div class="arg">"timeline projection role user assistant"</div>
+              <div class="out">6 条结果 · 已取前 3 条正文</div>
+            </div>
+            <div class="step done">
+              <div class="sl">读取 <span class="mono" style="color:var(--accent-t)">TimelineProjection.cs</span></div>
+              <div class="sub">4.6k 字 · 已截断到 8000 字上限内</div>
+            </div>
+            <div class="step">
+              <div class="sl">写入 <span class="mono" style="color:var(--accent-t)">TimelineProjection.cs</span>
+                <span class="badge w">等你批准</span></div>
+              <div class="arg">mode=overwrite, ifMatch=sha256:9f3c…</div>
+            </div>
+          </div>
+          <div class="think">
+            <div class="ring spin"></div>
+            <div class="tx">需要把 tool 结果按其 tool_call_id 归位，避免和最终输出混在一段…
+              <small>推理中…</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cmp">
+      <div class="runbar">
+        <div class="rring"></div>
+        <div class="rtx">第 3 步 · 正在执行 write_file</div>
+        <div class="stop"><i class="i">&#xE71A;</i>打断</div>
+      </div>
+      <div class="tb ph">追加到当前任务…</div>
+      <div class="act">
+        <div class="ib"><i class="i">&#xE723;</i></div>
+        <div class="sp"></div>
+        <div class="steer"><i class="i">&#xE724;</i>追加</div>
+      </div>
+    </div>
+  </div>
+  <figcaption>
+    <b>6 · 会话 · 运行中（工具循环）</b>
+    输入行上方多一条<b>运行条</b>：进度环 + 状态文字 + 「打断」常驻，因此打断不需要隐藏手势。输入行末端的「发送」被「追加」<b>同位置替换</b>，输入框因此能用满宽度。工具步骤<b>边跑边更新状态</b>（完成转绿、失败转红），不等到最后一次性回放；运行中最多只露最近 5 步，更早的合并成「显示前面 N 步」。
+  </figcaption>
+</figure>
+
+<!-- ═══════════ 7. 会话 · 输出 ═══════════ -->
+<figure class="shot">
+  <div class="phone">
+    <div class="top">
+      <div class="back"><i class="i">&#xE72B;</i></div>
+      <div class="tt"><b>工程助理</b><small>deepseek-chat</small></div>
+      <div class="act"><i class="i">&#xE712;</i></div>
+    </div>
+    <div class="body" style="background:#0A0A0A">
+      <div class="scroll">
+        <div class="tl">
+          <div class="fold">
+            <div class="n"><i class="i">&#xE712;</i></div>
+            <div><div class="sl"><b>显示前面 9 步</b></div><div class="sub">思考 3 · 工具 6</div></div>
+          </div>
+          <div class="out">
+            <p>按 <code>tool_call_id</code> 归位就能分开。核心是把一轮里的内容切三段：</p>
+            <ul>
+              <li>思考 → <b>轨道上的折叠行</b></li>
+              <li>工具入参 / 出参 → <b>轨道步骤</b></li>
+              <li>末轮无 tool_calls 的内容 → <b>最终输出</b></li>
+            </ul>
+          </div>
+          <div class="code">
+            <div class="lbl"><span>C#</span><span><i class="i">&#xE8C8;</i> 复制</span></div>
+            <pre><span class="cm">// 只有末轮内容才是最终输出</span>
+<span class="kw">bool</span> isFinal = msg.ToolCalls == <span class="kw">null</span>
+             || msg.ToolCalls.Count == 0;
+
+<span class="kw">if</span> (isFinal) AppendOutput(msg.Content);
+<span class="kw">else</span>         AppendStep(msg.ToolCalls);</pre>
+          </div>
+          <div class="out"><p>这样长回复也不会把过程淹没在正文里。</p></div>
+          <div style="display:flex;gap:8px;margin-top:2px">
+            <div class="btn gh"><i class="i">&#xE72C;</i> 重新生成</div>
+            <div class="btn gh"><i class="i">&#xE8C8;</i> 复制</div>
+            <div class="btn gh"><i class="i">&#xE10A;</i> 分支</div>
+          </div>
+          <div style="height:14px"></div>
+        </div>
+      </div>
+    </div>
+    <div class="cmp">
+      <div class="tb ph">发消息…</div>
+      <div class="act">
+        <div class="ib"><i class="i">&#xE723;</i></div>
+        <div class="sp"></div>
+        <div class="send"><i class="i">&#xE724;</i></div>
+      </div>
+    </div>
+  </div>
+  <figcaption>
+    <b>7 · 会话 · 最终输出</b>
+    最终输出无气泡、亮色正文，Markdown 全量渲染。代码块：深底 <code>#0C0C0C</code> + 左侧 2px 强调色边 + 语言标签 + 复制按钮。行末动作是「重新生成 / 复制 / 从这里分支」。
+  </figcaption>
+</figure>
+
+<!-- ═══════════ 8. 审批 ═══════════ -->
+<figure class="shot">
+  <div class="phone">
+    <div class="top">
+      <div class="back"><i class="i">&#xE72B;</i></div>
+      <div class="tt"><b>批准操作</b><small>写入文件</small></div>
+    </div>
+    <div class="body">
+      <div class="scroll">
+        <div class="note" style="border-color:var(--err);background:rgba(232,17,35,.10)">
+          这个操作会<b>覆盖</b>你档案里的现有文件。原始内容会先备份到 <span class="mono">files\\.bak\\</span>。
+        </div>
+        <div class="sec">请求详情</div>
+        <div class="kv" style="margin:0 16px"><span>工具</span><span>write_file</span></div>
+        <div class="kv" style="margin:0 16px"><span>文件</span><span>TimelineProjection.cs</span></div>
+        <div class="kv" style="margin:0 16px"><span>大小</span><span>18.4 KB（+2.1 KB）</span></div>
+        <div class="kv" style="margin:0 16px"><span>校验</span><span>ifMatch sha256:9f3c…a71</span></div>
+        <div class="kv" style="margin:0 16px"><span>来自</span><span>子代理 #2</span></div>
+        <div class="sec">将写入的内容预览</div>
+        <div class="code" style="margin:0 16px">
+          <pre style="font-size:11.5px;padding:8px 10px">+ <span class="kw">public</span> TimelineRow Project(item)
++ {
++     <span class="kw">if</span> (item.Role == <span class="kw">"user"</span>) ...
++ }</pre>
+        </div>
+        <div class="sw-row" style="margin-top:12px">
+          <div class="c"><b>始终允许 write_file</b><small>可在「我的 → 权限记录」里随时撤销</small></div>
+          <div class="tg"></div>
+        </div>
+      </div>
+    </div>
+    <div class="foot">
+      <div class="btn">拒绝</div>
+      <div class="btn">允许一次</div>
+      <div class="btn acc">允许</div>
+    </div>
+  </div>
+  <figcaption>
+    <b>8 · 审批（全屏页）</b>
+    改成全屏而不是底部滑出面板，避免被软键盘挤压。敏感集合：<code>write_file / calendar_create / make_call / send_sms / read_image</code>。「始终允许」写进 <code>_shared/permissions.json</code>，设置里能看到并一键清空。
+  </figcaption>
+</figure>
+
+<!-- ═══════════ 9. 追问面板 ═══════════ -->
+<figure class="shot">
+  <div class="phone">
+    <div class="top">
+      <div class="back"><i class="i">&#xE72B;</i></div>
+      <div class="tt"><b>助手想确认两件事</b><small>回答后继续生成</small></div>
+    </div>
+    <div class="body">
+      <div class="scroll">
+        <div class="q">
+          <div class="qt">1. 这次重构要保留旧的 API 吗？</div>
+          <div class="opt on"><div class="mk"><i class="i">&#xE73E;</i></div>保留，标记为过时</div>
+          <div class="opt"><div class="mk"></div>直接删掉</div>
+          <div class="opt"><div class="mk"></div>其他（自己填）</div>
+        </div>
+        <div class="q">
+          <div class="qt">2. 需要同时更新测试吗？<span style="color:var(--mid);font-size:12px">（可多选）</span></div>
+          <div class="opt on"><div class="mk"><i class="i">&#xE73E;</i></div>单元测试</div>
+          <div class="opt on"><div class="mk"><i class="i">&#xE73E;</i></div>协议测试</div>
+          <div class="opt"><div class="mk"></div>原生自测</div>
+        </div>
+        <div class="note">一次最多 4 题，每题 2–4 个选项。答完一次性提交，不来回打断。</div>
+      </div>
+    </div>
+    <div class="foot"><div class="btn">跳过</div><div class="btn acc">提交</div></div>
+  </div>
+  <figcaption>
+    <b>9 · 追问（AskUser）</b>
+    结构化问题用原生控件，支持单选 / 多选（题末标「可多选」）+「其他（自己填）」。旧项目这套 <code>AskUserPanel</code> 已实现但从未挂进工具循环，这次接上。
+  </figcaption>
+</figure>
+
+<!-- ═══════════ 10. 会话设置 ═══════════ -->
+<figure class="shot">
+  <div class="phone">
+    <div class="top">
+      <div class="back"><i class="i">&#xE72B;</i></div>
+      <div class="tt"><b>会话设置</b><small>修复手机登录</small></div>
+    </div>
+    <div class="body">
+      <div class="scroll">
+        <div style="height:10px"></div>
+        <div class="row tap"><div class="lead"><i class="i">&#xE8AC;</i></div><div class="c"><b>重命名</b><small>修复手机登录</small></div><div class="chev"><i class="i">&#xE76C;</i></div></div>
+        <div class="row tap"><div class="lead"><i class="i">&#xE8D4;</i></div><div class="c"><b>归属档案</b><small>工程助理</small></div><div class="chev"><i class="i">&#xE76C;</i></div></div>
+        <div class="row tap"><div class="lead"><i class="i">&#xE718;</i></div><div class="c"><b>置顶</b><small>排在会话列表最前</small></div><div class="tg on"></div></div>
+        <div class="row tap"><div class="lead"><i class="i">&#xE7B8;</i></div><div class="c"><b>外观</b><small>此会话覆盖档案的背景与气泡色</small></div><div class="chev"><i class="i">&#xE76C;</i></div></div>
+        <div class="row tap"><div class="lead"><i class="i">&#xE9D9;</i></div><div class="c"><b>上下文</b><small>已用 62% · 压缩过 2 次</small></div><div class="chev"><i class="i">&#xE76C;</i></div></div>
+        <div class="row tap"><div class="lead"><i class="i">&#xE898;</i></div><div class="c"><b>导出</b><small>JSON / JSONL / Markdown</small></div><div class="chev"><i class="i">&#xE76C;</i></div></div>
+        <div class="row tap"><div class="lead" style="color:var(--err-t)"><i class="i">&#xE74D;</i></div><div class="c"><b>删除</b><small>移入回收区，不直接清除</small></div></div>
+        <div style="height:8px"></div>
+        <div class="usage"><span>上下文用量</span><span class="mono">81.8k / 131k</span></div>
+        <div class="bar"><i style="width:62%"></i></div>
+        <div class="note">超过 80% 会自动压缩；也可在这里手动「立即压缩」。压缩摘要按<b>替换</b>而非堆叠写入，避免摘要越滚越长。</div>
+      </div>
+    </div>
+  </div>
+  <figcaption>
+    <b>10 · 会话设置</b>
+    一行一个动作的列表式，不再把重命名 / 归档 / 接管挤在横向一排。上下文用量条 + 手动压缩入口放这里，与顶栏的告警联动。
+  </figcaption>
+</figure>
+
+<!-- ═══════════ 11. 记忆 ═══════════ -->
+<figure class="shot">
+  <div class="phone">
+    <div class="top">
+      <div class="back"><i class="i">&#xE72B;</i></div>
+      <div class="tt"><b>记忆</b><small>工程助理 · 87 条</small></div>
+      <div class="act on"><i class="i">&#xE710;</i></div>
+    </div>
+    <div class="pivot sm"><div class="on">私有池</div><div>全局池</div><div>会话摘要</div></div>
+    <div class="body">
+      <div class="scroll">
+        <div class="sw-row"><div class="c"><b>启用记忆</b><small>每 10 轮自动抽取一次</small></div><div class="tg on"></div></div>
+        <div class="sw-row"><div class="c"><b>使用全局池</b><small>关闭则只记在自己的档案里，不与其他档案串味</small></div><div class="tg"></div></div>
+        <div class="sec">最近写入</div>
+        <div class="mem">
+          <div class="h"><span class="badge">偏好</span><div class="imp"><i style="width:80%"></i></div><span style="font-size:11px;color:var(--mid)">0.8</span></div>
+          <div class="tx">偏好先给结论再给依据，不要铺垫</div>
+          <div class="ft"><span>2 小时前</span><span>引用 6 次</span><span>来自「修复手机登录」</span></div>
+        </div>
+        <div class="mem">
+          <div class="h"><span class="badge">事实</span><div class="imp"><i style="width:70%"></i></div><span style="font-size:11px;color:var(--mid)">0.7</span></div>
+          <div class="tx">项目用 VS2017 MSBuild 15 + Windows SDK 19041，不要升级 UWP 依赖</div>
+          <div class="ft"><span>昨天</span><span>引用 3 次</span><span>来自「重写时间线投影」</span></div>
+        </div>
+        <div class="mem">
+          <div class="h"><span class="badge">经历</span><div class="imp"><i style="width:65%"></i></div><span style="font-size:11px;color:var(--mid)">0.65</span></div>
+          <div class="tx">官网登录的 salt 要按 UTF-8 字符串直接用，不能 base64 解码</div>
+          <div class="ft"><span>3 天前</span><span>引用 9 次</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="foot"><div class="btn">整理</div><div class="btn">重建向量索引</div></div>
+  </div>
+  <figcaption>
+    <b>11 · 记忆</b>
+    三层结构里的「档案记忆池」。旧项目三套并行（向量库 / 全局 / 会话内条目）合并为：会话摘要（单个会话）+ 档案记忆池（跨会话）+ 全局池（可选共享）。「整理」先给<b>删除预览</b>再执行。
+  </figcaption>
+</figure>
+
+<!-- ═══════════ 12. 模型档案 ═══════════ -->
+<figure class="shot">
+  <div class="phone">
+    <div class="top">
+      <div class="back"><i class="i">&#xE72B;</i></div>
+      <div class="tt"><b>模型档案</b><small>4 个配置</small></div>
+      <div class="act on"><i class="i">&#xE710;</i></div>
+    </div>
+    <div class="body">
+      <div class="scroll">
+        <div style="height:10px"></div>
+        <div class="row tap"><div class="lead"><i class="i">&#xE735;</i></div><div class="c"><b>★ DeepSeek</b><small>deepseek-chat · api.deepseek.com</small></div><span class="badge g">正常</span></div>
+        <div class="row tap"><div class="lead"><i class="i"></i></div><div class="c"><b>Claude</b><small>claude-sonnet-4 · anthropic.com</small></div><span class="badge g">正常</span></div>
+        <div class="row tap"><div class="lead"><i class="i"></i></div><div class="c"><b>本地中转</b><small>qwen3-32b · 192.168.3.7:8080</small></div><span class="badge r">失败</span></div>
+        <div class="row tap"><div class="lead"><i class="i"></i></div><div class="c"><b>OpenAI</b><small>gpt-4o-mini · 未测试</small></div><span class="badge">未测</span></div>
+        <div style="height:8px"></div>
+        <div class="sec">编辑所选</div>
+        <div class="field"><label>名称</label><div class="inp">DeepSeek</div></div>
+        <div class="field"><label>接口地址</label><div class="inp mono" style="font-size:13px">https://api.deepseek.com/v1/chat/completions</div></div>
+        <div class="field"><label>密钥</label><div class="inp mono" style="font-size:13px;color:var(--mid)">•••••••••••••••• 已存入凭据保险箱</div></div>
+        <div class="field"><label>模型</label>
+          <div style="display:flex;gap:8px"><div class="inp" style="flex:1">deepseek-chat</div><div class="btn">刷新</div></div>
+        </div>
+        <div class="sw-row"><div class="c"><b>支持图片输入</b><small>自动探测 + 可手动覆盖</small></div><div class="tg"></div></div>
+        <div class="sw-row"><div class="c"><b>用作副模型</b><small>负责记忆抽取与 RAG 重排，建议选快而便宜的</small></div><div class="tg on"></div></div>
+        <div class="note"><b>密钥只进 PasswordVault</b>，配置文件里存引用不存明文；日志不记密钥、不记 URL 查询参数。</div>
+      </div>
+    </div>
+    <div class="foot"><div class="btn">删除</div><div class="btn acc">测试连接</div></div>
+  </div>
+  <figcaption>
+    <b>12 · 模型档案</b>
+    列表带连通状态点；编辑页支持 <code>/v1/models</code> 拉取模型下拉、视觉能力探测、自定义请求头 / 请求体（中转站需要）、副模型指派。密钥走 <code>PasswordVault</code>。
+  </figcaption>
+</figure>
+
+<!-- ═══════════ 13. 我的 ═══════════ -->
+<figure class="shot">
+  <div class="phone">
+    <div class="top">
+      <div class="back"></div>
+      <div class="tt"><b>我的</b><small>dev@yanshuai.app</small></div>
+    </div>
+    <div class="pivot"><div>对话</div><div>档案</div><div class="on">我的</div></div>
+    <div class="body">
+      <div class="scroll">
+        <div style="height:10px"></div>
+        <div class="row tap"><div class="lead"><i class="i">&#xE77B;</i></div><div class="c"><b>用户人设</b><small>3 套 · 当前「我」</small></div><div class="chev"><i class="i">&#xE76C;</i></div></div>
+        <div class="row tap"><div class="lead"><i class="i">&#xE943;</i></div><div class="c"><b>模型档案</b><small>4 个配置 · 1 个异常</small></div><div class="chev"><i class="i">&#xE76C;</i></div></div>
+        <div class="row tap"><div class="lead"><i class="i">&#xE790;</i></div><div class="c"><b>联网搜索</b><small>Tavily · 结果深度 2000 字</small></div><div class="chev"><i class="i">&#xE76C;</i></div></div>
+        <div class="row tap"><div class="lead"><i class="i">&#xE9D2;</i></div><div class="c"><b>MCP 与技能</b><small>2 个服务器 · 5 个技能</small></div><div class="chev"><i class="i">&#xE76C;</i></div></div>
+        <div class="sec">通用</div>
+        <div class="row tap"><div class="lead"><i class="i">&#xE790;</i></div><div class="c"><b>外观</b><small>暗色 · 跟随系统强调色</small></div><div class="chev"><i class="i">&#xE76C;</i></div></div>
+        <div class="row tap"><div class="lead"><i class="i">&#xE765;</i></div><div class="c"><b>发送键</b><small>Enter 发送</small></div><div class="chev"><i class="i">&#xE76C;</i></div></div>
+        <div class="row tap"><div class="lead"><i class="i">&#xE8B7;</i></div><div class="c"><b>工作区位置</b><small>应用存储 · 2.4 GB</small></div><div class="chev"><i class="i">&#xE76C;</i></div></div>
+        <div class="row tap"><div class="lead"><i class="i">&#xE7C3;</i></div><div class="c"><b>权限记录</b><small>3 项「始终允许」</small></div><div class="chev"><i class="i">&#xE76C;</i></div></div>
+        <div class="row tap"><div class="lead"><i class="i">&#xE8B5;</i></div><div class="c"><b>数据与备份</b><small>导入导出 · 旧数据迁移</small></div><div class="chev"><i class="i">&#xE76C;</i></div></div>
+        <div class="row tap"><div class="lead"><i class="i">&#xE946;</i></div><div class="c"><b>关于与调试日志</b><small>1.0.0.0 · 日志不含密钥</small></div><div class="chev"><i class="i">&#xE76C;</i></div></div>
+      </div>
+    </div>
+  </div>
+  <figcaption>
+    <b>13 · 我的</b>
+    旧项目 44KB 的单个设置页拆成四类：人设 / 模型 / 通用 / 数据。带副标题说明当前值，避免进二级才知道设成了什么。
+  </figcaption>
+</figure>
+
+<!-- ═══════════ 14. 空态与错误 ═══════════ -->
+<figure class="shot">
+  <div class="phone">
+    <div class="top">
+      <div class="back"><i class="i">&#xE72B;</i></div>
+      <div class="tt"><b>工程助理</b><small>deepseek-chat<span style="color:var(--err-t)"> · 离线</span></small></div>
+      <div class="act"><i class="i">&#xE712;</i></div>
+    </div>
+    <div class="body">
+      <div class="welcome">
+        <div class="ringlg"><i class="i">&#xE774;</i></div>
+        <b>网络不可用</b>
+        <p>已连上 Wi-Fi，但访问模型接口失败。消息已保存在本地，恢复后会重试。</p>
+        <div style="display:flex;gap:10px">
+          <div class="btn">重试</div>
+          <div class="btn">换模型档案</div>
+        </div>
+        <div class="mono" style="font-size:11px;color:var(--ml);margin-top:22px">errno -2147012889 · 已重试 3 次</div>
+      </div>
+      <div class="approve" style="border-color:var(--err);background:rgba(232,17,35,.12)">
+        <div class="c"><b style="color:var(--err-t)">1 条消息发送失败</b><small>可以重试，不会产生重复任务</small></div>
+        <div class="btn gh">重试</div>
+      </div>
+    </div>
+    <div class="cmp">
+      <div class="tb ph" style="opacity:.55">离线，消息会存在本地</div>
+      <div class="act"><div class="sp"></div><div class="send" style="background:var(--low);color:var(--ml)"><i class="i">&#xE724;</i></div></div>
+    </div>
+  </div>
+  <figcaption>
+    <b>14 · 离线与错误态</b>
+    空态用 84px 圆环 + 图标 + 一句解释 + 最多两个动作。发送失败重试<b>复用同一 clientMessageId</b>，避免重复任务。错误带错误码，方便对日志。
+  </figcaption>
+</figure>
+
+</div>
+
+<h2>这一稿相对两个源项目改了什么</h2>
+<table class="spec" style="max-width:1180px">
+  <tr><th style="width:230px">改动</th><th style="width:280px">原来</th><th>现在</th></tr>
+  <tr><td class="k">导航</td><td>Lumina.Agent：SplitView 三栏 + 18 个页面；Agents Anywhere：两层嵌套 Pivot</td><td>三页根 Pivot，会话页不再嵌套 Pivot，文件与终端类功能下沉到二级页</td></tr>
+  <tr><td class="k">消息呈现</td><td>全类型走气泡 + 推理折叠</td><td>只有用户消息是气泡；思考 / 工具 / 中间解说走左侧轨道，默认只露最近一步</td></tr>
+  <tr><td class="k">生成中的动作</td><td>发送 / 停止</td><td>追加（steer，不打断）+ 停止；长按追加变打断</td></tr>
+  <tr><td class="k">审批</td><td>底部滑出面板</td><td>全屏页 + 会话顶部固定提醒条</td></tr>
+  <tr><td class="k">档案</td><td>无档案概念，靠 Project 兼做</td><td>档案 = 工作区一个文件夹，含人设 / 记忆 / 会话 / 文件，支持角色卡导入导出</td></tr>
+  <tr><td class="k">记忆</td><td>三套并行，互不同步</td><td>会话摘要 + 档案池 + 可选全局池</td></tr>
+  <tr><td class="k">主题</td><td>主题文件是死代码且语法有误</td><td>显式合并的设计令牌体系，颜色 / 字号 / 间距 / 圆角全部命名化</td></tr>
+</table>
+
+</body>
+</html>

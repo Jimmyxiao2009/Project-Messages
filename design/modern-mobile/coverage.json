@@ -1,0 +1,982 @@
+[
+  {
+    "id": "home",
+    "title": "对话",
+    "group": "01 / 开始与导航",
+    "controls": 15,
+    "links": 11
+  },
+  {
+    "id": "profiles",
+    "title": "档案",
+    "group": "01 / 开始与导航",
+    "controls": 14,
+    "links": 9
+  },
+  {
+    "id": "me",
+    "title": "我的",
+    "group": "01 / 开始与导航",
+    "controls": 13,
+    "links": 13
+  },
+  {
+    "id": "startup",
+    "title": "启动与初始化",
+    "group": "01 / 开始与导航",
+    "controls": 1,
+    "links": 1
+  },
+  {
+    "id": "startup-error",
+    "title": "初始化失败",
+    "group": "01 / 开始与导航",
+    "controls": 5,
+    "links": 3
+  },
+  {
+    "id": "migration",
+    "title": "旧数据迁移",
+    "group": "01 / 开始与导航",
+    "controls": 8,
+    "links": 1
+  },
+  {
+    "id": "search",
+    "title": "全局搜索",
+    "group": "01 / 开始与导航",
+    "controls": 10,
+    "links": 7
+  },
+  {
+    "id": "search-empty",
+    "title": "搜索无结果",
+    "group": "01 / 开始与导航",
+    "controls": 4,
+    "links": 1
+  },
+  {
+    "id": "new-chat",
+    "title": "新建会话",
+    "group": "02 / 对话与执行",
+    "controls": 8,
+    "links": 2
+  },
+  {
+    "id": "profile-select",
+    "title": "选择档案",
+    "group": "02 / 对话与执行",
+    "controls": 7,
+    "links": 4
+  },
+  {
+    "id": "chat",
+    "title": "会话 · 完成",
+    "group": "02 / 对话与执行",
+    "controls": 15,
+    "links": 0
+  },
+  {
+    "id": "chat-running",
+    "title": "会话 · 运行中",
+    "group": "02 / 对话与执行",
+    "controls": 10,
+    "links": 0
+  },
+  {
+    "id": "chat-approval",
+    "title": "会话 · 待审批",
+    "group": "02 / 对话与执行",
+    "controls": 11,
+    "links": 1
+  },
+  {
+    "id": "chat-error",
+    "title": "会话 · 请求失败",
+    "group": "02 / 对话与执行",
+    "controls": 11,
+    "links": 1
+  },
+  {
+    "id": "chat-empty",
+    "title": "会话 · 草稿空态",
+    "group": "02 / 对话与执行",
+    "controls": 10,
+    "links": 1
+  },
+  {
+    "id": "chat-roleplay",
+    "title": "会话 · 角色对话",
+    "group": "02 / 对话与执行",
+    "controls": 14,
+    "links": 0
+  },
+  {
+    "id": "chat-branches",
+    "title": "会话 · 候选分支",
+    "group": "02 / 对话与执行",
+    "controls": 16,
+    "links": 0
+  },
+  {
+    "id": "chat-speaking",
+    "title": "会话 · 朗读",
+    "group": "02 / 对话与执行",
+    "controls": 16,
+    "links": 0
+  },
+  {
+    "id": "chat-translated",
+    "title": "会话 · 译文叠加",
+    "group": "02 / 对话与执行",
+    "controls": 15,
+    "links": 0
+  },
+  {
+    "id": "message-actions",
+    "title": "消息操作",
+    "group": "02 / 对话与执行",
+    "controls": 9,
+    "links": 5
+  },
+  {
+    "id": "message-edit",
+    "title": "编辑消息",
+    "group": "02 / 对话与执行",
+    "controls": 7,
+    "links": 0
+  },
+  {
+    "id": "fork",
+    "title": "创建会话分支",
+    "group": "02 / 对话与执行",
+    "controls": 7,
+    "links": 1
+  },
+  {
+    "id": "approval",
+    "title": "敏感工具审批",
+    "group": "03 / 审批与群聊",
+    "controls": 9,
+    "links": 1
+  },
+  {
+    "id": "ask-user",
+    "title": "向你追问",
+    "group": "03 / 审批与群聊",
+    "controls": 9,
+    "links": 0
+  },
+  {
+    "id": "group-chat",
+    "title": "群聊会话",
+    "group": "03 / 审批与群聊",
+    "controls": 6,
+    "links": 3
+  },
+  {
+    "id": "group-members",
+    "title": "群聊成员",
+    "group": "03 / 审批与群聊",
+    "controls": 9,
+    "links": 5
+  },
+  {
+    "id": "group-add",
+    "title": "添加群聊成员",
+    "group": "03 / 审批与群聊",
+    "controls": 8,
+    "links": 0
+  },
+  {
+    "id": "group-member-edit",
+    "title": "编辑群聊成员",
+    "group": "03 / 审批与群聊",
+    "controls": 9,
+    "links": 1
+  },
+  {
+    "id": "group-mode",
+    "title": "群聊回复模式",
+    "group": "03 / 审批与群聊",
+    "controls": 7,
+    "links": 0
+  },
+  {
+    "id": "profile",
+    "title": "档案详情",
+    "group": "04 / 档案与人设",
+    "controls": 18,
+    "links": 14
+  },
+  {
+    "id": "profile-new",
+    "title": "新建档案",
+    "group": "04 / 档案与人设",
+    "controls": 10,
+    "links": 2
+  },
+  {
+    "id": "profile-identity",
+    "title": "编辑身份",
+    "group": "04 / 档案与人设",
+    "controls": 9,
+    "links": 1
+  },
+  {
+    "id": "avatar",
+    "title": "选择头像",
+    "group": "04 / 档案与人设",
+    "controls": 7,
+    "links": 1
+  },
+  {
+    "id": "profile-persona",
+    "title": "编辑人设",
+    "group": "04 / 档案与人设",
+    "controls": 21,
+    "links": 0
+  },
+  {
+    "id": "profile-model",
+    "title": "模型与生成参数",
+    "group": "04 / 档案与人设",
+    "controls": 14,
+    "links": 4
+  },
+  {
+    "id": "request-overrides",
+    "title": "自定义请求字段",
+    "group": "04 / 档案与人设",
+    "controls": 6,
+    "links": 0
+  },
+  {
+    "id": "profile-appearance",
+    "title": "档案外观",
+    "group": "04 / 档案与人设",
+    "controls": 17,
+    "links": 2
+  },
+  {
+    "id": "user-personas",
+    "title": "用户人设列表",
+    "group": "04 / 档案与人设",
+    "controls": 8,
+    "links": 4
+  },
+  {
+    "id": "user-persona-edit",
+    "title": "编辑用户人设",
+    "group": "04 / 档案与人设",
+    "controls": 8,
+    "links": 0
+  },
+  {
+    "id": "user-persona-new",
+    "title": "新建用户人设",
+    "group": "04 / 档案与人设",
+    "controls": 8,
+    "links": 0
+  },
+  {
+    "id": "import-source",
+    "title": "角色卡 · 选择来源",
+    "group": "05 / 角色卡导入",
+    "controls": 6,
+    "links": 2
+  },
+  {
+    "id": "import-url",
+    "title": "角色卡 · 链接来源",
+    "group": "05 / 角色卡导入",
+    "controls": 5,
+    "links": 0
+  },
+  {
+    "id": "import-preview",
+    "title": "角色卡 · 预览补齐",
+    "group": "05 / 角色卡导入",
+    "controls": 6,
+    "links": 0
+  },
+  {
+    "id": "import-options",
+    "title": "角色卡 · 导入选项",
+    "group": "05 / 角色卡导入",
+    "controls": 9,
+    "links": 0
+  },
+  {
+    "id": "import-done",
+    "title": "角色卡 · 导入完成",
+    "group": "05 / 角色卡导入",
+    "controls": 4,
+    "links": 2
+  },
+  {
+    "id": "import-error",
+    "title": "角色卡 · 解析失败",
+    "group": "05 / 角色卡导入",
+    "controls": 4,
+    "links": 2
+  },
+  {
+    "id": "api-profiles",
+    "title": "模型档案列表",
+    "group": "06 / 模型与服务",
+    "controls": 9,
+    "links": 5
+  },
+  {
+    "id": "api-edit",
+    "title": "编辑模型档案",
+    "group": "06 / 模型与服务",
+    "controls": 15,
+    "links": 3
+  },
+  {
+    "id": "api-new",
+    "title": "新建模型档案",
+    "group": "06 / 模型与服务",
+    "controls": 15,
+    "links": 3
+  },
+  {
+    "id": "api-test",
+    "title": "连接测试结果",
+    "group": "06 / 模型与服务",
+    "controls": 6,
+    "links": 3
+  },
+  {
+    "id": "model-picker",
+    "title": "模型选择器",
+    "group": "06 / 模型与服务",
+    "controls": 26,
+    "links": 1
+  },
+  {
+    "id": "model-manual",
+    "title": "手动添加模型",
+    "group": "06 / 模型与服务",
+    "controls": 10,
+    "links": 0
+  },
+  {
+    "id": "model-details",
+    "title": "模型元数据与覆盖",
+    "group": "06 / 模型与服务",
+    "controls": 10,
+    "links": 0
+  },
+  {
+    "id": "memory",
+    "title": "记忆列表",
+    "group": "07 / 记忆与提示词",
+    "controls": 17,
+    "links": 9
+  },
+  {
+    "id": "memory-edit",
+    "title": "编辑记忆",
+    "group": "07 / 记忆与提示词",
+    "controls": 9,
+    "links": 1
+  },
+  {
+    "id": "memory-new",
+    "title": "新增记忆",
+    "group": "07 / 记忆与提示词",
+    "controls": 9,
+    "links": 1
+  },
+  {
+    "id": "memory-settings",
+    "title": "记忆与检索设置",
+    "group": "07 / 记忆与提示词",
+    "controls": 15,
+    "links": 1
+  },
+  {
+    "id": "memory-clean",
+    "title": "整理记忆预览",
+    "group": "07 / 记忆与提示词",
+    "controls": 6,
+    "links": 0
+  },
+  {
+    "id": "memory-index",
+    "title": "记忆索引状态",
+    "group": "07 / 记忆与提示词",
+    "controls": 4,
+    "links": 1
+  },
+  {
+    "id": "prompt-selection",
+    "title": "世界书与注入选择",
+    "group": "07 / 记忆与提示词",
+    "controls": 10,
+    "links": 2
+  },
+  {
+    "id": "lorebooks",
+    "title": "世界书列表",
+    "group": "07 / 记忆与提示词",
+    "controls": 8,
+    "links": 4
+  },
+  {
+    "id": "lorebook-detail",
+    "title": "世界书详情",
+    "group": "07 / 记忆与提示词",
+    "controls": 10,
+    "links": 4
+  },
+  {
+    "id": "lorebook-new",
+    "title": "新建世界书",
+    "group": "07 / 记忆与提示词",
+    "controls": 7,
+    "links": 0
+  },
+  {
+    "id": "lore-entry-edit",
+    "title": "编辑世界书条目",
+    "group": "07 / 记忆与提示词",
+    "controls": 16,
+    "links": 0
+  },
+  {
+    "id": "lore-entry-new",
+    "title": "新增世界书条目",
+    "group": "07 / 记忆与提示词",
+    "controls": 16,
+    "links": 0
+  },
+  {
+    "id": "injections",
+    "title": "模式注入列表",
+    "group": "07 / 记忆与提示词",
+    "controls": 6,
+    "links": 3
+  },
+  {
+    "id": "injection-edit",
+    "title": "编辑模式注入",
+    "group": "07 / 记忆与提示词",
+    "controls": 11,
+    "links": 0
+  },
+  {
+    "id": "injection-new",
+    "title": "新建模式注入",
+    "group": "07 / 记忆与提示词",
+    "controls": 11,
+    "links": 0
+  },
+  {
+    "id": "tools",
+    "title": "工具选择",
+    "group": "08 / 工具与扩展",
+    "controls": 18,
+    "links": 4
+  },
+  {
+    "id": "tool-catalog",
+    "title": "全部内置工具",
+    "group": "08 / 工具与扩展",
+    "controls": 26,
+    "links": 0
+  },
+  {
+    "id": "mcp-list",
+    "title": "MCP 服务器列表",
+    "group": "08 / 工具与扩展",
+    "controls": 7,
+    "links": 3
+  },
+  {
+    "id": "mcp-edit",
+    "title": "编辑 MCP 服务器",
+    "group": "08 / 工具与扩展",
+    "controls": 11,
+    "links": 0
+  },
+  {
+    "id": "mcp-new",
+    "title": "新增 MCP 服务器",
+    "group": "08 / 工具与扩展",
+    "controls": 11,
+    "links": 0
+  },
+  {
+    "id": "mcp-detail",
+    "title": "MCP 工具详情",
+    "group": "08 / 工具与扩展",
+    "controls": 12,
+    "links": 1
+  },
+  {
+    "id": "skills",
+    "title": "技能列表",
+    "group": "08 / 工具与扩展",
+    "controls": 8,
+    "links": 3
+  },
+  {
+    "id": "skill-edit",
+    "title": "编辑技能",
+    "group": "08 / 工具与扩展",
+    "controls": 8,
+    "links": 0
+  },
+  {
+    "id": "skill-new",
+    "title": "新建技能",
+    "group": "08 / 工具与扩展",
+    "controls": 8,
+    "links": 0
+  },
+  {
+    "id": "permissions",
+    "title": "权限记录",
+    "group": "08 / 工具与扩展",
+    "controls": 6,
+    "links": 3
+  },
+  {
+    "id": "permission-detail",
+    "title": "授权详情与撤销",
+    "group": "08 / 工具与扩展",
+    "controls": 4,
+    "links": 1
+  },
+  {
+    "id": "authorized-folders",
+    "title": "授权目录",
+    "group": "08 / 工具与扩展",
+    "controls": 5,
+    "links": 2
+  },
+  {
+    "id": "folder-permission",
+    "title": "目录授权设置",
+    "group": "08 / 工具与扩展",
+    "controls": 8,
+    "links": 0
+  },
+  {
+    "id": "conversations",
+    "title": "档案会话列表",
+    "group": "09 / 会话管理与文件",
+    "controls": 12,
+    "links": 8
+  },
+  {
+    "id": "conversation-select",
+    "title": "批量管理会话",
+    "group": "09 / 会话管理与文件",
+    "controls": 10,
+    "links": 1
+  },
+  {
+    "id": "move-conversations",
+    "title": "移动会话到档案",
+    "group": "09 / 会话管理与文件",
+    "controls": 7,
+    "links": 0
+  },
+  {
+    "id": "archived",
+    "title": "已归档会话",
+    "group": "09 / 会话管理与文件",
+    "controls": 4,
+    "links": 1
+  },
+  {
+    "id": "chat-settings",
+    "title": "会话设置",
+    "group": "09 / 会话管理与文件",
+    "controls": 19,
+    "links": 10
+  },
+  {
+    "id": "chat-appearance",
+    "title": "会话外观",
+    "group": "09 / 会话管理与文件",
+    "controls": 18,
+    "links": 2
+  },
+  {
+    "id": "context",
+    "title": "上下文与压缩",
+    "group": "09 / 会话管理与文件",
+    "controls": 5,
+    "links": 1
+  },
+  {
+    "id": "context-preview",
+    "title": "上下文压缩预览",
+    "group": "09 / 会话管理与文件",
+    "controls": 5,
+    "links": 0
+  },
+  {
+    "id": "speech-settings",
+    "title": "朗读设置",
+    "group": "09 / 会话管理与文件",
+    "controls": 10,
+    "links": 0
+  },
+  {
+    "id": "translation",
+    "title": "消息翻译设置",
+    "group": "09 / 会话管理与文件",
+    "controls": 8,
+    "links": 1
+  },
+  {
+    "id": "usage",
+    "title": "会话用量",
+    "group": "09 / 会话管理与文件",
+    "controls": 6,
+    "links": 1
+  },
+  {
+    "id": "files",
+    "title": "档案文件",
+    "group": "09 / 会话管理与文件",
+    "controls": 13,
+    "links": 9
+  },
+  {
+    "id": "file-folder",
+    "title": "文件夹内容",
+    "group": "09 / 会话管理与文件",
+    "controls": 7,
+    "links": 4
+  },
+  {
+    "id": "file-preview",
+    "title": "文件解析预览",
+    "group": "09 / 会话管理与文件",
+    "controls": 6,
+    "links": 1
+  },
+  {
+    "id": "file-editor",
+    "title": "文本文件编辑",
+    "group": "09 / 会话管理与文件",
+    "controls": 5,
+    "links": 1
+  },
+  {
+    "id": "file-new",
+    "title": "新建文本文件",
+    "group": "09 / 会话管理与文件",
+    "controls": 6,
+    "links": 0
+  },
+  {
+    "id": "file-conflict",
+    "title": "文件保存冲突",
+    "group": "09 / 会话管理与文件",
+    "controls": 7,
+    "links": 0
+  },
+  {
+    "id": "file-select",
+    "title": "文件批量选择",
+    "group": "09 / 会话管理与文件",
+    "controls": 9,
+    "links": 0
+  },
+  {
+    "id": "image-viewer",
+    "title": "图片查看",
+    "group": "09 / 会话管理与文件",
+    "controls": 5,
+    "links": 0
+  },
+  {
+    "id": "attachments",
+    "title": "会话附件",
+    "group": "09 / 会话管理与文件",
+    "controls": 8,
+    "links": 5
+  },
+  {
+    "id": "attachment-add",
+    "title": "添加附件",
+    "group": "09 / 会话管理与文件",
+    "controls": 6,
+    "links": 2
+  },
+  {
+    "id": "attachment-preview",
+    "title": "附件发送前预览",
+    "group": "09 / 会话管理与文件",
+    "controls": 6,
+    "links": 0
+  },
+  {
+    "id": "attachment-settings",
+    "title": "附件处理设置",
+    "group": "09 / 会话管理与文件",
+    "controls": 10,
+    "links": 0
+  },
+  {
+    "id": "general",
+    "title": "通用设置",
+    "group": "10 / 设置与数据",
+    "controls": 13,
+    "links": 6
+  },
+  {
+    "id": "appearance",
+    "title": "主题与强调色",
+    "group": "10 / 设置与数据",
+    "controls": 13,
+    "links": 0
+  },
+  {
+    "id": "default-appearance",
+    "title": "默认会话外观",
+    "group": "10 / 设置与数据",
+    "controls": 17,
+    "links": 2
+  },
+  {
+    "id": "typography",
+    "title": "文字与可读性",
+    "group": "10 / 设置与数据",
+    "controls": 8,
+    "links": 0
+  },
+  {
+    "id": "workspace",
+    "title": "工作区位置",
+    "group": "10 / 设置与数据",
+    "controls": 6,
+    "links": 2
+  },
+  {
+    "id": "quick-messages",
+    "title": "快捷消息列表",
+    "group": "10 / 设置与数据",
+    "controls": 9,
+    "links": 6
+  },
+  {
+    "id": "quick-edit",
+    "title": "编辑快捷消息",
+    "group": "10 / 设置与数据",
+    "controls": 12,
+    "links": 0
+  },
+  {
+    "id": "quick-new",
+    "title": "新增快捷消息",
+    "group": "10 / 设置与数据",
+    "controls": 12,
+    "links": 0
+  },
+  {
+    "id": "regex-list",
+    "title": "正则转换器列表",
+    "group": "10 / 设置与数据",
+    "controls": 7,
+    "links": 4
+  },
+  {
+    "id": "regex-edit",
+    "title": "编辑正则规则",
+    "group": "10 / 设置与数据",
+    "controls": 12,
+    "links": 1
+  },
+  {
+    "id": "regex-new",
+    "title": "新增正则规则",
+    "group": "10 / 设置与数据",
+    "controls": 12,
+    "links": 1
+  },
+  {
+    "id": "regex-test",
+    "title": "正则测试",
+    "group": "10 / 设置与数据",
+    "controls": 6,
+    "links": 0
+  },
+  {
+    "id": "storage",
+    "title": "存储空间",
+    "group": "10 / 设置与数据",
+    "controls": 7,
+    "links": 5
+  },
+  {
+    "id": "storage-clean",
+    "title": "清理空间确认",
+    "group": "10 / 设置与数据",
+    "controls": 7,
+    "links": 0
+  },
+  {
+    "id": "trash",
+    "title": "回收区",
+    "group": "10 / 设置与数据",
+    "controls": 7,
+    "links": 3
+  },
+  {
+    "id": "trash-detail",
+    "title": "回收项详情",
+    "group": "10 / 设置与数据",
+    "controls": 5,
+    "links": 1
+  },
+  {
+    "id": "backup",
+    "title": "备份与恢复",
+    "group": "10 / 设置与数据",
+    "controls": 5,
+    "links": 3
+  },
+  {
+    "id": "backup-create",
+    "title": "创建备份",
+    "group": "10 / 设置与数据",
+    "controls": 10,
+    "links": 0
+  },
+  {
+    "id": "backup-progress",
+    "title": "备份进度与结果",
+    "group": "10 / 设置与数据",
+    "controls": 4,
+    "links": 1
+  },
+  {
+    "id": "backup-select",
+    "title": "选择恢复文件",
+    "group": "10 / 设置与数据",
+    "controls": 4,
+    "links": 1
+  },
+  {
+    "id": "backup-preview",
+    "title": "备份检查与预览",
+    "group": "10 / 设置与数据",
+    "controls": 8,
+    "links": 2
+  },
+  {
+    "id": "restore-confirm",
+    "title": "恢复二次确认",
+    "group": "10 / 设置与数据",
+    "controls": 7,
+    "links": 0
+  },
+  {
+    "id": "restore-result",
+    "title": "恢复完成",
+    "group": "10 / 设置与数据",
+    "controls": 4,
+    "links": 2
+  },
+  {
+    "id": "data",
+    "title": "数据导入与导出",
+    "group": "10 / 设置与数据",
+    "controls": 8,
+    "links": 6
+  },
+  {
+    "id": "data-export",
+    "title": "导出档案",
+    "group": "10 / 设置与数据",
+    "controls": 9,
+    "links": 0
+  },
+  {
+    "id": "conversation-export",
+    "title": "导出会话",
+    "group": "10 / 设置与数据",
+    "controls": 8,
+    "links": 0
+  },
+  {
+    "id": "data-import-preview",
+    "title": "迁移数据检查",
+    "group": "10 / 设置与数据",
+    "controls": 5,
+    "links": 0
+  },
+  {
+    "id": "about",
+    "title": "关于言枢",
+    "group": "11 / 关于与诊断",
+    "controls": 7,
+    "links": 5
+  },
+  {
+    "id": "debug",
+    "title": "诊断日志",
+    "group": "11 / 关于与诊断",
+    "controls": 7,
+    "links": 0
+  },
+  {
+    "id": "offline",
+    "title": "会话 · 离线",
+    "group": "02 / 对话与执行",
+    "controls": 6,
+    "links": 1
+  },
+  {
+    "id": "home-empty",
+    "title": "工作区 · 无会话",
+    "group": "01 / 开始与导航",
+    "controls": 9,
+    "links": 8
+  },
+  {
+    "id": "profiles-empty",
+    "title": "档案 · 空态",
+    "group": "01 / 开始与导航",
+    "controls": 5,
+    "links": 5
+  },
+  {
+    "id": "memory-empty",
+    "title": "记忆 · 空态",
+    "group": "07 / 记忆与提示词",
+    "controls": 4,
+    "links": 2
+  },
+  {
+    "id": "files-empty",
+    "title": "文件 · 空态",
+    "group": "09 / 会话管理与文件",
+    "controls": 4,
+    "links": 2
+  },
+  {
+    "id": "context-limit",
+    "title": "会话 · 上下文将满",
+    "group": "02 / 对话与执行",
+    "controls": 7,
+    "links": 3
+  },
+  {
+    "id": "coverage",
+    "title": "完整页面覆盖清单",
+    "group": "11 / 关于与诊断",
+    "controls": 141,
+    "links": 139
+  }
+]

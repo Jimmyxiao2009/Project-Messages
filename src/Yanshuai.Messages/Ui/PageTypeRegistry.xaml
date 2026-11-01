@@ -1,0 +1,97 @@
+﻿<!--
+  Ui/PageTypeRegistry.xaml —— 让 .NET Native 认识"纯代码构建"的页面
+
+  ── 为什么需要这个文件 ──────────────────────────────────────────────
+  症状：ARM Release（.NET Native）上，只要一调 DetailFrame.Navigate(typeof(某页面))，
+  进程立刻无声消失：没有异常、crash.log 为空、埋点停在 Navigate 前一行。
+  同一份代码在桌面 Debug 下完全正常。
+
+  原因：Frame.Navigate(Type) 不是"直接 new"，它先问应用的 XAML 元数据提供者
+  （生成的 XamlTypeInfo.g.cs）要这个类型的 IXamlType，再调它的 ActivateInstance()。
+  只有**出现在 XAML 标记里**的类型才会被生成器写进那张表 ——
+  本项目生成的表里只有 MainPage / TimelineTemplateSelector / AttachmentStrip /
+  WorkspaceImage / SettingRow / MarkdownBlock，因为只有它们在 XAML 里出现过。
+
+  Ui.Pages 下这 50 多个页面（OnboardingPage、各设置页…）全是纯 C# 构建的，
+  不在表里。桌面 .NET FX 查不到时还能回落到 CLR 反射构造，.NET Native 没有这条退路，
+  于是直接 fail-fast 把进程带走 —— 连 App.UnhandledException 都接不到。
+
+  注意：这不是"缺元数据"那么简单。rd.xml 里给这两个命名空间加
+  Activate="Required All" Dynamic="Required All" 也没用：
+  问题出在 XAML 框架查不到 IXamlType，压根走不到反射那一步。
+
+  ── 这个文件怎么解决 ────────────────────────────────────────────────
+  把这些页面类型作为元素写进 DataTemplate。DataTemplate 的内容是**惰性**的，
+  只声明不实例化，但 XAML 编译器看到元素就会为它生成类型表项 + 激活器
+  （Activate_xx_OnboardingPage() { return new OnboardingPage(); }），
+  Frame.Navigate 于是能查到并直接构造，不再依赖反射。
+
+  导航语义完全不变 —— 这里只是给编译器一份"类型清单"。
+  新增纯代码页面时，记得往这里补一行，否则真机上打开那个页面就会闪退。
+-->
+
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:pages="using:Yanshuai.Messages.Ui.Pages">
+
+  <DataTemplate x:Key="PageType_AboutPage"><pages:AboutPage /></DataTemplate>
+  <DataTemplate x:Key="PageType_ApiEditorPage"><pages:ApiEditorPage /></DataTemplate>
+  <DataTemplate x:Key="PageType_ApiProfilesPage"><pages:ApiProfilesPage /></DataTemplate>
+  <DataTemplate x:Key="PageType_ApiTestPage"><pages:ApiTestPage /></DataTemplate>
+  <DataTemplate x:Key="PageType_AppearancePage"><pages:AppearancePage /></DataTemplate>
+  <DataTemplate x:Key="PageType_AvatarCropPage"><pages:AvatarCropPage /></DataTemplate>
+  <DataTemplate x:Key="PageType_BackupPage"><pages:BackupPage /></DataTemplate>
+  <DataTemplate x:Key="PageType_ChatSettingsPage"><pages:ChatSettingsPage /></DataTemplate>
+  <DataTemplate x:Key="PageType_CompactPreviewPage"><pages:CompactPreviewPage /></DataTemplate>
+  <DataTemplate x:Key="PageType_ContentRulesPage"><pages:ContentRulesPage /></DataTemplate>
+  <DataTemplate x:Key="PageType_ContextPage"><pages:ContextPage /></DataTemplate>
+  <DataTemplate x:Key="PageType_ConversationsPage"><pages:ConversationsPage /></DataTemplate>
+  <DataTemplate x:Key="PageType_DataPage"><pages:DataPage /></DataTemplate>
+  <DataTemplate x:Key="PageType_DiagnosticsPage"><pages:DiagnosticsPage /></DataTemplate>
+  <DataTemplate x:Key="PageType_ExtensionEditorPage"><pages:ExtensionEditorPage /></DataTemplate>
+  <DataTemplate x:Key="PageType_ExtensionsPage"><pages:ExtensionsPage /></DataTemplate>
+  <DataTemplate x:Key="PageType_ExternalFolderPage"><pages:ExternalFolderPage /></DataTemplate>
+  <DataTemplate x:Key="PageType_FileEditorPage"><pages:FileEditorPage /></DataTemplate>
+  <DataTemplate x:Key="PageType_FilePreviewPage"><pages:FilePreviewPage /></DataTemplate>
+  <DataTemplate x:Key="PageType_FilesPage"><pages:FilesPage /></DataTemplate>
+  <DataTemplate x:Key="PageType_FolderAccessPage"><pages:FolderAccessPage /></DataTemplate>
+  <DataTemplate x:Key="PageType_FolderPermissionPage"><pages:FolderPermissionPage /></DataTemplate>
+  <DataTemplate x:Key="PageType_GlobalSearchPage"><pages:GlobalSearchPage /></DataTemplate>
+  <DataTemplate x:Key="PageType_GroupMemberPage"><pages:GroupMemberPage /></DataTemplate>
+  <DataTemplate x:Key="PageType_GroupPage"><pages:GroupPage /></DataTemplate>
+  <DataTemplate x:Key="PageType_ImportPage"><pages:ImportPage /></DataTemplate>
+  <DataTemplate x:Key="PageType_InteractionPage"><pages:InteractionPage /></DataTemplate>
+  <DataTemplate x:Key="PageType_McpSchemaPage"><pages:McpSchemaPage /></DataTemplate>
+  <DataTemplate x:Key="PageType_McpToolsPage"><pages:McpToolsPage /></DataTemplate>
+  <DataTemplate x:Key="PageType_MemoryEditorPage"><pages:MemoryEditorPage /></DataTemplate>
+  <DataTemplate x:Key="PageType_MemoryMaintenancePage"><pages:MemoryMaintenancePage /></DataTemplate>
+  <DataTemplate x:Key="PageType_MemoryPage"><pages:MemoryPage /></DataTemplate>
+  <DataTemplate x:Key="PageType_MessageEditPage"><pages:MessageEditPage /></DataTemplate>
+  <DataTemplate x:Key="PageType_MigrationPage"><pages:MigrationPage /></DataTemplate>
+  <DataTemplate x:Key="PageType_ModelDetailsPage"><pages:ModelDetailsPage /></DataTemplate>
+  <DataTemplate x:Key="PageType_ModelPickerPage"><pages:ModelPickerPage /></DataTemplate>
+  <DataTemplate x:Key="PageType_ModelRolesPage"><pages:ModelRolesPage /></DataTemplate>
+  <DataTemplate x:Key="PageType_MoveConversationsPage"><pages:MoveConversationsPage /></DataTemplate>
+  <DataTemplate x:Key="PageType_NewConversationPage"><pages:NewConversationPage /></DataTemplate>
+  <DataTemplate x:Key="PageType_NewProfilePage"><pages:NewProfilePage /></DataTemplate>
+  <DataTemplate x:Key="PageType_OnboardingPage"><pages:OnboardingPage /></DataTemplate>
+  <DataTemplate x:Key="PageType_PackagesPage"><pages:PackagesPage /></DataTemplate>
+  <DataTemplate x:Key="PageType_PermissionsPage"><pages:PermissionsPage /></DataTemplate>
+  <DataTemplate x:Key="PageType_ProfileEditorPage"><pages:ProfileEditorPage /></DataTemplate>
+  <DataTemplate x:Key="PageType_ProfilePage"><pages:ProfilePage /></DataTemplate>
+  <DataTemplate x:Key="PageType_PromptPreviewPage"><pages:PromptPreviewPage /></DataTemplate>
+  <DataTemplate x:Key="PageType_ProviderModelsPage"><pages:ProviderModelsPage /></DataTemplate>
+  <DataTemplate x:Key="PageType_RegexTestPage"><pages:RegexTestPage /></DataTemplate>
+  <DataTemplate x:Key="PageType_ResourceEditorPage"><pages:ResourceEditorPage /></DataTemplate>
+  <DataTemplate x:Key="PageType_ResourcesPage"><pages:ResourcesPage /></DataTemplate>
+  <DataTemplate x:Key="PageType_RuleEditorPage"><pages:RuleEditorPage /></DataTemplate>
+  <DataTemplate x:Key="PageType_SearchSettingsPage"><pages:SearchSettingsPage /></DataTemplate>
+  <DataTemplate x:Key="PageType_SettingsPage"><pages:SettingsPage /></DataTemplate>
+  <DataTemplate x:Key="PageType_StorageCleanupPage"><pages:StorageCleanupPage /></DataTemplate>
+  <DataTemplate x:Key="PageType_StoragePage"><pages:StoragePage /></DataTemplate>
+  <DataTemplate x:Key="PageType_ToolDetailsPage"><pages:ToolDetailsPage /></DataTemplate>
+  <DataTemplate x:Key="PageType_ToolsPage"><pages:ToolsPage /></DataTemplate>
+  <DataTemplate x:Key="PageType_TrashPage"><pages:TrashPage /></DataTemplate>
+
+</ResourceDictionary>

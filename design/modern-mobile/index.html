@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="dark light">
+  <meta name="description" content="言枢 Messages · Modern / Windows 10 Mobile 全页面交互原型">
+  <title>言枢 Messages — Modern / Windows 10 Mobile</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="studio">
+    <aside class="navigator">
+      <a class="brand" href="#home"><span>言枢<span class="brand-dot">.</span></span><small>MESSAGES / DESIGN PREVIEW</small></a>
+      <div class="nav-intro">一个档案，一种可能。<br>Windows 10 Mobile · Modern UI</div>
+      <label class="nav-search"><span id="navSearchIcon"></span><input id="pageSearch" type="search" placeholder="查找页面" aria-label="查找页面"></label>
+      <nav id="pageNav" aria-label="原型页面"></nav>
+      <div class="nav-footer"><span class="live-dot"></span> 本地交互原型 <span id="pageCount"></span><small>依据 UI-HANDOFF · 2026.10.12</small></div>
+    </aside>
+    <div class="workspace">
+      <header class="studio-toolbar">
+        <div class="breadcrumb">设计原型 <span>/</span> <b id="currentCategory">对话</b></div>
+        <div class="toolbar-actions">
+          <button id="themeButton" class="studio-button" title="切换浅色 / 深色">浅色</button>
+          <select id="viewportSelect" aria-label="预览宽度"><option value="360">360 × 640</option><option value="320">320 × 640</option><option value="430">430 × 740</option></select>
+          <button id="overviewButton" class="studio-button">页面总览</button>
+        </div>
+      </header>
+      <main id="stage" class="stage">
+        <section class="preview-heading"><div class="eyebrow">MODERN / WINDOWS 10 MOBILE</div><h1 id="pageTitle">对话</h1><p id="pageDescription"></p></section>
+        <div class="preview-layout">
+          <div class="device-column"><div class="device-caption"><span><i class="live-dot"></i> 交互预览</span><span id="viewportCaption">360 × 640</span></div><div class="device"><div class="phone" id="phone" data-theme="dark"><div class="status-bar"><span>10:42</span><span id="statusIcons"></span></div><div id="app" class="app"></div><div class="system-nav"><button data-action="back" aria-label="系统返回" id="systemBack"></button><button data-route="home" aria-label="开始" id="systemHome"></button><button data-route="search" aria-label="系统搜索" id="systemSearch"></button></div><div id="toast" class="toast" role="status" aria-live="polite"></div><div id="dialogLayer"></div></div></div><div class="device-hint">点击控件体验流程 · Esc 返回 · Ctrl + K 搜索页面</div></div>
+          <aside class="annotations"><div class="annotation-number" id="pageNumber">01</div><div class="annotation-line"></div><h2>页面要点</h2><div id="pageNotes"></div><h2>继续体验</h2><div id="relatedPages"></div><div class="prototype-note">这里展示交互与页面结构。模型请求、权限、文件操作使用演示数据。</div></aside>
+        </div>
+      </main>
+      <section id="overview" class="overview" hidden></section>
+      <footer class="studio-footer"><span>Y AN SHU · MESSAGES</span><span>单列导航 / 系统强调色 / 内容优先</span><span>PROTOTYPE 02</span></footer>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

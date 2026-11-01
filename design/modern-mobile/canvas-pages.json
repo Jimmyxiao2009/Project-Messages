@@ -1,0 +1,1398 @@
+{
+  "home": {
+    "draftId": "4623f4e7-910b-4fc7-a642-69c629752ecb",
+    "currentVersion": 2,
+    "title": "对话 · Modern 主屏",
+    "verified": true
+  },
+  "profiles": {
+    "draftId": "e1dcc0ff-b5d2-4c0d-853e-6ae28a94cf77",
+    "nodeId": "draft-variant-e1dcc0ff-b5d2-4c0d-853e-6ae28a94cf77",
+    "title": "档案",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-e1dcc0ff-b5d2-4c0d-853e-6ae28a94cf77",
+    "previewUrl": "https://p.superdesign.dev/draft/e1dcc0ff-b5d2-4c0d-853e-6ae28a94cf77",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "me": {
+    "draftId": "2f10a3f2-31cf-407d-89ac-0af717009761",
+    "nodeId": "draft-variant-2f10a3f2-31cf-407d-89ac-0af717009761",
+    "title": "我的",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-2f10a3f2-31cf-407d-89ac-0af717009761",
+    "previewUrl": "https://p.superdesign.dev/draft/2f10a3f2-31cf-407d-89ac-0af717009761",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "startup": {
+    "draftId": "90b4e78f-0ea6-4bbc-8e08-3a7861982bbf",
+    "nodeId": "draft-variant-90b4e78f-0ea6-4bbc-8e08-3a7861982bbf",
+    "title": "启动与初始化",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-90b4e78f-0ea6-4bbc-8e08-3a7861982bbf",
+    "previewUrl": "https://p.superdesign.dev/draft/90b4e78f-0ea6-4bbc-8e08-3a7861982bbf",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "startup-error": {
+    "draftId": "e38f4036-f1e7-471f-85f8-ab8d4f9e96d0",
+    "nodeId": "draft-variant-e38f4036-f1e7-471f-85f8-ab8d4f9e96d0",
+    "title": "初始化失败",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-e38f4036-f1e7-471f-85f8-ab8d4f9e96d0",
+    "previewUrl": "https://p.superdesign.dev/draft/e38f4036-f1e7-471f-85f8-ab8d4f9e96d0",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "search": {
+    "draftId": "8e363ba8-0334-4879-a5d8-08bd1a0f8d79",
+    "nodeId": "draft-variant-8e363ba8-0334-4879-a5d8-08bd1a0f8d79",
+    "title": "全局搜索",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-8e363ba8-0334-4879-a5d8-08bd1a0f8d79",
+    "previewUrl": "https://p.superdesign.dev/draft/8e363ba8-0334-4879-a5d8-08bd1a0f8d79",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "migration": {
+    "draftId": "cfa0eb28-dbcc-4fad-be78-60d80050d725",
+    "nodeId": "draft-variant-cfa0eb28-dbcc-4fad-be78-60d80050d725",
+    "title": "旧数据迁移",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-cfa0eb28-dbcc-4fad-be78-60d80050d725",
+    "previewUrl": "https://p.superdesign.dev/draft/cfa0eb28-dbcc-4fad-be78-60d80050d725",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "search-empty": {
+    "draftId": "b05cedaf-1c15-4f60-865c-a40755b9abcb",
+    "nodeId": "draft-variant-b05cedaf-1c15-4f60-865c-a40755b9abcb",
+    "title": "搜索无结果",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-b05cedaf-1c15-4f60-865c-a40755b9abcb",
+    "previewUrl": "https://p.superdesign.dev/draft/b05cedaf-1c15-4f60-865c-a40755b9abcb",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "new-chat": {
+    "draftId": "ab3d3953-1ce8-411c-ae5b-6c6eb9d1ded7",
+    "nodeId": "draft-variant-ab3d3953-1ce8-411c-ae5b-6c6eb9d1ded7",
+    "title": "新建会话",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-ab3d3953-1ce8-411c-ae5b-6c6eb9d1ded7",
+    "previewUrl": "https://p.superdesign.dev/draft/ab3d3953-1ce8-411c-ae5b-6c6eb9d1ded7",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "profile-select": {
+    "draftId": "f56abc55-5a6d-4d37-b927-a3882438a0ae",
+    "nodeId": "draft-variant-f56abc55-5a6d-4d37-b927-a3882438a0ae",
+    "title": "选择档案",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-f56abc55-5a6d-4d37-b927-a3882438a0ae",
+    "previewUrl": "https://p.superdesign.dev/draft/f56abc55-5a6d-4d37-b927-a3882438a0ae",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "chat": {
+    "draftId": "4a7f2cae-624c-44c4-af7e-9d4a5bb06105",
+    "nodeId": "draft-variant-4a7f2cae-624c-44c4-af7e-9d4a5bb06105",
+    "title": "会话 · 完成",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-4a7f2cae-624c-44c4-af7e-9d4a5bb06105",
+    "previewUrl": "https://p.superdesign.dev/draft/4a7f2cae-624c-44c4-af7e-9d4a5bb06105",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "chat-running": {
+    "draftId": "a455f08f-6fa8-4a6b-b004-8a8bd1340f11",
+    "nodeId": "draft-variant-a455f08f-6fa8-4a6b-b004-8a8bd1340f11",
+    "title": "会话 · 运行中",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-a455f08f-6fa8-4a6b-b004-8a8bd1340f11",
+    "previewUrl": "https://p.superdesign.dev/draft/a455f08f-6fa8-4a6b-b004-8a8bd1340f11",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "chat-approval": {
+    "draftId": "7cf6030f-7d93-47b8-b1a4-1643074682c0",
+    "nodeId": "draft-variant-7cf6030f-7d93-47b8-b1a4-1643074682c0",
+    "title": "会话 · 待审批",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-7cf6030f-7d93-47b8-b1a4-1643074682c0",
+    "previewUrl": "https://p.superdesign.dev/draft/7cf6030f-7d93-47b8-b1a4-1643074682c0",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "chat-error": {
+    "draftId": "cec8b475-78a9-40ff-9bc5-ab36b80b67c3",
+    "nodeId": "draft-variant-cec8b475-78a9-40ff-9bc5-ab36b80b67c3",
+    "title": "会话 · 请求失败",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-cec8b475-78a9-40ff-9bc5-ab36b80b67c3",
+    "previewUrl": "https://p.superdesign.dev/draft/cec8b475-78a9-40ff-9bc5-ab36b80b67c3",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "chat-empty": {
+    "draftId": "c4319f81-c4c3-4400-99ac-ded6f54d2301",
+    "nodeId": "draft-variant-c4319f81-c4c3-4400-99ac-ded6f54d2301",
+    "title": "会话 · 草稿空态",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-c4319f81-c4c3-4400-99ac-ded6f54d2301",
+    "previewUrl": "https://p.superdesign.dev/draft/c4319f81-c4c3-4400-99ac-ded6f54d2301",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "chat-roleplay": {
+    "draftId": "4550f001-40fd-49f8-bf43-985a8cc023f6",
+    "nodeId": "draft-variant-4550f001-40fd-49f8-bf43-985a8cc023f6",
+    "title": "会话 · 角色对话",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-4550f001-40fd-49f8-bf43-985a8cc023f6",
+    "previewUrl": "https://p.superdesign.dev/draft/4550f001-40fd-49f8-bf43-985a8cc023f6",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "chat-branches": {
+    "draftId": "b5e0cc3a-fe20-41f1-bedf-b8e5030b17ce",
+    "nodeId": "draft-variant-b5e0cc3a-fe20-41f1-bedf-b8e5030b17ce",
+    "title": "会话 · 候选分支",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-b5e0cc3a-fe20-41f1-bedf-b8e5030b17ce",
+    "previewUrl": "https://p.superdesign.dev/draft/b5e0cc3a-fe20-41f1-bedf-b8e5030b17ce",
+    "verified": true,
+    "currentVersion": 2
+  },
+  "chat-speaking": {
+    "draftId": "c652df25-b7a2-4145-a056-e56521fd848a",
+    "nodeId": "draft-variant-c652df25-b7a2-4145-a056-e56521fd848a",
+    "title": "会话 · 朗读",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-c652df25-b7a2-4145-a056-e56521fd848a",
+    "previewUrl": "https://p.superdesign.dev/draft/c652df25-b7a2-4145-a056-e56521fd848a",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "chat-translated": {
+    "draftId": "a352c1f8-0794-40a7-992a-5b06c2332051",
+    "nodeId": "draft-variant-a352c1f8-0794-40a7-992a-5b06c2332051",
+    "title": "会话 · 译文叠加",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-a352c1f8-0794-40a7-992a-5b06c2332051",
+    "previewUrl": "https://p.superdesign.dev/draft/a352c1f8-0794-40a7-992a-5b06c2332051",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "message-actions": {
+    "draftId": "ab72c2a4-06ce-413f-925a-706f2b179eb3",
+    "nodeId": "draft-variant-ab72c2a4-06ce-413f-925a-706f2b179eb3",
+    "title": "消息操作",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-ab72c2a4-06ce-413f-925a-706f2b179eb3",
+    "previewUrl": "https://p.superdesign.dev/draft/ab72c2a4-06ce-413f-925a-706f2b179eb3",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "message-edit": {
+    "draftId": "0347bde0-7f24-49d9-96b1-6aac5b0e4eab",
+    "nodeId": "draft-variant-0347bde0-7f24-49d9-96b1-6aac5b0e4eab",
+    "title": "编辑消息",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-0347bde0-7f24-49d9-96b1-6aac5b0e4eab",
+    "previewUrl": "https://p.superdesign.dev/draft/0347bde0-7f24-49d9-96b1-6aac5b0e4eab",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "approval": {
+    "draftId": "2e735c1e-e4a9-4070-9a15-43f679031b40",
+    "nodeId": "draft-variant-2e735c1e-e4a9-4070-9a15-43f679031b40",
+    "title": "敏感工具审批",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-2e735c1e-e4a9-4070-9a15-43f679031b40",
+    "previewUrl": "https://p.superdesign.dev/draft/2e735c1e-e4a9-4070-9a15-43f679031b40",
+    "verified": true,
+    "currentVersion": 2
+  },
+  "fork": {
+    "draftId": "9b033fb9-348c-4ad4-aed8-701b188fe25b",
+    "nodeId": "draft-variant-9b033fb9-348c-4ad4-aed8-701b188fe25b",
+    "title": "创建会话分支",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-9b033fb9-348c-4ad4-aed8-701b188fe25b",
+    "previewUrl": "https://p.superdesign.dev/draft/9b033fb9-348c-4ad4-aed8-701b188fe25b",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "ask-user": {
+    "draftId": "ac4a4ed2-7eab-4275-9c2a-9a412c3fffea",
+    "nodeId": "draft-variant-ac4a4ed2-7eab-4275-9c2a-9a412c3fffea",
+    "title": "向你追问",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-ac4a4ed2-7eab-4275-9c2a-9a412c3fffea",
+    "previewUrl": "https://p.superdesign.dev/draft/ac4a4ed2-7eab-4275-9c2a-9a412c3fffea",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "group-chat": {
+    "draftId": "0ac93cd7-df49-4c52-8f2a-931ca385f2cc",
+    "nodeId": "draft-variant-0ac93cd7-df49-4c52-8f2a-931ca385f2cc",
+    "title": "群聊会话",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-0ac93cd7-df49-4c52-8f2a-931ca385f2cc",
+    "previewUrl": "https://p.superdesign.dev/draft/0ac93cd7-df49-4c52-8f2a-931ca385f2cc",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "group-members": {
+    "draftId": "535dfd4b-bb9f-48ee-b081-1270a749c87d",
+    "nodeId": "draft-variant-535dfd4b-bb9f-48ee-b081-1270a749c87d",
+    "title": "群聊成员",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-535dfd4b-bb9f-48ee-b081-1270a749c87d",
+    "previewUrl": "https://p.superdesign.dev/draft/535dfd4b-bb9f-48ee-b081-1270a749c87d",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "group-add": {
+    "draftId": "007195fc-bca4-41f4-9a44-0c7432af0fd1",
+    "nodeId": "draft-variant-007195fc-bca4-41f4-9a44-0c7432af0fd1",
+    "title": "添加群聊成员",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-007195fc-bca4-41f4-9a44-0c7432af0fd1",
+    "previewUrl": "https://p.superdesign.dev/draft/007195fc-bca4-41f4-9a44-0c7432af0fd1",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "group-member-edit": {
+    "draftId": "8ce0b63e-2087-4cdd-ba62-6dcceb61040d",
+    "nodeId": "draft-variant-8ce0b63e-2087-4cdd-ba62-6dcceb61040d",
+    "title": "编辑群聊成员",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-8ce0b63e-2087-4cdd-ba62-6dcceb61040d",
+    "previewUrl": "https://p.superdesign.dev/draft/8ce0b63e-2087-4cdd-ba62-6dcceb61040d",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "group-mode": {
+    "draftId": "8bb86596-4f5b-4c0e-9119-75f97cd8bf07",
+    "nodeId": "draft-variant-8bb86596-4f5b-4c0e-9119-75f97cd8bf07",
+    "title": "群聊回复模式",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-8bb86596-4f5b-4c0e-9119-75f97cd8bf07",
+    "previewUrl": "https://p.superdesign.dev/draft/8bb86596-4f5b-4c0e-9119-75f97cd8bf07",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "profile": {
+    "draftId": "6b648206-cf47-4e24-81a3-c769700c5fea",
+    "nodeId": "draft-variant-6b648206-cf47-4e24-81a3-c769700c5fea",
+    "title": "档案详情",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-6b648206-cf47-4e24-81a3-c769700c5fea",
+    "previewUrl": "https://p.superdesign.dev/draft/6b648206-cf47-4e24-81a3-c769700c5fea",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "profile-new": {
+    "draftId": "7fc2831d-865f-4d6d-bcaf-0943ba0b786c",
+    "nodeId": "draft-variant-7fc2831d-865f-4d6d-bcaf-0943ba0b786c",
+    "title": "新建档案",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-7fc2831d-865f-4d6d-bcaf-0943ba0b786c",
+    "previewUrl": "https://p.superdesign.dev/draft/7fc2831d-865f-4d6d-bcaf-0943ba0b786c",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "profile-identity": {
+    "draftId": "c8c48184-b88b-4158-a3ba-890d09f5d4f2",
+    "nodeId": "draft-variant-c8c48184-b88b-4158-a3ba-890d09f5d4f2",
+    "title": "编辑身份",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-c8c48184-b88b-4158-a3ba-890d09f5d4f2",
+    "previewUrl": "https://p.superdesign.dev/draft/c8c48184-b88b-4158-a3ba-890d09f5d4f2",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "avatar": {
+    "draftId": "ba51771e-d856-4921-a454-4c14e522bde2",
+    "nodeId": "draft-variant-ba51771e-d856-4921-a454-4c14e522bde2",
+    "title": "选择头像",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-ba51771e-d856-4921-a454-4c14e522bde2",
+    "previewUrl": "https://p.superdesign.dev/draft/ba51771e-d856-4921-a454-4c14e522bde2",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "profile-model": {
+    "draftId": "96f28a9b-7f77-4edc-9431-b857c0adee38",
+    "nodeId": "draft-variant-96f28a9b-7f77-4edc-9431-b857c0adee38",
+    "title": "模型与生成参数",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-96f28a9b-7f77-4edc-9431-b857c0adee38",
+    "previewUrl": "https://p.superdesign.dev/draft/96f28a9b-7f77-4edc-9431-b857c0adee38",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "request-overrides": {
+    "draftId": "c0460692-dfc5-42e6-8b35-d48035d8f1f4",
+    "nodeId": "draft-variant-c0460692-dfc5-42e6-8b35-d48035d8f1f4",
+    "title": "自定义请求字段",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-c0460692-dfc5-42e6-8b35-d48035d8f1f4",
+    "previewUrl": "https://p.superdesign.dev/draft/c0460692-dfc5-42e6-8b35-d48035d8f1f4",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "profile-appearance": {
+    "draftId": "eecf807f-ef43-446b-a34b-957630c75e88",
+    "nodeId": "draft-variant-eecf807f-ef43-446b-a34b-957630c75e88",
+    "title": "档案外观",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-eecf807f-ef43-446b-a34b-957630c75e88",
+    "previewUrl": "https://p.superdesign.dev/draft/eecf807f-ef43-446b-a34b-957630c75e88",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "user-personas": {
+    "draftId": "2b10fcb2-ff9e-4b00-9b6f-870fc51ca73c",
+    "nodeId": "draft-variant-2b10fcb2-ff9e-4b00-9b6f-870fc51ca73c",
+    "title": "用户人设列表",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-2b10fcb2-ff9e-4b00-9b6f-870fc51ca73c",
+    "previewUrl": "https://p.superdesign.dev/draft/2b10fcb2-ff9e-4b00-9b6f-870fc51ca73c",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "user-persona-edit": {
+    "draftId": "94d6a451-f6d7-463c-9e50-376fe1e6d1fa",
+    "nodeId": "draft-variant-94d6a451-f6d7-463c-9e50-376fe1e6d1fa",
+    "title": "编辑用户人设",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-94d6a451-f6d7-463c-9e50-376fe1e6d1fa",
+    "previewUrl": "https://p.superdesign.dev/draft/94d6a451-f6d7-463c-9e50-376fe1e6d1fa",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "user-persona-new": {
+    "draftId": "8da731c5-4dab-4ab5-ac4f-84e48d43c69f",
+    "nodeId": "draft-variant-8da731c5-4dab-4ab5-ac4f-84e48d43c69f",
+    "title": "新建用户人设",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-8da731c5-4dab-4ab5-ac4f-84e48d43c69f",
+    "previewUrl": "https://p.superdesign.dev/draft/8da731c5-4dab-4ab5-ac4f-84e48d43c69f",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "import-source": {
+    "draftId": "773d94f6-5a60-47b4-9a7d-ae226f12f246",
+    "nodeId": "draft-variant-773d94f6-5a60-47b4-9a7d-ae226f12f246",
+    "title": "角色卡 · 选择来源",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-773d94f6-5a60-47b4-9a7d-ae226f12f246",
+    "previewUrl": "https://p.superdesign.dev/draft/773d94f6-5a60-47b4-9a7d-ae226f12f246",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "import-url": {
+    "draftId": "38929418-8932-4aa3-b582-de4d4beeaf7f",
+    "nodeId": "draft-variant-38929418-8932-4aa3-b582-de4d4beeaf7f",
+    "title": "角色卡 · 链接来源",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-38929418-8932-4aa3-b582-de4d4beeaf7f",
+    "previewUrl": "https://p.superdesign.dev/draft/38929418-8932-4aa3-b582-de4d4beeaf7f",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "import-preview": {
+    "draftId": "adb4bd73-2068-41cf-932f-09496c986591",
+    "nodeId": "draft-variant-adb4bd73-2068-41cf-932f-09496c986591",
+    "title": "角色卡 · 预览补齐",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-adb4bd73-2068-41cf-932f-09496c986591",
+    "previewUrl": "https://p.superdesign.dev/draft/adb4bd73-2068-41cf-932f-09496c986591",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "import-options": {
+    "draftId": "d1b77b33-2577-47cc-9e3d-79f1510566cb",
+    "nodeId": "draft-variant-d1b77b33-2577-47cc-9e3d-79f1510566cb",
+    "title": "角色卡 · 导入选项",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-d1b77b33-2577-47cc-9e3d-79f1510566cb",
+    "previewUrl": "https://p.superdesign.dev/draft/d1b77b33-2577-47cc-9e3d-79f1510566cb",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "import-done": {
+    "draftId": "ee5105c4-e382-4fa8-8a5e-9e9a0699d37f",
+    "nodeId": "draft-variant-ee5105c4-e382-4fa8-8a5e-9e9a0699d37f",
+    "title": "角色卡 · 导入完成",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-ee5105c4-e382-4fa8-8a5e-9e9a0699d37f",
+    "previewUrl": "https://p.superdesign.dev/draft/ee5105c4-e382-4fa8-8a5e-9e9a0699d37f",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "import-error": {
+    "draftId": "55026382-4d6b-47ff-81fb-c7f011677eb1",
+    "nodeId": "draft-variant-55026382-4d6b-47ff-81fb-c7f011677eb1",
+    "title": "角色卡 · 解析失败",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-55026382-4d6b-47ff-81fb-c7f011677eb1",
+    "previewUrl": "https://p.superdesign.dev/draft/55026382-4d6b-47ff-81fb-c7f011677eb1",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "api-profiles": {
+    "draftId": "ad4e9fcb-2a21-4ea4-beea-c91bf517930b",
+    "nodeId": "draft-variant-ad4e9fcb-2a21-4ea4-beea-c91bf517930b",
+    "title": "模型档案列表",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-ad4e9fcb-2a21-4ea4-beea-c91bf517930b",
+    "previewUrl": "https://p.superdesign.dev/draft/ad4e9fcb-2a21-4ea4-beea-c91bf517930b",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "api-edit": {
+    "draftId": "2592fe1e-64d4-4acb-8ffd-64d0bf3cc3be",
+    "nodeId": "draft-variant-2592fe1e-64d4-4acb-8ffd-64d0bf3cc3be",
+    "title": "编辑模型档案",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-2592fe1e-64d4-4acb-8ffd-64d0bf3cc3be",
+    "previewUrl": "https://p.superdesign.dev/draft/2592fe1e-64d4-4acb-8ffd-64d0bf3cc3be",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "api-new": {
+    "draftId": "8f33cc8a-48e6-457a-b11d-d1ff6f3039b7",
+    "nodeId": "draft-variant-8f33cc8a-48e6-457a-b11d-d1ff6f3039b7",
+    "title": "新建模型档案",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-8f33cc8a-48e6-457a-b11d-d1ff6f3039b7",
+    "previewUrl": "https://p.superdesign.dev/draft/8f33cc8a-48e6-457a-b11d-d1ff6f3039b7",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "api-test": {
+    "draftId": "ae41d83d-6182-44e9-b0c1-9fc10891e744",
+    "nodeId": "draft-variant-ae41d83d-6182-44e9-b0c1-9fc10891e744",
+    "title": "连接测试结果",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-ae41d83d-6182-44e9-b0c1-9fc10891e744",
+    "previewUrl": "https://p.superdesign.dev/draft/ae41d83d-6182-44e9-b0c1-9fc10891e744",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "model-picker": {
+    "draftId": "6edfa5a8-f341-4093-b833-c003952e1635",
+    "nodeId": "draft-variant-6edfa5a8-f341-4093-b833-c003952e1635",
+    "title": "模型选择器",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-6edfa5a8-f341-4093-b833-c003952e1635",
+    "previewUrl": "https://p.superdesign.dev/draft/6edfa5a8-f341-4093-b833-c003952e1635",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "model-manual": {
+    "draftId": "1b08e55a-f942-45b1-bd8f-3299bcfeff1f",
+    "nodeId": "draft-variant-1b08e55a-f942-45b1-bd8f-3299bcfeff1f",
+    "title": "手动添加模型",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-1b08e55a-f942-45b1-bd8f-3299bcfeff1f",
+    "previewUrl": "https://p.superdesign.dev/draft/1b08e55a-f942-45b1-bd8f-3299bcfeff1f",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "model-details": {
+    "draftId": "1583aa78-6f5c-4069-9bdf-8769b46bbeb3",
+    "nodeId": "draft-variant-1583aa78-6f5c-4069-9bdf-8769b46bbeb3",
+    "title": "模型元数据与覆盖",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-1583aa78-6f5c-4069-9bdf-8769b46bbeb3",
+    "previewUrl": "https://p.superdesign.dev/draft/1583aa78-6f5c-4069-9bdf-8769b46bbeb3",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "memory": {
+    "draftId": "450f0dc7-200f-4913-b003-9dfa15d055af",
+    "nodeId": "draft-variant-450f0dc7-200f-4913-b003-9dfa15d055af",
+    "title": "记忆列表",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-450f0dc7-200f-4913-b003-9dfa15d055af",
+    "previewUrl": "https://p.superdesign.dev/draft/450f0dc7-200f-4913-b003-9dfa15d055af",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "memory-edit": {
+    "draftId": "c1161721-d8c5-4869-bf63-5a00a48dfe4a",
+    "nodeId": "draft-variant-c1161721-d8c5-4869-bf63-5a00a48dfe4a",
+    "title": "编辑记忆",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-c1161721-d8c5-4869-bf63-5a00a48dfe4a",
+    "previewUrl": "https://p.superdesign.dev/draft/c1161721-d8c5-4869-bf63-5a00a48dfe4a",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "memory-new": {
+    "draftId": "aaa9c6e9-f684-4cc5-bdab-0c1d8d4695ee",
+    "nodeId": "draft-variant-aaa9c6e9-f684-4cc5-bdab-0c1d8d4695ee",
+    "title": "新增记忆",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-aaa9c6e9-f684-4cc5-bdab-0c1d8d4695ee",
+    "previewUrl": "https://p.superdesign.dev/draft/aaa9c6e9-f684-4cc5-bdab-0c1d8d4695ee",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "memory-settings": {
+    "draftId": "3f0bbf50-2fa3-4c19-8c87-fae71d01c97a",
+    "nodeId": "draft-variant-3f0bbf50-2fa3-4c19-8c87-fae71d01c97a",
+    "title": "记忆与检索设置",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-3f0bbf50-2fa3-4c19-8c87-fae71d01c97a",
+    "previewUrl": "https://p.superdesign.dev/draft/3f0bbf50-2fa3-4c19-8c87-fae71d01c97a",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "memory-clean": {
+    "draftId": "422701b6-9218-4c2a-81c4-3fd3a6113aeb",
+    "nodeId": "draft-variant-422701b6-9218-4c2a-81c4-3fd3a6113aeb",
+    "title": "整理记忆预览",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-422701b6-9218-4c2a-81c4-3fd3a6113aeb",
+    "previewUrl": "https://p.superdesign.dev/draft/422701b6-9218-4c2a-81c4-3fd3a6113aeb",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "memory-index": {
+    "draftId": "0c899e92-d9d7-472f-b109-b5af5915a0d3",
+    "nodeId": "draft-variant-0c899e92-d9d7-472f-b109-b5af5915a0d3",
+    "title": "记忆索引状态",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-0c899e92-d9d7-472f-b109-b5af5915a0d3",
+    "previewUrl": "https://p.superdesign.dev/draft/0c899e92-d9d7-472f-b109-b5af5915a0d3",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "prompt-selection": {
+    "draftId": "a638676a-bb9d-469b-9bdd-75b08be3846a",
+    "nodeId": "draft-variant-a638676a-bb9d-469b-9bdd-75b08be3846a",
+    "title": "世界书与注入选择",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-a638676a-bb9d-469b-9bdd-75b08be3846a",
+    "previewUrl": "https://p.superdesign.dev/draft/a638676a-bb9d-469b-9bdd-75b08be3846a",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "lorebooks": {
+    "draftId": "57097873-f5b7-4867-be41-08138dc689c2",
+    "nodeId": "draft-variant-57097873-f5b7-4867-be41-08138dc689c2",
+    "title": "世界书列表",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-57097873-f5b7-4867-be41-08138dc689c2",
+    "previewUrl": "https://p.superdesign.dev/draft/57097873-f5b7-4867-be41-08138dc689c2",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "lorebook-detail": {
+    "draftId": "69de9efe-4819-4e14-a3e1-fb4e5bb22778",
+    "nodeId": "draft-variant-69de9efe-4819-4e14-a3e1-fb4e5bb22778",
+    "title": "世界书详情",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-69de9efe-4819-4e14-a3e1-fb4e5bb22778",
+    "previewUrl": "https://p.superdesign.dev/draft/69de9efe-4819-4e14-a3e1-fb4e5bb22778",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "lorebook-new": {
+    "draftId": "ae67d2f0-e10d-4e59-9440-94d306b091ba",
+    "nodeId": "draft-variant-ae67d2f0-e10d-4e59-9440-94d306b091ba",
+    "title": "新建世界书",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-ae67d2f0-e10d-4e59-9440-94d306b091ba",
+    "previewUrl": "https://p.superdesign.dev/draft/ae67d2f0-e10d-4e59-9440-94d306b091ba",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "lore-entry-edit": {
+    "draftId": "747db5ea-60f1-405c-a91e-371fc8db6a29",
+    "nodeId": "draft-variant-747db5ea-60f1-405c-a91e-371fc8db6a29",
+    "title": "编辑世界书条目",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-747db5ea-60f1-405c-a91e-371fc8db6a29",
+    "previewUrl": "https://p.superdesign.dev/draft/747db5ea-60f1-405c-a91e-371fc8db6a29",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "lore-entry-new": {
+    "draftId": "c324a7a6-fb66-43fd-b580-d5ce55e9b72f",
+    "nodeId": "draft-variant-c324a7a6-fb66-43fd-b580-d5ce55e9b72f",
+    "title": "新增世界书条目",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-c324a7a6-fb66-43fd-b580-d5ce55e9b72f",
+    "previewUrl": "https://p.superdesign.dev/draft/c324a7a6-fb66-43fd-b580-d5ce55e9b72f",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "injections": {
+    "draftId": "3e04b905-5803-4ba4-9c81-4ba09d21a592",
+    "nodeId": "draft-variant-3e04b905-5803-4ba4-9c81-4ba09d21a592",
+    "title": "模式注入列表",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-3e04b905-5803-4ba4-9c81-4ba09d21a592",
+    "previewUrl": "https://p.superdesign.dev/draft/3e04b905-5803-4ba4-9c81-4ba09d21a592",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "injection-edit": {
+    "draftId": "02b8bad9-6d62-4e98-a080-90b8a4d93448",
+    "nodeId": "draft-variant-02b8bad9-6d62-4e98-a080-90b8a4d93448",
+    "title": "编辑模式注入",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-02b8bad9-6d62-4e98-a080-90b8a4d93448",
+    "previewUrl": "https://p.superdesign.dev/draft/02b8bad9-6d62-4e98-a080-90b8a4d93448",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "injection-new": {
+    "draftId": "73c2c7cd-f2c3-4743-8528-052d1c74d91c",
+    "nodeId": "draft-variant-73c2c7cd-f2c3-4743-8528-052d1c74d91c",
+    "title": "新建模式注入",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-73c2c7cd-f2c3-4743-8528-052d1c74d91c",
+    "previewUrl": "https://p.superdesign.dev/draft/73c2c7cd-f2c3-4743-8528-052d1c74d91c",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "tools": {
+    "draftId": "fe405857-2c1c-4fef-aacc-3e14f8a798ef",
+    "nodeId": "draft-variant-fe405857-2c1c-4fef-aacc-3e14f8a798ef",
+    "title": "工具选择",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-fe405857-2c1c-4fef-aacc-3e14f8a798ef",
+    "previewUrl": "https://p.superdesign.dev/draft/fe405857-2c1c-4fef-aacc-3e14f8a798ef",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "tool-catalog": {
+    "draftId": "4ee4230e-85a8-426f-bd5c-222223e47dd4",
+    "nodeId": "draft-variant-4ee4230e-85a8-426f-bd5c-222223e47dd4",
+    "title": "全部内置工具",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-4ee4230e-85a8-426f-bd5c-222223e47dd4",
+    "previewUrl": "https://p.superdesign.dev/draft/4ee4230e-85a8-426f-bd5c-222223e47dd4",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "mcp-list": {
+    "draftId": "7106f614-9711-4b7d-b120-45592f1b3f6f",
+    "nodeId": "draft-variant-7106f614-9711-4b7d-b120-45592f1b3f6f",
+    "title": "MCP 服务器列表",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-7106f614-9711-4b7d-b120-45592f1b3f6f",
+    "previewUrl": "https://p.superdesign.dev/draft/7106f614-9711-4b7d-b120-45592f1b3f6f",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "mcp-edit": {
+    "draftId": "40e6c635-c116-4922-a0bf-55245775706b",
+    "nodeId": "draft-variant-40e6c635-c116-4922-a0bf-55245775706b",
+    "title": "编辑 MCP 服务器",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-40e6c635-c116-4922-a0bf-55245775706b",
+    "previewUrl": "https://p.superdesign.dev/draft/40e6c635-c116-4922-a0bf-55245775706b",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "mcp-new": {
+    "draftId": "a506d93c-8fb5-47bd-8cdb-b1c1075b81a0",
+    "nodeId": "draft-variant-a506d93c-8fb5-47bd-8cdb-b1c1075b81a0",
+    "title": "新增 MCP 服务器",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-a506d93c-8fb5-47bd-8cdb-b1c1075b81a0",
+    "previewUrl": "https://p.superdesign.dev/draft/a506d93c-8fb5-47bd-8cdb-b1c1075b81a0",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "mcp-detail": {
+    "draftId": "f7deb7d6-5d5e-47d3-8cf9-476398cddfd3",
+    "nodeId": "draft-variant-f7deb7d6-5d5e-47d3-8cf9-476398cddfd3",
+    "title": "MCP 工具详情",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-f7deb7d6-5d5e-47d3-8cf9-476398cddfd3",
+    "previewUrl": "https://p.superdesign.dev/draft/f7deb7d6-5d5e-47d3-8cf9-476398cddfd3",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "skills": {
+    "draftId": "64d6881d-e26e-4142-83d3-a618945c8d57",
+    "nodeId": "draft-variant-64d6881d-e26e-4142-83d3-a618945c8d57",
+    "title": "技能列表",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-64d6881d-e26e-4142-83d3-a618945c8d57",
+    "previewUrl": "https://p.superdesign.dev/draft/64d6881d-e26e-4142-83d3-a618945c8d57",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "skill-edit": {
+    "draftId": "98b36326-16ef-4767-98d4-ea8c3148a92c",
+    "nodeId": "draft-variant-98b36326-16ef-4767-98d4-ea8c3148a92c",
+    "title": "编辑技能",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-98b36326-16ef-4767-98d4-ea8c3148a92c",
+    "previewUrl": "https://p.superdesign.dev/draft/98b36326-16ef-4767-98d4-ea8c3148a92c",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "skill-new": {
+    "draftId": "1f70527d-d775-476a-ae83-b6bb7d259f03",
+    "nodeId": "draft-variant-1f70527d-d775-476a-ae83-b6bb7d259f03",
+    "title": "新建技能",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-1f70527d-d775-476a-ae83-b6bb7d259f03",
+    "previewUrl": "https://p.superdesign.dev/draft/1f70527d-d775-476a-ae83-b6bb7d259f03",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "permissions": {
+    "draftId": "75d415f1-d22d-43f8-9ab5-6e744e6435e5",
+    "nodeId": "draft-variant-75d415f1-d22d-43f8-9ab5-6e744e6435e5",
+    "title": "权限记录",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-75d415f1-d22d-43f8-9ab5-6e744e6435e5",
+    "previewUrl": "https://p.superdesign.dev/draft/75d415f1-d22d-43f8-9ab5-6e744e6435e5",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "permission-detail": {
+    "draftId": "bd6064e1-e266-481a-af8d-cbd5085dbc12",
+    "nodeId": "draft-variant-bd6064e1-e266-481a-af8d-cbd5085dbc12",
+    "title": "授权详情与撤销",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-bd6064e1-e266-481a-af8d-cbd5085dbc12",
+    "previewUrl": "https://p.superdesign.dev/draft/bd6064e1-e266-481a-af8d-cbd5085dbc12",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "authorized-folders": {
+    "draftId": "c9da8a65-2c22-4fd2-a2c3-3bc8251964f8",
+    "nodeId": "draft-variant-c9da8a65-2c22-4fd2-a2c3-3bc8251964f8",
+    "title": "授权目录",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-c9da8a65-2c22-4fd2-a2c3-3bc8251964f8",
+    "previewUrl": "https://p.superdesign.dev/draft/c9da8a65-2c22-4fd2-a2c3-3bc8251964f8",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "folder-permission": {
+    "draftId": "ef36f426-fe66-4e70-a800-50ef05e22051",
+    "nodeId": "draft-variant-ef36f426-fe66-4e70-a800-50ef05e22051",
+    "title": "目录授权设置",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-ef36f426-fe66-4e70-a800-50ef05e22051",
+    "previewUrl": "https://p.superdesign.dev/draft/ef36f426-fe66-4e70-a800-50ef05e22051",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "conversations": {
+    "draftId": "fc4bd191-5026-4777-ad45-ea56a6cb8742",
+    "nodeId": "draft-variant-fc4bd191-5026-4777-ad45-ea56a6cb8742",
+    "title": "档案会话列表",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-fc4bd191-5026-4777-ad45-ea56a6cb8742",
+    "previewUrl": "https://p.superdesign.dev/draft/fc4bd191-5026-4777-ad45-ea56a6cb8742",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "conversation-select": {
+    "draftId": "4944c773-dafa-4fb9-903c-63b6f0eeca11",
+    "nodeId": "draft-variant-4944c773-dafa-4fb9-903c-63b6f0eeca11",
+    "title": "批量管理会话",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-4944c773-dafa-4fb9-903c-63b6f0eeca11",
+    "previewUrl": "https://p.superdesign.dev/draft/4944c773-dafa-4fb9-903c-63b6f0eeca11",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "move-conversations": {
+    "draftId": "4d319696-990a-4cbb-bb78-6de4fa6a86e3",
+    "nodeId": "draft-variant-4d319696-990a-4cbb-bb78-6de4fa6a86e3",
+    "title": "移动会话到档案",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-4d319696-990a-4cbb-bb78-6de4fa6a86e3",
+    "previewUrl": "https://p.superdesign.dev/draft/4d319696-990a-4cbb-bb78-6de4fa6a86e3",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "archived": {
+    "draftId": "f41023f6-58ca-4357-bd97-3d6984554b66",
+    "nodeId": "draft-variant-f41023f6-58ca-4357-bd97-3d6984554b66",
+    "title": "已归档会话",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-f41023f6-58ca-4357-bd97-3d6984554b66",
+    "previewUrl": "https://p.superdesign.dev/draft/f41023f6-58ca-4357-bd97-3d6984554b66",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "chat-settings": {
+    "draftId": "cca198e3-b738-4eb8-9f57-a139153d252d",
+    "nodeId": "draft-variant-cca198e3-b738-4eb8-9f57-a139153d252d",
+    "title": "会话设置",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-cca198e3-b738-4eb8-9f57-a139153d252d",
+    "previewUrl": "https://p.superdesign.dev/draft/cca198e3-b738-4eb8-9f57-a139153d252d",
+    "verified": true,
+    "currentVersion": 2
+  },
+  "chat-appearance": {
+    "draftId": "ac7f3dd9-ea88-4332-b280-788f02cda05a",
+    "nodeId": "draft-variant-ac7f3dd9-ea88-4332-b280-788f02cda05a",
+    "title": "会话外观",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-ac7f3dd9-ea88-4332-b280-788f02cda05a",
+    "previewUrl": "https://p.superdesign.dev/draft/ac7f3dd9-ea88-4332-b280-788f02cda05a",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "context": {
+    "draftId": "647c835c-5cfa-434f-a6f4-20162df41a73",
+    "nodeId": "draft-variant-647c835c-5cfa-434f-a6f4-20162df41a73",
+    "title": "上下文与压缩",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-647c835c-5cfa-434f-a6f4-20162df41a73",
+    "previewUrl": "https://p.superdesign.dev/draft/647c835c-5cfa-434f-a6f4-20162df41a73",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "context-preview": {
+    "draftId": "fa26915c-45ce-4e70-a614-1ebf07e02931",
+    "nodeId": "draft-variant-fa26915c-45ce-4e70-a614-1ebf07e02931",
+    "title": "上下文压缩预览",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-fa26915c-45ce-4e70-a614-1ebf07e02931",
+    "previewUrl": "https://p.superdesign.dev/draft/fa26915c-45ce-4e70-a614-1ebf07e02931",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "speech-settings": {
+    "draftId": "197cbecf-7df1-4243-961b-da44c6d6b1d2",
+    "nodeId": "draft-variant-197cbecf-7df1-4243-961b-da44c6d6b1d2",
+    "title": "朗读设置",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-197cbecf-7df1-4243-961b-da44c6d6b1d2",
+    "previewUrl": "https://p.superdesign.dev/draft/197cbecf-7df1-4243-961b-da44c6d6b1d2",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "translation": {
+    "draftId": "3a08c01f-151c-46b0-9086-a9b36d51d918",
+    "nodeId": "draft-variant-3a08c01f-151c-46b0-9086-a9b36d51d918",
+    "title": "消息翻译设置",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-3a08c01f-151c-46b0-9086-a9b36d51d918",
+    "previewUrl": "https://p.superdesign.dev/draft/3a08c01f-151c-46b0-9086-a9b36d51d918",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "usage": {
+    "draftId": "b83467c9-a441-4617-b009-d594f528b4dc",
+    "nodeId": "draft-variant-b83467c9-a441-4617-b009-d594f528b4dc",
+    "title": "会话用量",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-b83467c9-a441-4617-b009-d594f528b4dc",
+    "previewUrl": "https://p.superdesign.dev/draft/b83467c9-a441-4617-b009-d594f528b4dc",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "files": {
+    "draftId": "53cf3c74-66fc-49f5-bca2-b0ad4bada20c",
+    "nodeId": "draft-variant-53cf3c74-66fc-49f5-bca2-b0ad4bada20c",
+    "title": "档案文件",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-53cf3c74-66fc-49f5-bca2-b0ad4bada20c",
+    "previewUrl": "https://p.superdesign.dev/draft/53cf3c74-66fc-49f5-bca2-b0ad4bada20c",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "file-folder": {
+    "draftId": "4a77133c-2280-437a-9f1d-2d3cd0c69c23",
+    "nodeId": "draft-variant-4a77133c-2280-437a-9f1d-2d3cd0c69c23",
+    "title": "文件夹内容",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-4a77133c-2280-437a-9f1d-2d3cd0c69c23",
+    "previewUrl": "https://p.superdesign.dev/draft/4a77133c-2280-437a-9f1d-2d3cd0c69c23",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "file-preview": {
+    "draftId": "5f631e88-ea35-4532-9479-189865d6726f",
+    "nodeId": "draft-variant-5f631e88-ea35-4532-9479-189865d6726f",
+    "title": "文件解析预览",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-5f631e88-ea35-4532-9479-189865d6726f",
+    "previewUrl": "https://p.superdesign.dev/draft/5f631e88-ea35-4532-9479-189865d6726f",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "file-editor": {
+    "draftId": "023e8c06-aba7-4600-9d9b-197604070f15",
+    "nodeId": "draft-variant-023e8c06-aba7-4600-9d9b-197604070f15",
+    "title": "文本文件编辑",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-023e8c06-aba7-4600-9d9b-197604070f15",
+    "previewUrl": "https://p.superdesign.dev/draft/023e8c06-aba7-4600-9d9b-197604070f15",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "file-new": {
+    "draftId": "0e1a6b84-ef38-4ed6-800a-2cebad7cbd03",
+    "nodeId": "draft-variant-0e1a6b84-ef38-4ed6-800a-2cebad7cbd03",
+    "title": "新建文本文件",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-0e1a6b84-ef38-4ed6-800a-2cebad7cbd03",
+    "previewUrl": "https://p.superdesign.dev/draft/0e1a6b84-ef38-4ed6-800a-2cebad7cbd03",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "file-conflict": {
+    "draftId": "7703feb4-cbb4-4a65-b77c-31e2b13a607b",
+    "nodeId": "draft-variant-7703feb4-cbb4-4a65-b77c-31e2b13a607b",
+    "title": "文件保存冲突",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-7703feb4-cbb4-4a65-b77c-31e2b13a607b",
+    "previewUrl": "https://p.superdesign.dev/draft/7703feb4-cbb4-4a65-b77c-31e2b13a607b",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "file-select": {
+    "draftId": "921eb1d1-5f1e-4454-8cca-6cd1e82bfabf",
+    "nodeId": "draft-variant-921eb1d1-5f1e-4454-8cca-6cd1e82bfabf",
+    "title": "文件批量选择",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-921eb1d1-5f1e-4454-8cca-6cd1e82bfabf",
+    "previewUrl": "https://p.superdesign.dev/draft/921eb1d1-5f1e-4454-8cca-6cd1e82bfabf",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "image-viewer": {
+    "draftId": "2a5a54d3-ddeb-4664-a081-28bdee27f329",
+    "nodeId": "draft-variant-2a5a54d3-ddeb-4664-a081-28bdee27f329",
+    "title": "图片查看",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-2a5a54d3-ddeb-4664-a081-28bdee27f329",
+    "previewUrl": "https://p.superdesign.dev/draft/2a5a54d3-ddeb-4664-a081-28bdee27f329",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "attachments": {
+    "draftId": "3b1fed92-976f-48ea-9fe1-ca44206566d3",
+    "nodeId": "draft-variant-3b1fed92-976f-48ea-9fe1-ca44206566d3",
+    "title": "会话附件",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-3b1fed92-976f-48ea-9fe1-ca44206566d3",
+    "previewUrl": "https://p.superdesign.dev/draft/3b1fed92-976f-48ea-9fe1-ca44206566d3",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "attachment-add": {
+    "draftId": "87ef5134-d503-4282-809c-0b558b61d26f",
+    "nodeId": "draft-variant-87ef5134-d503-4282-809c-0b558b61d26f",
+    "title": "添加附件",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-87ef5134-d503-4282-809c-0b558b61d26f",
+    "previewUrl": "https://p.superdesign.dev/draft/87ef5134-d503-4282-809c-0b558b61d26f",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "attachment-preview": {
+    "draftId": "9f9e4300-a226-4ad0-9def-18c227de4a5e",
+    "nodeId": "draft-variant-9f9e4300-a226-4ad0-9def-18c227de4a5e",
+    "title": "附件发送前预览",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-9f9e4300-a226-4ad0-9def-18c227de4a5e",
+    "previewUrl": "https://p.superdesign.dev/draft/9f9e4300-a226-4ad0-9def-18c227de4a5e",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "attachment-settings": {
+    "draftId": "709fe460-ca5a-484a-8ae4-0b801bb6c872",
+    "nodeId": "draft-variant-709fe460-ca5a-484a-8ae4-0b801bb6c872",
+    "title": "附件处理设置",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-709fe460-ca5a-484a-8ae4-0b801bb6c872",
+    "previewUrl": "https://p.superdesign.dev/draft/709fe460-ca5a-484a-8ae4-0b801bb6c872",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "appearance": {
+    "draftId": "0f09e4aa-30a9-4cc1-8758-a916f6757347",
+    "nodeId": "draft-variant-0f09e4aa-30a9-4cc1-8758-a916f6757347",
+    "title": "主题与强调色",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-0f09e4aa-30a9-4cc1-8758-a916f6757347",
+    "previewUrl": "https://p.superdesign.dev/draft/0f09e4aa-30a9-4cc1-8758-a916f6757347",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "general": {
+    "draftId": "f3a7aa51-1a52-48e2-b4a2-7599d17787c1",
+    "nodeId": "draft-variant-f3a7aa51-1a52-48e2-b4a2-7599d17787c1",
+    "title": "通用设置",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-f3a7aa51-1a52-48e2-b4a2-7599d17787c1",
+    "previewUrl": "https://p.superdesign.dev/draft/f3a7aa51-1a52-48e2-b4a2-7599d17787c1",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "default-appearance": {
+    "draftId": "1501f8ec-8286-4b08-bc21-91667def1c95",
+    "nodeId": "draft-variant-1501f8ec-8286-4b08-bc21-91667def1c95",
+    "title": "默认会话外观",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-1501f8ec-8286-4b08-bc21-91667def1c95",
+    "previewUrl": "https://p.superdesign.dev/draft/1501f8ec-8286-4b08-bc21-91667def1c95",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "typography": {
+    "draftId": "427abe4e-7252-4e9f-8be6-62414ead1d37",
+    "nodeId": "draft-variant-427abe4e-7252-4e9f-8be6-62414ead1d37",
+    "title": "文字与可读性",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-427abe4e-7252-4e9f-8be6-62414ead1d37",
+    "previewUrl": "https://p.superdesign.dev/draft/427abe4e-7252-4e9f-8be6-62414ead1d37",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "workspace": {
+    "draftId": "6357cefa-3533-4124-b4aa-33cd70a5b48b",
+    "nodeId": "draft-variant-6357cefa-3533-4124-b4aa-33cd70a5b48b",
+    "title": "工作区位置",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-6357cefa-3533-4124-b4aa-33cd70a5b48b",
+    "previewUrl": "https://p.superdesign.dev/draft/6357cefa-3533-4124-b4aa-33cd70a5b48b",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "quick-messages": {
+    "draftId": "8f69ea77-700d-4d3a-aba1-41b5b3d0f233",
+    "nodeId": "draft-variant-8f69ea77-700d-4d3a-aba1-41b5b3d0f233",
+    "title": "快捷消息列表",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-8f69ea77-700d-4d3a-aba1-41b5b3d0f233",
+    "previewUrl": "https://p.superdesign.dev/draft/8f69ea77-700d-4d3a-aba1-41b5b3d0f233",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "quick-edit": {
+    "draftId": "394c5805-7020-4861-9184-cf822aecd213",
+    "nodeId": "draft-variant-394c5805-7020-4861-9184-cf822aecd213",
+    "title": "编辑快捷消息",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-394c5805-7020-4861-9184-cf822aecd213",
+    "previewUrl": "https://p.superdesign.dev/draft/394c5805-7020-4861-9184-cf822aecd213",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "quick-new": {
+    "draftId": "9e65dc03-d67f-4b53-9cb7-1a4f5a803837",
+    "nodeId": "draft-variant-9e65dc03-d67f-4b53-9cb7-1a4f5a803837",
+    "title": "新增快捷消息",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-9e65dc03-d67f-4b53-9cb7-1a4f5a803837",
+    "previewUrl": "https://p.superdesign.dev/draft/9e65dc03-d67f-4b53-9cb7-1a4f5a803837",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "regex-list": {
+    "draftId": "1fcc8bcd-642c-4baa-b07b-8eec7a382eff",
+    "nodeId": "draft-variant-1fcc8bcd-642c-4baa-b07b-8eec7a382eff",
+    "title": "正则转换器列表",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-1fcc8bcd-642c-4baa-b07b-8eec7a382eff",
+    "previewUrl": "https://p.superdesign.dev/draft/1fcc8bcd-642c-4baa-b07b-8eec7a382eff",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "regex-edit": {
+    "draftId": "09f8da73-c974-464e-95c3-a2c75b2ed4eb",
+    "nodeId": "draft-variant-09f8da73-c974-464e-95c3-a2c75b2ed4eb",
+    "title": "编辑正则规则",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-09f8da73-c974-464e-95c3-a2c75b2ed4eb",
+    "previewUrl": "https://p.superdesign.dev/draft/09f8da73-c974-464e-95c3-a2c75b2ed4eb",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "regex-new": {
+    "draftId": "1071a534-ab1e-4ef8-82f4-8c5a2a51d515",
+    "nodeId": "draft-variant-1071a534-ab1e-4ef8-82f4-8c5a2a51d515",
+    "title": "新增正则规则",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-1071a534-ab1e-4ef8-82f4-8c5a2a51d515",
+    "previewUrl": "https://p.superdesign.dev/draft/1071a534-ab1e-4ef8-82f4-8c5a2a51d515",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "regex-test": {
+    "draftId": "48ef5611-e423-4971-ba3f-c22f02c318c3",
+    "nodeId": "draft-variant-48ef5611-e423-4971-ba3f-c22f02c318c3",
+    "title": "正则测试",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-48ef5611-e423-4971-ba3f-c22f02c318c3",
+    "previewUrl": "https://p.superdesign.dev/draft/48ef5611-e423-4971-ba3f-c22f02c318c3",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "storage": {
+    "draftId": "b9ed576e-190b-41ea-acd7-2d31f59c1b15",
+    "nodeId": "draft-variant-b9ed576e-190b-41ea-acd7-2d31f59c1b15",
+    "title": "存储空间",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-b9ed576e-190b-41ea-acd7-2d31f59c1b15",
+    "previewUrl": "https://p.superdesign.dev/draft/b9ed576e-190b-41ea-acd7-2d31f59c1b15",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "storage-clean": {
+    "draftId": "dd31da26-6513-4491-b87a-86abf819fdf6",
+    "nodeId": "draft-variant-dd31da26-6513-4491-b87a-86abf819fdf6",
+    "title": "清理空间确认",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-dd31da26-6513-4491-b87a-86abf819fdf6",
+    "previewUrl": "https://p.superdesign.dev/draft/dd31da26-6513-4491-b87a-86abf819fdf6",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "trash": {
+    "draftId": "8d6951f7-33be-4092-93e7-203cc7cbd872",
+    "nodeId": "draft-variant-8d6951f7-33be-4092-93e7-203cc7cbd872",
+    "title": "回收区",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-8d6951f7-33be-4092-93e7-203cc7cbd872",
+    "previewUrl": "https://p.superdesign.dev/draft/8d6951f7-33be-4092-93e7-203cc7cbd872",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "trash-detail": {
+    "draftId": "1ea2acec-c736-4668-b009-6d275b4698a7",
+    "nodeId": "draft-variant-1ea2acec-c736-4668-b009-6d275b4698a7",
+    "title": "回收项详情",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-1ea2acec-c736-4668-b009-6d275b4698a7",
+    "previewUrl": "https://p.superdesign.dev/draft/1ea2acec-c736-4668-b009-6d275b4698a7",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "backup": {
+    "draftId": "273af226-3458-4897-a7eb-ab459ea8875d",
+    "nodeId": "draft-variant-273af226-3458-4897-a7eb-ab459ea8875d",
+    "title": "备份与恢复",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-273af226-3458-4897-a7eb-ab459ea8875d",
+    "previewUrl": "https://p.superdesign.dev/draft/273af226-3458-4897-a7eb-ab459ea8875d",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "backup-select": {
+    "draftId": "2b6b645f-7e96-4735-beef-4e6c4e00e1de",
+    "nodeId": "draft-variant-2b6b645f-7e96-4735-beef-4e6c4e00e1de",
+    "title": "选择恢复文件",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-2b6b645f-7e96-4735-beef-4e6c4e00e1de",
+    "previewUrl": "https://p.superdesign.dev/draft/2b6b645f-7e96-4735-beef-4e6c4e00e1de",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "backup-progress": {
+    "draftId": "b31782e8-a429-4503-95ad-80b88c0999b0",
+    "nodeId": "draft-variant-b31782e8-a429-4503-95ad-80b88c0999b0",
+    "title": "备份进度与结果",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-b31782e8-a429-4503-95ad-80b88c0999b0",
+    "previewUrl": "https://p.superdesign.dev/draft/b31782e8-a429-4503-95ad-80b88c0999b0",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "backup-create": {
+    "draftId": "c288b7ee-5a60-4ae0-9eff-cfcf4100c039",
+    "nodeId": "draft-variant-c288b7ee-5a60-4ae0-9eff-cfcf4100c039",
+    "title": "创建备份",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-c288b7ee-5a60-4ae0-9eff-cfcf4100c039",
+    "previewUrl": "https://p.superdesign.dev/draft/c288b7ee-5a60-4ae0-9eff-cfcf4100c039",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "backup-preview": {
+    "draftId": "31bc0cf8-3d70-477d-8607-eddcd715ab1d",
+    "nodeId": "draft-variant-31bc0cf8-3d70-477d-8607-eddcd715ab1d",
+    "title": "备份检查与预览",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-31bc0cf8-3d70-477d-8607-eddcd715ab1d",
+    "previewUrl": "https://p.superdesign.dev/draft/31bc0cf8-3d70-477d-8607-eddcd715ab1d",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "restore-result": {
+    "draftId": "0465e019-855c-4d30-ac92-522256022b74",
+    "nodeId": "draft-variant-0465e019-855c-4d30-ac92-522256022b74",
+    "title": "恢复完成",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-0465e019-855c-4d30-ac92-522256022b74",
+    "previewUrl": "https://p.superdesign.dev/draft/0465e019-855c-4d30-ac92-522256022b74",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "restore-confirm": {
+    "draftId": "993f85f4-59e4-4cab-911b-a6120c84d06f",
+    "nodeId": "draft-variant-993f85f4-59e4-4cab-911b-a6120c84d06f",
+    "title": "恢复二次确认",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-993f85f4-59e4-4cab-911b-a6120c84d06f",
+    "previewUrl": "https://p.superdesign.dev/draft/993f85f4-59e4-4cab-911b-a6120c84d06f",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "data": {
+    "draftId": "e392bc39-7bc8-42e2-a47a-d4b4d3693c27",
+    "nodeId": "draft-variant-e392bc39-7bc8-42e2-a47a-d4b4d3693c27",
+    "title": "数据导入与导出",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-e392bc39-7bc8-42e2-a47a-d4b4d3693c27",
+    "previewUrl": "https://p.superdesign.dev/draft/e392bc39-7bc8-42e2-a47a-d4b4d3693c27",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "data-export": {
+    "draftId": "29fa8733-3793-42ff-ba00-239a5b7e8a4d",
+    "nodeId": "draft-variant-29fa8733-3793-42ff-ba00-239a5b7e8a4d",
+    "title": "导出档案",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-29fa8733-3793-42ff-ba00-239a5b7e8a4d",
+    "previewUrl": "https://p.superdesign.dev/draft/29fa8733-3793-42ff-ba00-239a5b7e8a4d",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "conversation-export": {
+    "draftId": "60f57543-baab-49c8-b2bf-3b97482d076a",
+    "nodeId": "draft-variant-60f57543-baab-49c8-b2bf-3b97482d076a",
+    "title": "导出会话",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-60f57543-baab-49c8-b2bf-3b97482d076a",
+    "previewUrl": "https://p.superdesign.dev/draft/60f57543-baab-49c8-b2bf-3b97482d076a",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "data-import-preview": {
+    "draftId": "fe76d533-89bd-4d09-a4a1-337e54135403",
+    "nodeId": "draft-variant-fe76d533-89bd-4d09-a4a1-337e54135403",
+    "title": "迁移数据检查",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-fe76d533-89bd-4d09-a4a1-337e54135403",
+    "previewUrl": "https://p.superdesign.dev/draft/fe76d533-89bd-4d09-a4a1-337e54135403",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "about": {
+    "draftId": "59dba070-3401-45e2-b357-8d59efc07a9a",
+    "nodeId": "draft-variant-59dba070-3401-45e2-b357-8d59efc07a9a",
+    "title": "关于言枢",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-59dba070-3401-45e2-b357-8d59efc07a9a",
+    "previewUrl": "https://p.superdesign.dev/draft/59dba070-3401-45e2-b357-8d59efc07a9a",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "debug": {
+    "draftId": "dcea16dd-f7e3-4b83-a5a1-cdaf00817721",
+    "nodeId": "draft-variant-dcea16dd-f7e3-4b83-a5a1-cdaf00817721",
+    "title": "诊断日志",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-dcea16dd-f7e3-4b83-a5a1-cdaf00817721",
+    "previewUrl": "https://p.superdesign.dev/draft/dcea16dd-f7e3-4b83-a5a1-cdaf00817721",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "offline": {
+    "draftId": "ea952608-19e1-4379-9c32-aebda35f49ae",
+    "nodeId": "draft-variant-ea952608-19e1-4379-9c32-aebda35f49ae",
+    "title": "会话 · 离线",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-ea952608-19e1-4379-9c32-aebda35f49ae",
+    "previewUrl": "https://p.superdesign.dev/draft/ea952608-19e1-4379-9c32-aebda35f49ae",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "home-empty": {
+    "draftId": "6a38bf34-d030-4916-b51f-5568bc62b105",
+    "nodeId": "draft-variant-6a38bf34-d030-4916-b51f-5568bc62b105",
+    "title": "工作区 · 无会话",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-6a38bf34-d030-4916-b51f-5568bc62b105",
+    "previewUrl": "https://p.superdesign.dev/draft/6a38bf34-d030-4916-b51f-5568bc62b105",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "profiles-empty": {
+    "draftId": "da9a8b3d-3543-43b1-88c9-d4773fd1251d",
+    "nodeId": "draft-variant-da9a8b3d-3543-43b1-88c9-d4773fd1251d",
+    "title": "档案 · 空态",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-da9a8b3d-3543-43b1-88c9-d4773fd1251d",
+    "previewUrl": "https://p.superdesign.dev/draft/da9a8b3d-3543-43b1-88c9-d4773fd1251d",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "memory-empty": {
+    "draftId": "efa3df92-3c34-498e-be7e-71fd6670641c",
+    "nodeId": "draft-variant-efa3df92-3c34-498e-be7e-71fd6670641c",
+    "title": "记忆 · 空态",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-efa3df92-3c34-498e-be7e-71fd6670641c",
+    "previewUrl": "https://p.superdesign.dev/draft/efa3df92-3c34-498e-be7e-71fd6670641c",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "files-empty": {
+    "draftId": "1841adaf-fea7-408c-9291-edc8401f4c7a",
+    "nodeId": "draft-variant-1841adaf-fea7-408c-9291-edc8401f4c7a",
+    "title": "文件 · 空态",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-1841adaf-fea7-408c-9291-edc8401f4c7a",
+    "previewUrl": "https://p.superdesign.dev/draft/1841adaf-fea7-408c-9291-edc8401f4c7a",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "context-limit": {
+    "draftId": "b5150d7b-aa6d-4f95-a9cb-fb5d7f3d6253",
+    "nodeId": "draft-variant-b5150d7b-aa6d-4f95-a9cb-fb5d7f3d6253",
+    "title": "会话 · 上下文将满",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-b5150d7b-aa6d-4f95-a9cb-fb5d7f3d6253",
+    "previewUrl": "https://p.superdesign.dev/draft/b5150d7b-aa6d-4f95-a9cb-fb5d7f3d6253",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "coverage": {
+    "draftId": "0e36641e-5702-4622-8f7a-70be9a6dc6d5",
+    "nodeId": "draft-variant-0e36641e-5702-4622-8f7a-70be9a6dc6d5",
+    "title": "完整页面覆盖清单",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-0e36641e-5702-4622-8f7a-70be9a6dc6d5",
+    "previewUrl": "https://p.superdesign.dev/draft/0e36641e-5702-4622-8f7a-70be9a6dc6d5",
+    "verified": true,
+    "currentVersion": 1
+  },
+  "profile-persona": {
+    "draftId": "4791563b-24eb-4487-8c84-595de79e9f03",
+    "nodeId": "draft-variant-4791563b-24eb-4487-8c84-595de79e9f03",
+    "title": "编辑人设",
+    "projectUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e",
+    "nodeUrl": "https://superdesign.dev/teams/2a786f92-dde2-44dd-b17c-8f6c94277721/projects/45c1ba6a-9e6c-4e31-9708-a7d69d04938e?node=draft-variant-4791563b-24eb-4487-8c84-595de79e9f03",
+    "previewUrl": "https://p.superdesign.dev/draft/4791563b-24eb-4487-8c84-595de79e9f03",
+    "verified": true,
+    "currentVersion": 1
+  }
+}

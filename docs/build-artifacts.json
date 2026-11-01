@@ -1,0 +1,23 @@
+﻿[
+  {
+    "path": "src\\Yanshuai.Messages\\AppPackages\\Yanshuai.Messages_1.2.7.0_x86_Debug_Test\\Yanshuai.Messages_1.2.7.0_x86_Debug.appx",
+    "version": "1.2.7.0",
+    "architecture": "x86",
+    "bytes": 8634627,
+    "sha256": "E2C8D090168F4E87F206422E7375CABBC0C5BE9BFA470619186D42084DBE9576"
+  },
+  {
+    "path": "src\\Yanshuai.Messages\\AppPackages\\Yanshuai.Messages_1.3.17.0_ARM_Test\\Yanshuai.Messages_1.3.17.0_ARM.appx",
+    "version": "1.3.17.0",
+    "architecture": "arm",
+    "bytes": 8854610,
+    "sha256": "39E09526A06821EF7FC552BCE013DD9C1DAE4C7A9DA99B35E267DF9A4D935C68"
+  },
+  {
+    "path": "src\\Yanshuai.Messages\\AppPackages\\Yanshuai.Messages_1.3.17.0_ARM_Test\\Yanshuai.Messages_1.3.17.0_ARM.appxbundle",
+    "version": "1.3.17.0",
+    "architecture": "arm-bundle",
+    "bytes": 8857738,
+    "sha256": "41C1AEF26BFB55B7DFE5E587B3A40E68DA9EF517BF150D2C85E19BC47FED0C80"
+  }
+]

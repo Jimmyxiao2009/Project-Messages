@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>言枢 Messages · W10M / Modern 界面设计稿 v2</title>
+<link rel="stylesheet" href="w10m.css">
+<style>
+  /* 画廊外壳（不属于应用界面） */
+  html, body { margin:0; padding:0; }
+  body { background:#0E0E0E; color:#E6E6E6; font-family:"Segoe UI","Microsoft YaHei UI","Microsoft YaHei",sans-serif; font-size:14px; line-height:1.5; }
+  body.light { background:#E4E4E4; color:#1A1A1A; }
+  body.noscroll { overflow:hidden; }
+  a { color:inherit; }
+  code { font-family:Consolas,monospace; font-size:12px; color:#8FC3EE; }
+  .light code { color:#005A9E; }
+  .page { max-width:1680px; margin:0 auto; padding:28px 28px 80px; }
+  header h1 { font-size:34px; font-weight:300; margin:0 0 4px; letter-spacing:.2px; }
+  header .lede { color:#9A9A9A; margin:0 0 18px; max-width:1100px; }
+  .light header .lede { color:#555; }
+
+  .gbar { position:sticky; top:0; z-index:50; display:flex; flex-wrap:wrap; gap:18px; align-items:center; padding:10px 28px; background:rgba(14,14,14,.94); border-bottom:1px solid #222; backdrop-filter:blur(6px); }
+  .light .gbar { background:rgba(228,228,228,.94); border-color:#ccc; }
+  .gbar .g { display:flex; gap:4px; align-items:center; }
+  .gbar .g > span:first-child { color:#888; margin-right:6px; font-size:12px; }
+  .gbar button { font:inherit; font-size:13px; height:30px; padding:0 12px; background:#262626; color:#ddd; border:2px solid transparent; cursor:pointer; }
+  .light .gbar button { background:#d2d2d2; color:#222; }
+  .gbar button.on { border-color:#ddd; }
+  .light .gbar button.on { border-color:#222; }
+  .gbar button.sw { width:30px; padding:0; }
+  .gbar .count { margin-left:auto; color:#888; font-size:12px; }
+
+  .toc { display:flex; flex-wrap:wrap; gap:6px 16px; margin:0 0 22px; font-size:13px; }
+  .toc a { text-decoration:none; color:#BBB; }
+  .light .toc a { color:#333; }
+  .toc a small { color:#777; }
+
+  details.spec { border:1px solid #2A2A2A; margin:0 0 14px; max-width:1500px; background:#141414; }
+  .light details.spec { background:#F2F2F2; border-color:#ccc; }
+  details.spec summary { cursor:pointer; padding:10px 14px; font-weight:600; color:#8FC3EE; }
+  .light details.spec summary { color:#005A9E; }
+  details.spec table { width:100%; border-collapse:collapse; }
+  details.spec td, details.spec th { border-top:1px solid #222; padding:7px 12px; vertical-align:top; font-size:13px; text-align:left; }
+  .light details.spec td, .light details.spec th { border-color:#d6d6d6; }
+  details.spec th { color:#888; font-weight:600; background:#181818; }
+  .light details.spec th { background:#e8e8e8; }
+  details.spec td.k { white-space:nowrap; color:#FFF; }
+  .light details.spec td.k { color:#000; }
+  details.spec .links a { display:inline-block; margin:0 10px 2px 0; text-decoration:none; color:#8FC3EE; }
+  .light details.spec .links a { color:#005A9E; }
+  details.spec .miss { color:#FF99A4; margin-right:10px; }
+  .sw { display:inline-block; width:14px; height:14px; vertical-align:-2px; border:1px solid #444; margin-right:6px; }
+  details.spec .body2 { padding:6px 14px 14px; color:#BBB; }
+  .light details.spec .body2 { color:#333; }
+
+  .grp { margin-top:44px; }
+  .grp h2 { font-size:24px; font-weight:350; margin:0 0 4px; display:flex; align-items:baseline; gap:12px; }
+  .grp h2 span { color:#777; font-size:14px; font-family:Consolas,monospace; }
+  .grp h2 small { color:#777; font-size:13px; }
+  .gdesc { color:#9A9A9A; margin:0 0 18px; max-width:1100px; }
+  .light .gdesc { color:#555; }
+  .grid { display:flex; flex-wrap:wrap; gap:40px 30px; align-items:flex-start; }
+  figure.shot { margin:0; width:var(--pw); content-visibility:auto; contain-intrinsic-size:var(--pw) calc(var(--ph) + 160px); }
+  figure.shot.landf { width:var(--ph); }
+  figure.shot .phone { cursor:zoom-in; }
+  figcaption { margin-top:14px; font-size:12.5px; color:#9A9A9A; line-height:1.5; }
+  .light figcaption { color:#555; }
+  figcaption b { display:block; color:#EEE; font-size:14px; font-weight:600; }
+  .light figcaption b { color:#111; }
+  figcaption code { font-size:11px; }
+  figcaption .src { margin-top:2px; color:#777; }
+  figcaption ul { margin:6px 0 0; padding-left:16px; }
+  figcaption li { margin-bottom:2px; }
+
+  #viewer { position:fixed; inset:0; z-index:100; background:rgba(0,0,0,.86); display:none; align-items:center; justify-content:center; gap:40px; }
+  .light #viewer { background:rgba(200,200,200,.92); }
+  #viewer.open { display:flex; }
+  #stage { flex:none; }
+  #vcap { width:340px; max-height:90vh; overflow:auto; font-size:13px; color:#BBB; }
+  .light #vcap { color:#333; }
+  #vcap b { display:block; font-size:20px; font-weight:350; color:#FFF; margin-bottom:2px; }
+  .light #vcap b { color:#000; }
+  #vcap ul { padding-left:16px; }
+  #vcap .vnav { display:flex; justify-content:space-between; margin-top:16px; user-select:none; }
+  #vcap .vnav span[data-step] { cursor:pointer; color:#8FC3EE; }
+  .light #vcap .vnav span[data-step] { color:#005A9E; }
+  #vcap .vtip { color:#777; font-size:12px; }
+  #vclose { position:fixed; top:14px; right:20px; font-size:26px; color:#CCC; cursor:pointer; font-family:"Segoe MDL2 Assets","Segoe Fluent Icons"; }
+  .light #vclose { color:#333; }
+  .app.enter > * { animation:enter .28s cubic-bezier(.1,.9,.2,1) both; }
+  @keyframes enter { from { transform:translateY(28px); opacity:0 } to { transform:none; opacity:1 } }
+  #flash { position:fixed; left:50%; bottom:40px; transform:translateX(-50%); background:#2B2B2B; color:#fff; padding:8px 16px; font-size:13px; opacity:0; transition:opacity .2s; z-index:200; pointer-events:none; }
+  #flash.on { opacity:1; }
+  body.bare header, body.bare details.spec, body.bare .toc, body.bare .gbar { display:none; }
+  body.bare .grp { margin-top:0; }
+  body.audit figure.shot { content-visibility:visible; }
+  body.nocap figcaption .src, body.nocap figcaption ul, body.nocap figcaption code, body.nocap .gdesc { display:none; }
+  body.nocap .grid { gap:16px 30px; }
+  body.nocap .page { max-width:none; padding:12px 20px; }
+  body.nocap figcaption { margin-top:6px; }
+  #audit { margin:0; padding:12px 28px; font:12px/1.5 Consolas,monospace; color:#fff; background:#300; white-space:pre-wrap; }
+  @media (max-width:820px) { #vcap { display:none; } .page { padding:16px; } }
+</style>
+</head>
+<body>
+
+<div class="gbar">
+  <div class="g"><span>主题</span><button data-theme="dark" class="on">深色</button><button data-theme="light">浅色</button></div>
+  <div class="g"><span>系统强调色</span>
+    <button class="sw on" data-accent="#0078D7" title="蓝 #0078D7"></button>
+    <button class="sw" data-accent="#E81123" title="红 #E81123"></button>
+    <button class="sw" data-accent="#10893E" title="绿 #10893E"></button>
+    <button class="sw" data-accent="#8764B8" title="紫 #8764B8"></button>
+    <button class="sw" data-accent="#CA5010" title="橙 #CA5010"></button>
+    <button class="sw" data-accent="#00B7C3" title="青 #00B7C3"></button>
+  </div>
+  <div class="g"><span>屏幕</span><button data-w="320">320×568</button><button data-w="360" class="on">360×640</button><button data-w="430">430×764</button></div>
+  <div class="g"><span>导航栏</span><button data-nav="sw" class="on">软件（950）</button><button data-nav="hw">硬件按键</button></div>
+  <span class="count">共 <b id="count">0</b> 屏 · 点任一手机进入交互预览</span>
+</div>
+
+<div class="page">
+<header>
+  <h1>言枢 Messages · W10M / Modern 界面设计稿 v2</h1>
+  <p class="lede">
+    依据 <code>docs/UI-HANDOFF.md</code> 与 <code>docs/设计稿.md</code>，按 Windows 10 Mobile（15254）的 Modern 设计语言重画全部页面与关键状态。
+    画板 360×640 有效像素，<b>包含</b>状态栏（24）与软件导航栏（48），所以应用实际可用高度是 568；工具栏可切 320 / 430 宽、硬件按键机型、浅色主题与任意系统强调色。
+    只用系统字体（Segoe UI + Microsoft YaHei UI）与 Segoe MDL2 Assets 图标，不引入任何第三方库。旧稿 <code>design/prototype</code> 与 <code>design/modern-mobile</code> 均未改动。
+  </p>
+</header>
+
+<details class="spec" open>
+  <summary>W10M / Modern 规范落点（XAML 实现时照这张表）</summary>
+  <table>
+    <tr><th>项</th><th>本稿做法</th><th>落到 XAML</th></tr>
+    <tr><td class="k">返回</td><td>手机上<b>不画返回箭头</b>，一律走系统导航栏 / 硬件返回键；优先级：关弹层 → 退会话 → 收搜索 → 交给系统。</td><td><code>SystemNavigationManager.BackRequested</code>；桌面用 <code>AppViewBackButtonVisibility.Visible</code> 在标题栏显示返回。</td></tr>
+    <tr><td class="k">根导航</td><td>三页 Pivot：小标题「言枢」+ 24px SemiLight 头。<b>选中的头轮转到最左</b>，未选的用 MidBrush，无下划线。</td><td>系统 <code>Pivot</code> 默认样式（15254 本来就是轮转、无下划线），只改 <code>Foreground</code>。</td></tr>
+    <tr><td class="k">子页标题</td><td>12px 上标签（所属档案 / 上级）+ 24px SemiLight 页名，不加色块。会话页例外：48px Chrome 顶栏，省高度。</td><td>新增样式 <code>PageOverline</code> / <code>PageTitle</code>；会话顶栏沿用 <code>TopBarHeight 48</code>。</td></tr>
+    <tr><td class="k">底部应用栏</td><td>CommandBar 48 高、主命令 ≤ 3 个靠右、标签只在展开时出现，二级命令在展开后从上方弹出。会话页没有 CommandBar。</td><td><code>CommandBar ClosedDisplayMode="Compact"</code>；超出的全进 <code>SecondaryCommands</code>（主命令不会自动溢流）。</td></tr>
+    <tr><td class="k">控件形态</td><td>全部直角。按钮 BaseLow 底；TextBox 2px 边框，聚焦<b>白底黑字 + 强调色边</b>；ToggleSwitch 44×20 + 「开 / 关」；CheckBox 20px 方框；Slider 8×24 竖条滑块；ProgressBar 4px；不定进度用五点流动，ProgressRing 用点环。</td><td>14393 的 <code>Control</code> 没有 <code>CornerRadius</code>，系统控件天然直角；<code>Design.xaml</code> 里 <code>CardCornerRadius</code> / <code>ControlCornerRadius</code> 建议改 0，与控件一致。</td></tr>
+    <tr><td class="k">设置项</td><td>开关一律「标题在上、开关在下」，不再用负边距把 ToggleSwitch 塞到右边（旧项目的 <code>Margin="0,0,-90,0"</code>）。ToggleSwitch 只用于立即生效的设置；要按按钮才提交的一次性选项（导入选项、备份内容、分支选项）用 CheckBox。</td><td><code>ToggleSwitch.Header</code> + 说明 <code>TextBlock</code>。</td></tr>
+    <tr><td class="k">列表行</td><td>无 chevron、无分隔线；靠标题 + 副标题（写当前值）表达可点；按下有倾斜反馈。状态只靠 4px 左色条：警告=需要你处理、强调=运行中、错误=失败。</td><td><code>ListView</code> 默认 <code>ListViewItemPresenter</code> 自带 <code>PointerDownThemeAnimation</code>。</td></tr>
+    <tr><td class="k">弹层</td><td>ContentDialog 贴顶全宽、按钮等分；MenuFlyout 全宽；下拉选项多时进全屏选择页（20px 大字条目，选中项强调色字）。</td><td><code>ContentDialog</code>、<code>MenuFlyout</code>、<code>ComboBox</code>（手机上 &gt; 5 项自动全屏）/ <code>ListPickerFlyout</code>。</td></tr>
+    <tr><td class="k">后台进度</td><td>生成中、备份中等在状态栏显示五点进度 + 文字；页面里只放行内细进度，不用遮罩挡屏。</td><td><code>StatusBar.ProgressIndicator</code>（先 <code>ApiInformation.IsTypePresent</code>）；桌面退化为页内 <code>ProgressBar</code>。</td></tr>
+    <tr><td class="k">软键盘</td><td>依赖整页上移；编辑类页面在键盘弹出时把「保存」提到标题行，底部固定按钮不被挡。</td><td><code>InputPane.Showing / Hiding</code> 只切换「保存」位置，不改布局结构。</td></tr>
+    <tr><td class="k">字体与刻度</td><td>W10 type ramp：Caption 12 · Body 15 · Base 15 SemiBold · Subtitle 20 · Title 24 SemiLight · Subheader 34 Light。页边距 12（W10M 手机标准）。</td><td>见下表的令牌改动建议。</td></tr>
+    <tr><td class="k">颜色</td><td>单强调色；一屏只有一个实心强调色焦点（主按钮或用户气泡）。头像用强调色<b>柔底</b>，不抢焦点。浅色主题按系统浅色（白底、#E6E6E6 Chrome）。</td><td><code>ThemeDictionaries</code> 拆 Dark / Light；同文件内用 <code>{ThemeResource}</code>。</td></tr>
+  </table>
+</details>
+
+<details class="spec">
+  <summary>令牌对照（CSS 变量 ↔ Themes\Design.xaml）与改动建议</summary>
+  <table>
+    <tr><th>键</th><th>深色</th><th>浅色</th><th>说明</th></tr>
+    <tr><td class="k">BgBrush</td><td><i class="sw" style="background:#000"></i>#000000</td><td><i class="sw" style="background:#fff"></i>#FFFFFF</td><td>页面底</td></tr>
+    <tr><td class="k">ChromeLowBrush</td><td><i class="sw" style="background:#171717"></i>#171717</td><td><i class="sw" style="background:#F2F2F2"></i>#F2F2F2</td><td>各条底（分支 / 运行 / 朗读）、标记胶囊</td></tr>
+    <tr><td class="k">ChromeBrush</td><td><i class="sw" style="background:#1F1F1F"></i>#1F1F1F</td><td><i class="sw" style="background:#E6E6E6"></i>#E6E6E6</td><td>CommandBar、会话顶栏、输入区</td></tr>
+    <tr><td class="k">ChromeMidBrush</td><td><i class="sw" style="background:#2B2B2B"></i>#2B2B2B</td><td><i class="sw" style="background:#F2F2F2"></i>#F2F2F2</td><td>ContentDialog、MenuFlyout、附件芯片</td></tr>
+    <tr><td class="k">LowBrush</td><td>#333333</td><td>#CCCCCC</td><td>表格线、轨道底</td></tr>
+    <tr><td class="k">Text / SoftText / Mid / Faint</td><td>#FFF / #BDBDBD / #999 / #666</td><td>#000 / #333 / #666 / #999</td><td><code>FaintBrush</code> 只做装饰，不做正文</td></tr>
+    <tr><td class="k">Accent / AccentText / AccentSoft</td><td>系统色 / 提亮 55% / α 0x59</td><td>系统色 / 压暗 22% / α 0x59</td><td>启动时 <code>ThemeHelper.ApplyAccent</code> 计算，画廊顶部可切换验证</td></tr>
+    <tr><td class="k">Think / Warn / Err / Ok</td><td>#B4A0FF / #FFB900 / #E81123 / #6CCB5F</td><td>#6B4FBB / #FFB900 / #E81123 / #107C10</td><td>语义色</td></tr>
+    <tr><td class="k">＋ ControlFillBrush</td><td>#33FFFFFF</td><td>#33000000</td><td><b>建议新增</b>：按钮 / 快捷消息芯片底（W10 BaseLow）</td></tr>
+    <tr><td class="k">＋ ControlBorderBrush</td><td>#66FFFFFF</td><td>#66000000</td><td><b>建议新增</b>：TextBox / ComboBox 2px 边框（W10 BaseMediumLow）</td></tr>
+    <tr><td class="k">＋ FieldBrush / FocusFieldBrush</td><td>#66000000 / #FFFFFF</td><td>#66FFFFFF / #FFFFFF</td><td><b>建议新增</b>：输入框静止底 / 聚焦白底（<code>ComposerBox</code> 现在是 ChromeMid 底、无边框，建议改回系统形态）</td></tr>
+    <tr><td class="k">＋ WarnTextBrush</td><td>#FFB900</td><td>#9D5D00</td><td><b>建议新增</b>：浅色下警告文字要压暗才够对比度</td></tr>
+    <tr><td class="k">＋ QuoteBrush / BracketBrush</td><td>#DCA03C / #969696</td><td>#A8650F / #7A7A7A</td><td><b>建议新增</b>：引号「…」与括号（…）着色（档案外观可覆盖）</td></tr>
+    <tr><td class="k">＋ OverlayBrush</td><td>#99000000</td><td>#A6FFFFFF</td><td><b>建议新增</b>：弹层遮罩</td></tr>
+    <tr><td class="k">字号改动</td><td colspan="2">FontSizeBody 14→15 · FontSizeSubtitle 18→20 · FontSizeTitle 22→24 · FontSizeHeader 28→34</td><td>对齐 W10 type ramp；时间线正文已经是 15</td></tr>
+    <tr><td class="k">度量改动</td><td colspan="2">PagePadding 16→12 · CardCornerRadius 8→0 · ControlCornerRadius 4→0</td><td>W10M 手机页边距与直角</td></tr>
+  </table>
+</details>
+
+<details class="spec">
+  <summary>交接清单 → 页面覆盖（UI-HANDOFF §1.2 / §1.3 / §9 与 设计稿 §4–§6）</summary>
+  <div id="coverage"></div>
+</details>
+
+<nav class="toc" id="toc"></nav>
+<main id="gallery"></main>
+</div>
+
+<div id="viewer"><span id="vclose" title="关闭（Esc）">&#xE711;</span><div id="stage"></div><div id="vcap"></div></div>
+<div id="flash"></div>
+
+<script src="kit.js"></script>
+<script src="screens-1-start.js"></script>
+<script src="screens-2-chat.js"></script>
+<script src="screens-3-profile.js"></script>
+<script src="screens-4-model.js"></script>
+<script src="screens-5-content.js"></script>
+<script src="screens-6-data.js"></script>
+<script src="coverage.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

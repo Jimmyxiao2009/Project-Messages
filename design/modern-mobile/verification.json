@@ -1,0 +1,38 @@
+{
+  "pageCount": 140,
+  "groups": [
+    "01 / 开始与导航",
+    "02 / 对话与执行",
+    "03 / 审批与群聊",
+    "04 / 档案与人设",
+    "05 / 角色卡导入",
+    "06 / 模型与服务",
+    "07 / 记忆与提示词",
+    "08 / 工具与扩展",
+    "09 / 会话管理与文件",
+    "10 / 设置与数据",
+    "11 / 关于与诊断"
+  ],
+  "renderChecks": 140,
+  "interactionChecks": [
+    "root Pivot navigation",
+    "quick messages fill without sending",
+    "switch state persists",
+    "model selection and favorites",
+    "candidate switching changes reply",
+    "search with no matches",
+    "three-step card import",
+    "unsaved profile changes require confirmation",
+    "approval has rejection, one-time and remembered choices",
+    "full trust is session-only and resets on entry",
+    "restore requires acknowledgment",
+    "JSON validation catches invalid input",
+    "regex replacement",
+    "attachment enters composer",
+    "single accent and theme toggle",
+    "destructive operation has confirmation",
+    "all page overview renders"
+  ],
+  "failures": [],
+  "verificationLimit": "DOM logic and structure only. This session has no available browser surface for rendered visual or real keyboard QA."
+}

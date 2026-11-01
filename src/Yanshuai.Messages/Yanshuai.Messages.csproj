@@ -1,0 +1,149 @@
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <!--
+    言枢 Messages —— Windows 10 Mobile / 桌面通用 UWP 客户端
+
+    工具链与本机已验证的组合保持一致：VS2017 MSBuild 15 + Windows SDK 19041 + UWP 5.4.7。
+    不要升级 UWP 依赖、不要引入 WinUI 3 / Windows App SDK —— 目标设备是 Windows 10 Mobile，
+    那些新框架在 15254 上跑不起来。
+
+    C# 语言版本锁 7.3：Core 里的代码同时被桌面测试工程（LangVersion 7.3）编译，
+    写新语法会在那边立刻编译失败，等于有一道闸。
+  -->
+
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{A7C41E5B-3F2D-4B8E-9C61-5D2E8F0A1B34}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <RootNamespace>Yanshuai.Messages</RootNamespace>
+    <AssemblyName>Yanshuai.Messages</AssemblyName>
+    <DefaultLanguage>zh-CN</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion>10.0.19041.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.14393.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C40-9AE8-F3B8C1B65853};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Platforms>x86;ARM;x64</Platforms>
+    <LangVersion>7.3</LangVersion>
+    <AppxPackageSigningEnabled>false</AppxPackageSigningEnabled>
+    <AppxAutoIncrementPackageRevision>false</AppxAutoIncrementPackageRevision>
+    <AppxBundle>Never</AppxBundle>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PlatformTarget>$(Platform)</PlatformTarget>
+    <OutputPath>bin\$(Platform)\$(Configuration)\</OutputPath>
+    <IntermediateOutputPath>obj\$(Platform)\$(Configuration)\</IntermediateOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- 通配：Core / Platform / Ui 下的 .cs 全部自动纳入，新增文件不用改工程 -->
+    <Compile Include="**\*.cs" Exclude="bin\**;obj\**" />
+
+    <ApplicationDefinition Include="App.xaml" />
+
+    <!-- XAML 页面必须逐条声明：新增页面时记得加一行，否则 InitializeComponent 会找不到 -->
+    <Page Include="Themes\Design.xaml" />
+    <Page Include="Ui\MainPage.xaml" />
+    <!-- 纯代码页面的类型清单，只为让 .NET Native 生成激活器；见文件头说明 -->
+    <Page Include="Ui\PageTypeRegistry.xaml" />
+
+    <AppxManifest Include="Package.appxmanifest" />
+    <Content Include="Assets\*.png" />
+    <Content Include="Properties\Default.rd.xml" />
+
+    <!-- 手机上的状态栏 API -->
+    <SDKReference Include="WindowsMobile, Version=10.0.19041.0" />
+
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="5.4.7" />
+    <!--
+      Newtonsoft.Json 必须是 10.0.3，不能升。
+
+      原因（在真机上实测过，不是推测）：13.x 的包只提供 netstandard2.0 资产，
+      而 UWP 5.4.7（Windows 10 Mobile 15254 自带的版本）对 netstandard2.0 的支持不完整 ——
+      JsonSerializerSettings 的静态构造在访问自己的 StreamingContext 字段时会抛
+      FieldAccessException，导致**所有** JSON 读写失败（连 new JsonSerializerSettings() 都不行）。
+      10.0.3 没有 netstandard2.0，NuGet 会退回 netstandard1.3 资产，那条路径在 5.4.7 上是好的。
+
+      为什么不改成升级 Microsoft.NETCore.UniversalWindowsPlatform：
+      那会把最低框架版本抬到手机上不存在的东西上，应用在目标设备上直接起不来。
+      手机才是这个项目的主目标，所以宁可钉住旧库。
+    -->
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+  </ItemGroup>
+
+  <!--
+    ═══ PyUwp 原生载荷（run_python 的真运行时）═══
+
+    PyUwp.Runtime 是 ARM32-only 的预览包，里面是 python-uwp.dll、z.dll 与整个
+    CPython 的 Lib\（600+ 个 .py 文件）。**刻意不默认接进来**，两个原因：
+
+      1) 它只有 ARM 资产。接进来会让 x86 桌面调试构建多一条警告，
+         而桌面本来也加载不了这个 DLL（会在 DllImport 时抛）。
+      2) 它是个预览包，从 nuget.org 拿不到 —— 默认打开会让仓库依赖某台机器上的路径。
+
+    要启用：把包解开，然后把目录指过来（解开后目录里应当有
+    python-uwp.dll / z.dll / Lib\）：
+
+      Add-Type -AssemblyName System.IO.Compression.FileSystem
+      [System.IO.Compression.ZipFile]::ExtractToDirectory(
+        'H:\项目\UWP\Python UWP\artifacts\PyUwp.Runtime.0.2.0-preview.1.nupkg',
+        'H:\项目\UWP\Python UWP\_extracted')
+      # 原生文件在 runtimes\win10-arm\native\ 下
+
+    默认路径指向仓库的**兄弟目录**（..\..\..\Python UWP\_extracted\...）——
+    Python UWP 与 Project-Messages 同级，所以这个相对路径在任何克隆位置都成立。
+    目录不存在时开关自动关闭，构建照常通过。
+
+    不启用时，应用里 run_python 会如实报告"运行时不可用"，不会静默失败。
+  -->
+  <PropertyGroup>
+    <PyUwpRuntimeDir Condition=" '$(PyUwpRuntimeDir)' == '' ">$(MSBuildThisFileDirectory)..\..\..\Python UWP\_extracted\runtimes\win10-arm\native</PyUwpRuntimeDir>
+    <PyUwpAvailable Condition=" '$(Platform)' == 'ARM' AND Exists('$(PyUwpRuntimeDir)\python-uwp.dll') ">true</PyUwpAvailable>
+  </PropertyGroup>
+
+  <!--
+    用 Content 而不是 None+DeploymentContent：UWP 的打包目标只认 Content
+    （None 那条路在 C# UWP 工程里不会被收进布局，实测过：包体大小完全没变）。
+  -->
+  <ItemGroup Condition=" '$(PyUwpAvailable)' == 'true' ">
+    <Content Include="$(PyUwpRuntimeDir)\python-uwp.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>python-uwp.dll</Link>
+    </Content>
+    <Content Include="$(PyUwpRuntimeDir)\z.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>z.dll</Link>
+    </Content>
+    <Content Include="$(PyUwpRuntimeDir)\Lib\**\*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>Lib\%(RecursiveDir)%(Filename)%(Extension)</Link>
+    </Content>
+  </ItemGroup>
+
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+
+  <Target Name="ReportPyUwpState" BeforeTargets="PrepareForBuild">
+    <Message Importance="high" Condition=" '$(PyUwpAvailable)' == 'true' "
+             Text="PyUwp 原生载荷已接入：$(PyUwpRuntimeDir)" />
+    <Message Importance="normal" Condition=" '$(Platform)' == 'ARM' AND '$(PyUwpAvailable)' != 'true' "
+             Text="PyUwp 原生载荷未接入（run_python 在真机上会报告运行时不可用）。见 csproj 里的 PyUwpRuntimeDir 说明。" />
+  </Target>
+</Project>

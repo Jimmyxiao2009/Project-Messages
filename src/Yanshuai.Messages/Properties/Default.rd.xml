@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  .NET Native 反射配置。
+  我们用 Newtonsoft.Json 反序列化这些模型，必须显式声明它们可以被反射访问，
+  否则 Release（.NET Native 编译）下会在运行期报"类型找不到"——Debug（.NET FX 解释执行）
+  下看不出来，这是最容易漏掉的一类线上问题。
+-->
+<Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">
+  <Application>
+    <Assembly Name="Yanshuai.Messages">
+      <Type Name="Yanshuai.Messages.Core.ApiProfile" Dynamic="Required All" />
+      <Type Name="Yanshuai.Messages.Core.ApiProfileFile" Dynamic="Required All" />
+      <!-- 模型元数据会被 Newtonsoft 反复反序列化（每个 provider 一个字典），必须声明 -->
+      <Type Name="Yanshuai.Messages.Core.ModelMetadata" Dynamic="Required All" />
+      <Type Name="Yanshuai.Messages.Core.Persona" Dynamic="Required All" />
+      <Type Name="Yanshuai.Messages.Core.Profile" Dynamic="Required All" />
+      <Type Name="Yanshuai.Messages.Core.ProfileApiOptions" Dynamic="Required All" />
+      <Type Name="Yanshuai.Messages.Core.GenerationOptions" Dynamic="Required All" />
+      <Type Name="Yanshuai.Messages.Core.PresetMessage" Dynamic="Required All" />
+      <Type Name="Yanshuai.Messages.Core.ToolOptions" Dynamic="Required All" />
+      <Type Name="Yanshuai.Messages.Core.PromptOptions" Dynamic="Required All" />
+      <Type Name="Yanshuai.Messages.Core.MemoryOptions" Dynamic="Required All" />
+      <Type Name="Yanshuai.Messages.Core.AppearanceOptions" Dynamic="Required All" />
+      <Type Name="Yanshuai.Messages.Core.AffinityState" Dynamic="Required All" />
+      <Type Name="Yanshuai.Messages.Core.UserPersona" Dynamic="Required All" />
+      <Type Name="Yanshuai.Messages.Core.UserPersonaFile" Dynamic="Required All" />
+      <Type Name="Yanshuai.Messages.Core.Conversation" Dynamic="Required All" />
+      <Type Name="Yanshuai.Messages.Core.Message" Dynamic="Required All" />
+      <Type Name="Yanshuai.Messages.Core.Attachment" Dynamic="Required All" />
+      <Type Name="Yanshuai.Messages.Core.ToolCallRecord" Dynamic="Required All" />
+      <Type Name="Yanshuai.Messages.Core.StepRecord" Dynamic="Required All" />
+      <Type Name="Yanshuai.Messages.Core.UsageInfo" Dynamic="Required All" />
+      <Type Name="Yanshuai.Messages.Core.ConversationIndex" Dynamic="Required All" />
+      <Type Name="Yanshuai.Messages.Core.ConversationIndexEntry" Dynamic="Required All" />
+      <Type Name="Yanshuai.Messages.Core.MemoryItem" Dynamic="Required All" />
+      <Type Name="Yanshuai.Messages.Core.MemoryFile" Dynamic="Required All" />
+      <Type Name="Yanshuai.Messages.Core.Lorebook" Dynamic="Required All" />
+      <Type Name="Yanshuai.Messages.Core.LorebookEntry" Dynamic="Required All" />
+      <Type Name="Yanshuai.Messages.Core.ModeInjection" Dynamic="Required All" />
+      <Type Name="Yanshuai.Messages.Core.PromptLibrary" Dynamic="Required All" />
+      <Type Name="Yanshuai.Messages.Core.AuthorizedFolder" Dynamic="Required All" />
+      <Type Name="Yanshuai.Messages.Core.TrashEntry" Dynamic="Required All" />
+      <Type Name="Yanshuai.Messages.Core.RegexTransform" Dynamic="Required All" />
+      <Type Name="Yanshuai.Messages.Core.GlobalSettings" Dynamic="Required All" />
+      <Type Name="Yanshuai.Messages.Core.SearchSettings" Dynamic="Required All" />
+      <!-- 副手模型 / 朗读模型的引用，存在 GlobalSettings 里 -->
+      <Type Name="Yanshuai.Messages.Core.ModelRef" Dynamic="Required All" />
+      <Type Name="Yanshuai.Messages.Core.McpServerConfig" Dynamic="Required All" />
+      <Type Name="Yanshuai.Messages.Core.SkillDefinition" Dynamic="Required All" />
+      <Type Name="Yanshuai.Messages.Core.PermissionFile" Dynamic="Required All" />
+      <Type Name="Yanshuai.Messages.Core.KnowledgeFile" Dynamic="Required All" />
+      <!-- v1.1 快捷消息：存在 library.json 里，会随 PromptLibrary 一起反序列化 -->
+      <Type Name="Yanshuai.Messages.Core.QuickMessage" Dynamic="Required All" />
+      <!-- v1.1 备份清单：写在备份 zip 里的 JSON -->
+      <Type Name="Yanshuai.Messages.Core.BackupManifest" Dynamic="Required All" />
+      <!-- v1.2 会话用量日志：JSONL，逐行反序列化 -->
+      <Type Name="Yanshuai.Messages.Core.TechLogEntry" Dynamic="Required All" />
+      <!-- v1.2 脚本执行结果：会被工具层与宿主桥传递 -->
+      <Type Name="Yanshuai.Messages.Core.ScriptResult" Dynamic="Required All" />
+      <Type Name="Yanshuai.Messages.Core.ScriptRequest" Dynamic="Required All" />
+      <Type Name="Yanshuai.Messages.Core.SpeechChunk" Dynamic="Required All" />
+      <Type Name="Yanshuai.Messages.Core.TtsSettings" Dynamic="Required All" />
+      <Type Name="Yanshuai.Messages.Core.TranslationResult" Dynamic="Required All" />
+      <Type Name="Yanshuai.Messages.Core.StorageBucket" Dynamic="Required All" />
+      <Type Name="Yanshuai.Messages.Core.StorageStats" Dynamic="Required All" />
+
+      <!--
+        ═══ UI 层（这一段之前整个漏了）═══
+
+        症状：Release（.NET Native）下应用启动后立刻退出，而 crash.log 是空的。
+        原因：MainPage.xaml 里大量使用经典 {Binding}（不是 x:Bind），
+        它走的是运行期反射读 ViewModel 的属性；XAML 还要反射构造带 x:Class 的页面。
+        这些类型没在 rd.xml 里声明时，.NET Native 会把元数据裁掉，
+        运行期抛 MissingMetadataException —— 它是 fail-fast，
+        连 App.UnhandledException 都接不到，所以日志里什么都不留，
+        只有 Debug（.NET FX 解释执行、不裁剪）下才一切正常。
+
+        用 Namespace 一次覆盖：MainPage、四个 ViewModel（ConversationVm / ProfileVm /
+        RowVm / StepVm，被 {Binding} 反射读写）、TimelineTemplateSelector（XAML 实例化）、
+        ThemeHelper。
+
+        注意：这里只管"反射读写成员"。Frame.Navigate(typeof(纯代码页面)) 走的是另一条路 ——
+        它要的是 XAML 类型表里的激活器，给这两个命名空间加 Activate 也没用。
+        那一半在 Ui\PageTypeRegistry.xaml 里解决，别在 rd.xml 上重复试。
+      -->
+      <Namespace Name="Yanshuai.Messages.Ui.Pages" Dynamic="Required All" />
+      <Namespace Name="Yanshuai.Messages.Ui" Dynamic="Required All" />
+      <Type Name="Yanshuai.Messages.App" Dynamic="Required All" />
+    </Assembly>
+    <Assembly Name="Newtonsoft.Json" Dynamic="Required All" />
+  </Application>
+</Directives>

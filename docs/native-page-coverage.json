@@ -1,0 +1,1076 @@
+[
+  {
+    "id": "spec-type",
+    "title": "文字刻度与页头",
+    "native": "Design.xaml / DetailPage / 时间线规范",
+    "status": "规范参照"
+  },
+  {
+    "id": "spec-controls",
+    "title": "基础控件",
+    "native": "Design.xaml / DetailPage / 时间线规范",
+    "status": "规范参照"
+  },
+  {
+    "id": "spec-lists",
+    "title": "列表行与状态",
+    "native": "Design.xaml / DetailPage / 时间线规范",
+    "status": "规范参照"
+  },
+  {
+    "id": "spec-appbar",
+    "title": "应用栏的三种状态",
+    "native": "Design.xaml / DetailPage / 时间线规范",
+    "status": "规范参照"
+  },
+  {
+    "id": "spec-dialog",
+    "title": "对话框与菜单",
+    "native": "Design.xaml / DetailPage / 时间线规范",
+    "status": "规范参照"
+  },
+  {
+    "id": "spec-timeline",
+    "title": "时间线行类型",
+    "native": "Design.xaml / DetailPage / 时间线规范",
+    "status": "规范参照"
+  },
+  {
+    "id": "startup",
+    "title": "启动与初始化",
+    "native": "App / RestoreStartupAsync",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "startup-error",
+    "title": "初始化失败",
+    "native": "App / RestoreStartupAsync",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "crash-notice",
+    "title": "上次异常退出",
+    "native": "App / RestoreStartupAsync",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "migration",
+    "title": "旧数据迁移",
+    "native": "MigrationPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "migration-running",
+    "title": "迁移进行中",
+    "native": "MigrationPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "oobe-1",
+    "title": "引导 1 / 3 · 连接模型",
+    "native": "OnboardingPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "oobe-2",
+    "title": "引导 2 / 3 · 第一个档案",
+    "native": "OnboardingPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "oobe-3",
+    "title": "引导 3 / 3 · 完成",
+    "native": "OnboardingPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "home",
+    "title": "对话（根 Pivot 第 1 页）",
+    "native": "MainPage 根 Pivot",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "home-filtered",
+    "title": "对话 · 按档案筛选",
+    "native": "MainPage 根 Pivot",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "home-appbar",
+    "title": "对话 · 应用栏展开",
+    "native": "MainPage 根 Pivot",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "home-select",
+    "title": "批量管理会话",
+    "native": "ConversationsPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "home-empty",
+    "title": "对话 · 一条会话都没有",
+    "native": "MainPage 根 Pivot",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "search",
+    "title": "全局搜索",
+    "native": "GlobalSearchPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "search-empty",
+    "title": "搜索无结果",
+    "native": "GlobalSearchPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "profiles",
+    "title": "档案（根 Pivot 第 2 页）",
+    "native": "MainPage 根 Pivot",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "profiles-empty",
+    "title": "档案 · 空态",
+    "native": "MainPage 根 Pivot",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "me",
+    "title": "我的（根 Pivot 第 3 页）",
+    "native": "MainPage 根 Pivot",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "new-chat",
+    "title": "新建会话（草稿设置）",
+    "native": "NewConversationPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "profile-select",
+    "title": "选择档案",
+    "native": "NewConversationPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "chat-draft",
+    "title": "会话 · 草稿空态",
+    "native": "MainPage 会话 / 时间线 / 长按菜单",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "chat",
+    "title": "会话 · 完成",
+    "native": "MainPage 会话 / 时间线 / 长按菜单",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "chat-markdown",
+    "title": "会话 · Markdown 与公式",
+    "native": "MainPage 会话 / 时间线 / 长按菜单",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "chat-menu",
+    "title": "会话 · 「⋯」菜单",
+    "native": "MainPage 会话 / 时间线 / 长按菜单",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "chat-running",
+    "title": "会话 · 运行中",
+    "native": "MainPage 会话 / 时间线 / 长按菜单",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "chat-approval",
+    "title": "会话 · 待审批",
+    "native": "MainPage 会话 / 时间线 / 长按菜单",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "chat-error",
+    "title": "会话 · 请求失败",
+    "native": "MainPage 会话 / 时间线 / 长按菜单",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "chat-offline",
+    "title": "会话 · 离线",
+    "native": "MainPage.Status / 会话提示栏",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "chat-context-limit",
+    "title": "会话 · 上下文将满",
+    "native": "MainPage.Status / 会话提示栏",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "chat-roleplay",
+    "title": "会话 · 角色对话",
+    "native": "MainPage 会话 / 时间线 / 长按菜单",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "chat-branches",
+    "title": "会话 · 候选分支",
+    "native": "MainPage 会话 / 时间线 / 长按菜单",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "chat-speaking",
+    "title": "会话 · 朗读",
+    "native": "MainPage 会话 / 时间线 / 长按菜单",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "chat-translated",
+    "title": "会话 · 译文叠加",
+    "native": "MainPage 会话 / 时间线 / 长按菜单",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "chat-keyboard",
+    "title": "会话 · 软键盘弹出",
+    "native": "MainPage 会话 / 时间线 / 长按菜单",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "chat-compose-attach",
+    "title": "会话 · 带附件待发送",
+    "native": "MainPage 会话 / 时间线 / 长按菜单",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "chat-history",
+    "title": "会话 · 长会话与回到底部",
+    "native": "MainPage 会话 / 时间线 / 长按菜单",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "message-actions",
+    "title": "长按 · 用户消息",
+    "native": "MainPage 会话 / 时间线 / 长按菜单",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "message-actions-ai",
+    "title": "长按 · 模型输出",
+    "native": "MainPage 会话 / 时间线 / 长按菜单",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "message-edit",
+    "title": "编辑消息",
+    "native": "MessageEditPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "fork",
+    "title": "从这里分支",
+    "native": "MessageEditPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "chat-landscape",
+    "title": "会话 · 横屏",
+    "native": "MainPage 会话 / 时间线 / 长按菜单",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "chat-resumed",
+    "title": "会话 · 离开后切回",
+    "native": "MainPage 会话 / 时间线 / 长按菜单",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "approval",
+    "title": "敏感工具审批 · 写入文件",
+    "native": "InteractionPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "approval-python",
+    "title": "敏感工具审批 · 运行脚本",
+    "native": "InteractionPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "approval-device",
+    "title": "敏感工具审批 · 发短信",
+    "native": "InteractionPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "ask-user",
+    "title": "向你追问",
+    "native": "InteractionPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "schema-form",
+    "title": "结构化输入",
+    "native": "InteractionPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "group-chat",
+    "title": "群聊会话",
+    "native": "MainPage 会话 / 时间线 / 长按菜单",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "group-members",
+    "title": "群聊成员",
+    "native": "GroupPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "group-add",
+    "title": "添加群聊成员",
+    "native": "GroupMemberPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "group-member-edit",
+    "title": "编辑群聊成员",
+    "native": "GroupMemberPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "group-mode",
+    "title": "群聊回复模式",
+    "native": "GroupPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "profile",
+    "title": "档案详情",
+    "native": "ProfilePage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "profile-new",
+    "title": "新建档案",
+    "native": "NewProfilePage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "profile-identity",
+    "title": "编辑身份",
+    "native": "ProfileEditorPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "avatar",
+    "title": "选择头像",
+    "native": "FilesPage avatar / AvatarCropPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "profile-persona",
+    "title": "编辑人设",
+    "native": "ProfileEditorPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "profile-persona-keyboard",
+    "title": "编辑人设 · 键盘弹出",
+    "native": "ProfileEditorPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "profile-unsaved",
+    "title": "未保存改动",
+    "native": "DetailPage 确认 / ProfilePage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "profile-model",
+    "title": "模型与生成参数",
+    "native": "ProfileEditorPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "request-overrides",
+    "title": "自定义请求字段",
+    "native": "ProfileEditorPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "profile-tools",
+    "title": "工具 · MCP · 技能",
+    "native": "ToolsPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "profile-memory",
+    "title": "记忆设置",
+    "native": "ProfileEditorPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "profile-prompts",
+    "title": "世界书 · 注入（档案侧勾选）",
+    "native": "ResourcesPage selection",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "profile-appearance",
+    "title": "档案外观",
+    "native": "AppearancePage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "prompt-assembly",
+    "title": "查看最终提示词",
+    "native": "PromptPreviewPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "profile-delete",
+    "title": "删除档案",
+    "native": "DetailPage 确认 / ProfilePage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "conversations",
+    "title": "档案的会话",
+    "native": "ConversationsPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "user-personas",
+    "title": "用户人设",
+    "native": "ResourcesPage user-personas",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "user-persona-edit",
+    "title": "编辑用户人设",
+    "native": "ResourceEditorPage user",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "user-persona-new",
+    "title": "新建用户人设",
+    "native": "ResourceEditorPage user",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "import-source",
+    "title": "导入 1 / 3 · 选来源",
+    "native": "ImportPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "import-url",
+    "title": "导入 · 从链接",
+    "native": "ImportPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "import-parsing",
+    "title": "导入 · 解析中",
+    "native": "ImportPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "import-preview",
+    "title": "导入 2 / 3 · 预览与补齐",
+    "native": "ImportPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "import-options",
+    "title": "导入 3 / 3 · 落盘选项",
+    "native": "ImportPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "import-done",
+    "title": "导入完成",
+    "native": "ImportPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "import-error",
+    "title": "导入失败 · 文件过大",
+    "native": "ImportPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "import-not-card",
+    "title": "导入 · 这不是角色卡",
+    "native": "ImportPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "import-error-ztxt",
+    "title": "导入失败 · 解压失败",
+    "native": "ImportPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "import-error-empty",
+    "title": "导入失败 · 没有字段",
+    "native": "ImportPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "api-profiles",
+    "title": "模型档案列表",
+    "native": "ApiProfilesPage / ProviderModelsPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "api-actions",
+    "title": "模型档案 · 长按菜单",
+    "native": "ApiProfilesPage / Actions",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "api-new",
+    "title": "新建模型档案 · 选类型",
+    "native": "ApiEditorPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "api-edit",
+    "title": "编辑模型档案",
+    "native": "ApiEditorPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "api-test",
+    "title": "连接测试结果",
+    "native": "ApiTestPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "model-picker",
+    "title": "模型选择器",
+    "native": "ModelPickerPage / ProviderModelsPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "model-picker-search",
+    "title": "模型选择器 · 搜索",
+    "native": "ModelPickerPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "model-manual",
+    "title": "手动添加模型",
+    "native": "ModelDetailsPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "model-details",
+    "title": "模型元数据与覆盖",
+    "native": "ModelDetailsPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "search-settings",
+    "title": "联网搜索",
+    "native": "SearchSettingsPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "tool-catalog",
+    "title": "全部内置工具",
+    "native": "ToolsPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "tool-detail",
+    "title": "工具详情",
+    "native": "ToolDetailsPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "script-runtime",
+    "title": "脚本运行时（run_python）",
+    "native": "ToolDetailsPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "mcp-list",
+    "title": "MCP 服务器",
+    "native": "ExtensionsPage mcp",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "mcp-edit",
+    "title": "编辑 MCP 服务器",
+    "native": "ExtensionEditorPage mcp",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "mcp-new",
+    "title": "新增 MCP 服务器",
+    "native": "ExtensionEditorPage mcp",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "mcp-detail",
+    "title": "MCP 工具清单",
+    "native": "McpToolsPage / McpSchemaPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "skills",
+    "title": "技能",
+    "native": "ExtensionsPage skills",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "skill-edit",
+    "title": "编辑技能",
+    "native": "ExtensionEditorPage skill",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "skill-new",
+    "title": "新建技能",
+    "native": "ExtensionEditorPage skill",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "permissions",
+    "title": "权限记录",
+    "native": "PermissionsPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "permission-detail",
+    "title": "授权详情与撤销",
+    "native": "PermissionsPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "authorized-folders",
+    "title": "授权目录",
+    "native": "FolderAccessPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "folder-permission",
+    "title": "目录授权设置",
+    "native": "FolderPermissionPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "memory",
+    "title": "记忆列表",
+    "native": "MemoryPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "memory-empty",
+    "title": "记忆 · 空态",
+    "native": "MemoryPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "memory-edit",
+    "title": "编辑记忆",
+    "native": "MemoryEditorPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "memory-new",
+    "title": "新增记忆",
+    "native": "MemoryEditorPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "memory-clean",
+    "title": "整理记忆 · 预览",
+    "native": "MemoryMaintenancePage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "memory-index",
+    "title": "记忆索引状态",
+    "native": "MemoryMaintenancePage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "memory-global",
+    "title": "全局记忆池",
+    "native": "MemoryPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "memory-clear",
+    "title": "清空记忆",
+    "native": "MemoryPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "lorebooks",
+    "title": "世界书列表",
+    "native": "ResourcesPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "lorebook-new",
+    "title": "新建世界书",
+    "native": "ResourceEditorPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "lorebook-detail",
+    "title": "世界书详情",
+    "native": "ResourcesPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "lore-entry-edit",
+    "title": "编辑世界书条目",
+    "native": "ResourceEditorPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "injections",
+    "title": "模式注入列表",
+    "native": "ResourcesPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "injection-edit",
+    "title": "编辑模式注入",
+    "native": "ResourceEditorPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "chat-settings",
+    "title": "会话设置",
+    "native": "ChatSettingsPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "chat-delete",
+    "title": "删除会话",
+    "native": "MainPage 会话 / 时间线 / 长按菜单",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "archived",
+    "title": "已归档会话",
+    "native": "ConversationsPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "move-conversations",
+    "title": "移动到档案",
+    "native": "MoveConversationsPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "chat-appearance",
+    "title": "会话外观",
+    "native": "AppearancePage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "context",
+    "title": "上下文与压缩",
+    "native": "ContextPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "context-preview",
+    "title": "上下文压缩预览",
+    "native": "CompactPreviewPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "speech-settings",
+    "title": "朗读设置",
+    "native": "SettingsPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "translation",
+    "title": "消息翻译",
+    "native": "SettingsPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "usage",
+    "title": "会话用量",
+    "native": "DiagnosticsPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "conversation-export",
+    "title": "导出会话",
+    "native": "DataPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "attachments",
+    "title": "会话附件",
+    "native": "FilesPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "attachment-add",
+    "title": "添加附件",
+    "native": "FilesPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "attachment-preview",
+    "title": "附件发送前预览",
+    "native": "FilePreviewPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "attachment-settings",
+    "title": "附件处理设置",
+    "native": "SettingsPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "files",
+    "title": "档案文件",
+    "native": "FilesPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "files-empty",
+    "title": "文件 · 空态",
+    "native": "FilesPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "file-folder",
+    "title": "文件夹内容",
+    "native": "FilesPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "file-preview",
+    "title": "文件解析预览",
+    "native": "FilePreviewPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "file-editor",
+    "title": "文本文件编辑",
+    "native": "FileEditorPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "file-new",
+    "title": "新建文本文件",
+    "native": "FileEditorPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "file-conflict",
+    "title": "文件保存冲突",
+    "native": "FileEditorPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "image-viewer",
+    "title": "图片查看",
+    "native": "FilePreviewPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "general",
+    "title": "通用设置",
+    "native": "SettingsPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "appearance",
+    "title": "主题与强调色",
+    "native": "AppearancePage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "default-appearance",
+    "title": "默认会话外观",
+    "native": "AppearancePage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "typography",
+    "title": "文字与可读性",
+    "native": "SettingsPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "workspace",
+    "title": "工作区位置",
+    "native": "SettingsPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "quick-messages",
+    "title": "快捷消息",
+    "native": "ContentRulesPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "quick-edit",
+    "title": "编辑快捷消息",
+    "native": "RuleEditorPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "quick-new",
+    "title": "新增快捷消息",
+    "native": "RuleEditorPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "regex-list",
+    "title": "正则转换器",
+    "native": "ContentRulesPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "regex-edit",
+    "title": "编辑正则规则",
+    "native": "RuleEditorPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "regex-new",
+    "title": "新增正则规则 · 校验失败",
+    "native": "RuleEditorPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "regex-test",
+    "title": "正则测试",
+    "native": "RegexTestPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "storage",
+    "title": "存储空间",
+    "native": "StoragePage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "storage-clean",
+    "title": "清理空间确认",
+    "native": "StorageCleanupPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "trash",
+    "title": "回收区",
+    "native": "TrashPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "trash-detail",
+    "title": "回收项详情",
+    "native": "TrashPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "backup",
+    "title": "备份与恢复",
+    "native": "BackupPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "backup-create",
+    "title": "创建备份",
+    "native": "BackupPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "backup-progress",
+    "title": "备份进行中",
+    "native": "BackupPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "backup-done",
+    "title": "备份完成",
+    "native": "BackupPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "backup-select",
+    "title": "选择恢复文件",
+    "native": "BackupPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "backup-preview",
+    "title": "备份检查与预览",
+    "native": "BackupPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "restore-confirm",
+    "title": "恢复二次确认",
+    "native": "BackupPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "restore-result",
+    "title": "恢复完成",
+    "native": "BackupPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "data",
+    "title": "导入与导出",
+    "native": "DataPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "data-export",
+    "title": "导出档案",
+    "native": "DataPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "data-import-preview",
+    "title": "旧版数据检查",
+    "native": "MigrationPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "about",
+    "title": "关于言枢",
+    "native": "AboutPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "debug",
+    "title": "调试日志",
+    "native": "DiagnosticsPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "crash-log",
+    "title": "崩溃记录",
+    "native": "DiagnosticsPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  },
+  {
+    "id": "reset-index",
+    "title": "重建会话索引",
+    "native": "SettingsPage",
+    "status": "代码接线已构建；未做逐屏界面验收"
+  }
+]

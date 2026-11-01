@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package
+  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+  xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
+  xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+  IgnorableNamespaces="uap mp">
+
+  <Identity Name="com.yanshuai.messages" Publisher="CN=LockWizard" Version="1.3.17.1" />
+
+  <mp:PhoneIdentity PhoneProductId="8f2c41d7-6a55-4e0b-9d3c-1b7e5a4f2c88" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+
+  <Properties>
+    <DisplayName>言枢·消息</DisplayName>
+    <PublisherDisplayName>Yanshuai</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.14393.0" MaxVersionTested="10.0.19041.0" />
+  </Dependencies>
+
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="Yanshuai.Messages.App">
+      <uap:VisualElements
+        DisplayName="言枢·消息"
+        Square150x150Logo="Assets\Square150x150Logo.png"
+        Square44x44Logo="Assets\Square44x44Logo.png"
+        Description="言枢 AI 手机客户端"
+        BackgroundColor="transparent">
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" Square71x71Logo="Assets\Square71x71Logo.png">
+          <uap:ShowNameOnTiles>
+            <uap:ShowOn Tile="square150x150Logo" />
+            <uap:ShowOn Tile="wide310x150Logo" />
+          </uap:ShowNameOnTiles>
+        </uap:DefaultTile>
+        <uap:SplashScreen Image="Assets\SplashScreen.png" />
+      </uap:VisualElements>
+    </Application>
+  </Applications>
+
+  <Capabilities>
+    <!-- 模型 API、联网搜索、抓取网页 -->
+    <Capability Name="internetClient" />
+    <!--
+      Chronos 原生模块（.tccmod）内存加载：VirtualAllocFromApp 之后要把代码页
+      切成可执行。必须是普通 Capability —— SandboxProbe 在真机上验证过，
+      写成 rescap:Capability 不生效。
+    -->
+    <Capability Name="codeGeneration" />
+    <!-- 自建 / 局域网内的模型端点与搜索服务 -->
+    <Capability Name="privateNetworkClientServer" />
+    <!-- calendar_list / calendar_create -->
+    <uap:Capability Name="appointments" />
+    <!-- contacts_search -->
+    <uap:Capability Name="contacts" />
+    <!--
+      刻意不申请的能力（与旧项目相比收紧了）：
+        picturesLibrary / musicLibrary / videosLibrary / removableStorage
+          —— 工具的文件访问被限制在档案自己的目录内（见 PathSandbox），不需要库权限。
+        phoneCall / sms / chat
+          —— 拨号与短信走 tel: / sms: 协议打开系统应用，不需要这些能力。
+        microphone / webcam / location / bluetooth / radios / userAccountInformation
+          —— 没有任何功能用到。
+    -->
+  </Capabilities>
+</Package>
